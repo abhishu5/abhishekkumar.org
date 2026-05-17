@@ -1,0 +1,17 @@
+/* TEAM */
+Name: Abhishek Kumar
+Role: AI Search Visibility Diagnostics
+
+Website:
+https://abhishekkumar.org
+
+Focus:
+AI interpretation systems, entity clarity,
+answer extractability, and AI search visibility audits.
+
+/* SITE */
+Standards:
+Semantic HTML
+Minimal JavaScript
+Structured data markup
+AI-readable architecture
