@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Abhishek Kumar AI Interpretation & Search Visibility Diagnostics</title>
+  <meta name="description" content="Independent AI search visibility diagnostics for SaaS companies. Structured audits focused on entity clarity, AI interpretation, extractability, and cross-web consistency." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://abhishekkumar.org/services.html" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-header { padding: 5rem 0 3rem; border-bottom: 0.5px solid var(--border); }
+    .page-header h1 { font-size: clamp(1.6rem,4vw,2.4rem); font-weight: 300; letter-spacing:-0.03em; margin: 0.75rem 0 1rem; }
+    .page-header p { color: var(--text2); max-width: 520px; font-size: 0.95rem; }
+
+    .section { padding: 3.5rem 0; border-bottom: 0.5px solid var(--border); }
+    .section h2 { font-size: 1.2rem; font-weight: 500; letter-spacing:-0.02em; margin-bottom: 1rem; }
+    .section p { color: var(--text2); font-size: 0.95rem; }
+
+    .audit-sections { margin-top: 1.5rem; }
+    .audit-row {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-bottom: 0.5px solid var(--border);
+      align-items: start;
+    }
+    .audit-row:last-child { border-bottom: none; }
+    .audit-num { font-family: var(--mono); font-size: 11px; color: var(--text3); padding-top: 3px; }
+    .audit-title { font-size: 0.95rem; font-weight: 500; margin-bottom: 3px; }
+    .audit-desc { font-size: 0.88rem; color: var(--text2); line-height: 1.6; }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .price-card {
+      border: 0.5px solid var(--border);
+      border-radius: 6px;
+      padding: 1.75rem;
+    }
+    .price-card.featured { border-color: var(--border2); }
+    .price-name { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing:0.06em; text-transform:uppercase; margin-bottom: 1rem; }
+    .price-amount { font-size: 2rem; font-weight: 500; letter-spacing:-0.03em; margin-bottom: 0.25rem; }
+    .price-sub { font-size: 0.8rem; color: var(--text2); margin-bottom: 1.5rem; }
+    .price-features { list-style: none; margin-bottom: 1.75rem; }
+    .price-features li { font-size: 0.88rem; color: var(--text2); padding: 0.4rem 0; border-bottom: 0.5px solid var(--border); display: flex; gap: 0.75rem; }
+    .price-features li:last-child { border-bottom: none; }
+    .check { font-family: var(--mono); font-size: 11px; color: var(--text3); }
+
+    .btn-primary { font-family:var(--mono); font-size:12px; padding:10px 20px; background:var(--text); color:var(--bg); border:none; border-radius:4px; cursor:pointer; transition:opacity 0.15s; text-decoration:none; display:inline-block; }
+    .btn-primary:hover { opacity:0.8; }
+    .btn-secondary { font-family:var(--mono); font-size:12px; padding:10px 20px; background:none; color:var(--text2); border:0.5px solid var(--border2); border-radius:4px; cursor:pointer; transition:all 0.15s; text-decoration:none; display:inline-block; }
+    .btn-secondary:hover { color:var(--text); border-color:var(--text); }
+
+    .not-list { list-style:none; margin-top:1rem; }
+    .not-list li { font-size:0.88rem; color:var(--text2); padding:0.5rem 0; border-bottom:0.5px solid var(--border); display:flex; gap:0.75rem; }
+    .not-list li:last-child { border-bottom:none; }
+    .cross { font-family:var(--mono); font-size:11px; color:var(--text3); }
+
+    .process-steps { margin-top: 1.5rem; }
+    .process-step { display: grid; grid-template-columns: 60px 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 0.5px solid var(--border); }
+    .process-step:last-child { border-bottom: none; }
+    .step-num { font-family:var(--mono); font-size:11px; color:var(--text3); }
+    .step-title { font-size:0.95rem; font-weight:500; margin-bottom:3px; }
+    .step-desc { font-size:0.88rem; color:var(--text2); }
+
+    @media (max-width:640px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">abhishekkumar.org</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+      <button class="hamburger" onclick="toggleMenu()"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="methodology.html">Methodology</a><a href="about.html">About</a>
+    <a href="blog.html">Writing</a><a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page">
+    <div class="container">
+
+      <header class="page-header">
+        <span class="mono-label">Services</span>
+        <h1>AI Search Visibility Audit</h1>
+        <p>A structured diagnostic report. Not ongoing SEO. Not vague recommendations. A single, clear document showing exactly how AI systems interpret your brand and what to fix.</p>
+      </header>
+
+      <section class="section">
+        <span class="mono-label">What the audit covers</span>
+        <h2 style="margin-top:0.75rem;">10 diagnostic sections</h2>
+        <div class="audit-sections">
+          <div class="audit-row">
+            <span class="audit-num">01</span>
+            <div><div class="audit-title">Executive Snapshot</div><div class="audit-desc">A clear summary of how AI systems currently describe your brand — the actual outputs from ChatGPT, Gemini, and Perplexity when queried about you.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">02</span>
+            <div><div class="audit-title">Entity Clarity Audit</div><div class="audit-desc">Analysis of how consistently your brand entity is defined across your homepage, about page, and product pages — and whether AI systems converge on an accurate description.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">03</span>
+            <div><div class="audit-title">Schema Engineering Audit</div><div class="audit-desc">Review of your structured data implementation — whether it reinforces or contradicts your brand's actual category, audience, and value proposition.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">04</span>
+            <div><div class="audit-title">Answerability & Featured Snippet Readiness</div><div class="audit-desc">Assessment of whether your content is structured to surface in AI-generated answers — extractability, response format alignment, and direct answer density.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">05</span>
+            <div><div class="audit-title">Intent Classification Audit</div><div class="audit-desc">Analysis of how voice assistants and conversational AI systems classify your brand's intent — whether you surface for the right queries and user needs.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">06</span>
+            <div><div class="audit-title">Cross-Web Entity Consistency</div><div class="audit-desc">Review of signal alignment across your website, LinkedIn, industry directories, press mentions, and review platforms — where inconsistencies cause AI hallucination.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">07</span>
+            <div><div class="audit-title">Content Structure Competency</div><div class="audit-desc">Analysis of how your content is structured for AI comprehension — heading hierarchy, semantic density, and generative engine optimisation alignment.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">08</span>
+            <div><div class="audit-title">AI Summarisation Exposure Test</div><div class="audit-desc">Direct testing of how your brand appears in AI-generated comparisons, category queries, and competitor evaluations across major LLMs.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">09</span>
+            <div><div class="audit-title">Priority Fix Roadmap</div><div class="audit-desc">Specific, ranked corrective actions ordered by structural impact. Each fix tied directly to a diagnostic finding — no generic recommendations.</div></div>
+          </div>
+          <div class="audit-row">
+            <span class="audit-num">10</span>
+            <div><div class="audit-title">Expected Outcomes</div><div class="audit-desc">Clear articulation of what changes should follow from implementing the roadmap — measurable in AI query outputs, not abstract traffic projections.</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="mono-label">Diagnostic Engagements</span>
+        <h2 style="margin-top:0.75rem;">Independent diagnostic audits for SaaS companies navigating AI search visibility,
+entity clarity, and answer-engine interpretation.</h2>
+<div class="pricing-copy">
+
+<p>Engagement scope depends on:</p>
+
+<ul>
+<li>entity complexity</li>
+<li>platform footprint</li>
+<li>audit depth</li>
+<li>cross-platform consistency analysis</li>
+<li>AI interpretation exposure</li>
+</ul>
+
+<p>
+Each audit is structured independently based on the complexity
+of the company's public AI visibility footprint.
+</p>
+
+<a href="contact.html" class="primary-btn">
+Request diagnostic scope and availability
+</a>
+
+</div>
+
+        <div class="pricing-grid">
+          </div>
+      </section>
+
+      <section class="section">
+        <span class="mono-label">What I don't do</span>
+        <h2 style="margin-top:0.75rem;">Diagnostics only</h2>
+        <p>This is not a full-service SEO agency. I produce the diagnostic. Your team or agency implements the fixes.</p>
+        <ul class="not-list">
+          <li><span class="cross">✗</span><span>SEO execution or monthly retainers</span></li>
+          <li><span class="cross">✗</span><span>Link building or content writing</span></li>
+          <li><span class="cross">✗</span><span>Ranking guarantees or traffic projections</span></li>
+          <li><span class="cross">✗</span><span>PPC or paid media management</span></li>
+          <li><span class="cross">✗</span><span>Website redesign or development</span></li>
+        </ul>
+      </section>
+
+      <section class="section" style="border-bottom:none;">
+        <span class="mono-label">Process</span>
+        <h2 style="margin-top:0.75rem;">How it works</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="step-num">Day 0</span>
+            <div><div class="step-title">You submit a request</div><div class="step-desc">Via the contact page. Include your website URL and a brief description of your primary product or service.</div></div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">Day 1</span>
+            <div><div class="step-title">Diagnostic begins</div><div class="step-desc">I run AI query tests, crawl your site structure, review schema, and gather cross-web evidence.</div></div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">Day 3–5</span>
+            <div><div class="step-title">Report delivered</div><div class="step-desc">A structured PDF report covering all 10 sections, delivered to your email with a summary note.</div></div>
+          </div>
+        </div>
+        <div style="margin-top:2rem;">
+          <a href="contact.html" class="btn-primary">Request a diagnostic</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Abhishek Kumar</p>
+      <div style="display:flex;gap:2rem;">
+        <a href="mailto:hello@abhishekkumar.org">hello@abhishekkumar.org</a>
+        <a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const c = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', c === 'dark' ? 'light' : 'dark');
+      localStorage.setItem('theme', document.documentElement.getAttribute('data-theme'));
+    }
+    function toggleMenu() { document.getElementById('mobileNav').classList.toggle('open'); }
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+</body>
+</html>

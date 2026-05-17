@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kumar — AI Interpretation & Search Visibility Diagnostics</title>
+  <meta name="description" content="Independent diagnostic reports revealing how AI systems like ChatGPT, Gemini, and Perplexity interpret, classify, and surface your brand." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://abhishekkumar.org/" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://abhishekkumar.org/#person",
+        "name": "Abhishek Kumar",
+        "url": "https://abhishekkumar.org/",
+        "email": "mailto:hello@abhishekkumar.org",
+        "jobTitle": "AI Interpretation & Search Visibility Diagnostics Specialist",
+        "description": "Independent specialist producing diagnostic reports on how AI systems interpret, classify, and surface brands across answer engines and large language models.",
+        "sameAs": ["https://www.linkedin.com/in/abhishek-kumar314"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://abhishekkumar.org/#website",
+        "url": "https://abhishekkumar.org/",
+        "name": "Abhishek Kumar — AI Interpretation & Search Visibility Diagnostics",
+        "publisher": { "@id": "https://abhishekkumar.org/#person" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://abhishekkumar.org/#service",
+        "name": "AI Search Visibility Audit",
+        "provider": { "@id": "https://abhishekkumar.org/#person" },
+        "areaServed": "North America, Europe, Australia, and other competitive English-language markets",
+        "serviceType": "AI Interpretation & Search Visibility Diagnostics",
+        "description": "A structured diagnostic report revealing how AI systems interpret, classify, and surface your brand — and exactly what to fix."
+      }
+    ]
+  }
+  </script>
+  <style>
+    .hero {
+      padding: 7rem 0 5rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .hero-tag { margin-bottom: 2rem; }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+      color: var(--text);
+    }
+    .hero h1 em {
+      font-style: normal;
+      font-weight: 500;
+    }
+    .hero-sub {
+      font-size: 1rem;
+      color: var(--text2);
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      line-height: 1.75;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    .btn-primary {
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 10px 20px;
+      background: var(--text);
+      color: var(--bg);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover { opacity: 0.8; }
+    .btn-secondary {
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 10px 20px;
+      background: none;
+      color: var(--text2);
+      border: 0.5px solid var(--border2);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-secondary:hover { color: var(--text); border-color: var(--text); }
+
+    .section { padding: 4rem 0; border-bottom: 0.5px solid var(--border); }
+    .section-label { margin-bottom: 2rem; }
+    .section h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .section p { color: var(--text2); max-width: 560px; }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    .grid-item {
+      padding: 1.5rem 0;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .grid-item:nth-child(odd) { padding-right: 2rem; border-right: 0.5px solid var(--border); }
+    .grid-item:nth-child(even) { padding-left: 2rem; }
+    .grid-item h3 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+    .grid-item p { font-size: 0.88rem; color: var(--text2); line-height: 1.6; }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 0.5px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 2rem;
+    }
+    .stat {
+      padding: 1.5rem;
+      border-right: 0.5px solid var(--border);
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--mono);
+      font-size: 1.6rem;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .stat-desc { font-size: 0.8rem; color: var(--text2); }
+
+    .problem-list { list-style: none; margin-top: 1.5rem; }
+    .problem-list li {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 0.5px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--text2);
+    }
+    .problem-list li:last-child { border-bottom: none; }
+    .problem-num {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text3);
+      min-width: 24px;
+      padding-top: 3px;
+    }
+
+    @media (max-width: 640px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-item:nth-child(odd) { padding-right: 0; border-right: none; }
+      .grid-item:nth-child(even) { padding-left: 0; }
+      .stat-row { grid-template-columns: 1fr; }
+      .stat { border-right: none; border-bottom: 0.5px solid var(--border); }
+      .stat:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">abhishekkumar.org</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="methodology.html">Methodology</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Writing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page">
+    <div class="container">
+
+      <section class="hero">
+        <div class="hero-tag">
+          <span class="mono-label">AI Interpretation & Search Visibility Diagnostics</span>
+        </div>
+        <h1>Your brand exists.<br /><em>AI doesn't know that.</em></h1>
+        <p class="hero-sub">
+          I produce independent diagnostic reports revealing exactly how ChatGPT, Gemini,
+          Perplexity, and Claude interpret, classify, and surface your brand —
+          and what structural issues are causing misrepresentation or invisibility.
+        </p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn-primary">View audit details</a>
+          <a href="contact.html" class="btn-secondary">Request a diagnostic</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-label">
+          <span class="mono-label">The problem</span>
+        </div>
+        <h2>AI systems don't read websites.<br />They interpret signals.</h2>
+        <p>Most brands optimised for Google are structurally invisible to AI answer engines. The problem is not content volume — it is entity clarity, structural coherence, and cross-web signal consistency.</p>
+        <ul class="problem-list">
+          <li>
+            <span class="problem-num">01</span>
+            <span>AI averages ambiguity — unclear entity signals produce generic, inaccurate descriptions of your brand.</span>
+          </li>
+          <li>
+            <span class="problem-num">02</span>
+            <span>Answer engines compress information — only extractable, structured content surfaces in AI-generated answers.</span>
+          </li>
+          <li>
+            <span class="problem-num">03</span>
+            <span>Cross-web inconsistency causes AI hallucination — conflicting signals across platforms produce fabricated brand descriptions.</span>
+          </li>
+          <li>
+            <span class="problem-num">04</span>
+            <span>Schema is structural reinforcement — not a checkbox. Most implementations fail to tell AI what a brand actually does.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-label">
+          <span class="mono-label">What I diagnose</span>
+        </div>
+        <h2>Six layers of AI visibility</h2>
+        <div class="grid-2" style="margin-top:1.5rem;">
+          <div class="grid-item">
+            <h3>Entity Clarity</h3>
+            <p>How AI systems define, classify, and describe your brand across ChatGPT, Gemini, and Perplexity.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Answer Extractability</h3>
+            <p>Whether your content is structured to surface in AI-generated answers and featured responses.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Schema Engineering</h3>
+            <p>Whether structured data reinforces or contradicts how AI systems interpret your brand category.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Cross-Web Consistency</h3>
+            <p>Whether signals across your website, LinkedIn, directories, and press align into a coherent entity.</p>
+          </div>
+          <div class="grid-item">
+            <h3>AI Summarisation Exposure</h3>
+            <p>How your brand appears when AI systems are asked to compare, evaluate, or recommend in your space.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Priority Fix Roadmap</h3>
+            <p>Ranked, specific corrective actions ordered by structural impact — not generic SEO advice.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-label">
+          <span class="mono-label">Who this is for</span>
+        </div>
+        <h2>SaaS companies in North America, Europe, Australia, and other competitive English-language markets. losing ground to AI search</h2>
+        <p style="margin-bottom:1.5rem;">This diagnostic is not for every business. It is for brands that:</p>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-num">↓</span>
+            <span class="stat-desc">Are seeing organic traffic decline as AI answer engines absorb search queries</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">?</span>
+            <span class="stat-desc">Don't know how ChatGPT or Perplexity currently describes their brand</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">✗</span>
+            <span class="stat-desc">Are absent from AI-generated comparisons where competitors appear</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="border-bottom:none;">
+        <div class="section-label">
+          <span class="mono-label">Start here</span>
+        </div>
+        <h2>One report. Clear findings. Specific fixes.</h2>
+        <p style="margin-bottom:2rem;">No retainers. No vague recommendations. A structured diagnostic report delivered within 5 business days.</p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn-primary">See audit details & pricing</a>
+          <a href="methodology.html" class="btn-secondary">View methodology</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Abhishek Kumar</p>
+      <div style="display:flex;gap:2rem;">
+        <a href="mailto:hello@abhishekkumar.org">hello@abhishekkumar.org</a>
+        <a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+      localStorage.setItem('theme', document.documentElement.getAttribute('data-theme'));
+    }
+    function toggleMenu() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit Methodology — Abhishek Kumar AI Search Visibility Diagnostics</title>
+  <meta name="description" content="How I analyze AI interpretation and search visibility — the evidence-first methodology behind every AI interpretation and visibility diagnostic." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://abhishekkumar.org/methodology.html" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-header { padding: 5rem 0 3rem; border-bottom: 0.5px solid var(--border); }
+    .page-header h1 { font-size: clamp(1.6rem,4vw,2.4rem); font-weight: 300; letter-spacing:-0.03em; margin: 0.75rem 0 1rem; }
+    .page-header p { color: var(--text2); max-width: 520px; font-size: 0.95rem; }
+    .section { padding: 3.5rem 0; border-bottom: 0.5px solid var(--border); }
+    .section h2 { font-size: 1.2rem; font-weight: 500; letter-spacing:-0.02em; margin-bottom: 1rem; }
+    .section p { color: var(--text2); font-size: 0.95rem; margin-bottom: 1rem; }
+
+    .method-block { margin-top: 2rem; }
+    .method-item { padding: 1.5rem 0; border-bottom: 0.5px solid var(--border); display: grid; grid-template-columns: 140px 1fr; gap: 2rem; }
+    .method-item:last-child { border-bottom: none; }
+    .method-phase { font-family: var(--mono); font-size: 11px; color: var(--text3); padding-top: 3px; }
+    .method-title { font-size: 0.95rem; font-weight: 500; margin-bottom: 6px; }
+    .method-desc { font-size: 0.88rem; color: var(--text2); line-height: 1.65; }
+
+    .principle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+    .principle-card { border: 0.5px solid var(--border); border-radius: 6px; padding: 1.25rem; }
+    .principle-label { font-family: var(--mono); font-size: 11px; color: var(--text3); margin-bottom: 0.5rem; }
+    .principle-title { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.4rem; }
+    .principle-desc { font-size: 0.85rem; color: var(--text2); line-height: 1.6; }
+
+    .evidence-list { list-style: none; margin-top: 1rem; }
+    .evidence-list li { font-size: 0.88rem; color: var(--text2); padding: 0.6rem 0; border-bottom: 0.5px solid var(--border); display: flex; gap: 1rem; }
+    .evidence-list li:last-child { border-bottom: none; }
+    .ev-label { font-family: var(--mono); font-size: 11px; color: var(--text3); min-width: 80px; padding-top: 2px; }
+
+    .btn-primary { font-family:var(--mono); font-size:12px; padding:10px 20px; background:var(--text); color:var(--bg); border:none; border-radius:4px; cursor:pointer; transition:opacity 0.15s; text-decoration:none; display:inline-block; }
+    .btn-primary:hover { opacity:0.8; }
+
+    @media (max-width: 640px) {
+      .method-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .principle-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">abhishekkumar.org</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="methodology.html" class="active">Methodology</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+      <button class="hamburger" onclick="toggleMenu()"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="methodology.html">Methodology</a><a href="about.html">About</a>
+    <a href="blog.html">Writing</a><a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page">
+    <div class="container">
+
+      <header class="page-header">
+        <span class="mono-label">Methodology</span>
+        <h1>Evidence first. Findings second.</h1>
+        <p>Every audit follows a strict separation between raw evidence gathering and final conclusions. No assumptions are packaged as findings without supporting diagnostic data.</p>
+      </header>
+
+      <section class="section">
+        <span class="mono-label">Core principles</span>
+        <h2 style="margin-top:0.75rem;">What separates this from generic SEO audits</h2>
+        <div class="principle-grid">
+          <div class="principle-card">
+            <div class="principle-label">Principle 01</div>
+            <div class="principle-title">AI systems average ambiguity</div>
+            <div class="principle-desc">When brand signals are unclear or inconsistent, AI systems default to generic category descriptions. Precision requires eliminating ambiguity, not adding more content.</div>
+          </div>
+          <div class="principle-card">
+            <div class="principle-label">Principle 02</div>
+            <div class="principle-title">Extractability over volume</div>
+            <div class="principle-desc">AI answer engines don't reward content length. They reward structural clarity — content that can be extracted and summarised without distortion.</div>
+          </div>
+          <div class="principle-card">
+            <div class="principle-label">Principle 03</div>
+            <div class="principle-title">Cross-web consensus is trust</div>
+            <div class="principle-desc">AI systems triangulate brand identity across multiple sources. Inconsistency between your website, LinkedIn, and directories produces hallucinated descriptions.</div>
+          </div>
+          <div class="principle-card">
+            <div class="principle-label">Principle 04</div>
+            <div class="principle-title">Schema is reinforcement, not a checkbox</div>
+            <div class="principle-desc">Technically valid schema that contradicts or omits your actual positioning provides no AI visibility benefit — and can actively confuse classification.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="mono-label">Diagnostic process</span>
+        <h2 style="margin-top:0.75rem;">How evidence is gathered</h2>
+        <div class="method-block">
+          <div class="method-item">
+            <span class="method-phase">Phase 1 — Query</span>
+            <div>
+              <div class="method-title">Direct AI interrogation</div>
+              <div class="method-desc">I run structured queries across ChatGPT, Gemini, Perplexity, and Claude — asking each to describe your brand, categorise your service, compare you to competitors, and recommend you for specific use cases. Raw outputs are recorded verbatim before any analysis begins.</div>
+            </div>
+          </div>
+          <div class="method-item">
+            <span class="method-phase">Phase 2 — Crawl</span>
+            <div>
+              <div class="method-title">Site structure analysis</div>
+              <div class="method-desc">I analyse your site's entity signals — homepage definition, about page definition, product page definition — checking for internal consistency and extractability. Each page is assessed independently before cross-page patterns are identified.</div>
+            </div>
+          </div>
+          <div class="method-item">
+            <span class="method-phase">Phase 3 — Schema</span>
+            <div>
+              <div class="method-title">Structured data review</div>
+              <div class="method-desc">All structured data is extracted and compared against how AI systems are actually describing your brand. Mismatches between schema intent and AI output are flagged as structural conflicts, not technical errors.</div>
+            </div>
+          </div>
+          <div class="method-item">
+            <span class="method-phase">Phase 4 — Cross-web</span>
+            <div>
+              <div class="method-title">Off-site signal mapping</div>
+              <div class="method-desc">LinkedIn, Crunchbase, G2, Capterra, press mentions, and industry directories are reviewed for signal consistency. Each source is checked against the brand's stated positioning and the AI outputs from Phase 1.</div>
+            </div>
+          </div>
+          <div class="method-item">
+            <span class="method-phase">Phase 5 — Synthesis</span>
+            <div>
+              <div class="method-title">Finding and roadmap construction</div>
+              <div class="method-desc">Only after all evidence is gathered are findings written. Each finding is tied directly to specific evidence. Each roadmap item is tied directly to a specific finding. No generic recommendations are included.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="mono-label">Evidence types</span>
+        <h2 style="margin-top:0.75rem;">What constitutes diagnostic evidence</h2>
+        <ul class="evidence-list">
+          <li><span class="ev-label">LLM outputs</span><span>Verbatim AI responses to structured brand queries — recorded with model version and date</span></li>
+          <li><span class="ev-label">Page text</span><span>Extracted homepage, about, and product page copy — analysed for entity consistency</span></li>
+          <li><span class="ev-label">Schema data</span><span>Raw structured data extracted from source — compared against AI interpretation</span></li>
+          <li><span class="ev-label">Off-site signals</span><span>LinkedIn summary, directory descriptions, press mentions — checked for alignment</span></li>
+          <li><span class="ev-label">Competitor data</span><span>AI outputs for 3 competitors in your category — used for gap identification (Deep Dive only)</span></li>
+        </ul>
+      </section>
+
+      <section class="section" style="border-bottom:none;">
+        <span class="mono-label">Deliverable</span>
+        <h2 style="margin-top:0.75rem;">What you receive</h2>
+        <p>A structured PDF report. Formatted for your marketing team or agency to act on directly. No jargon-only findings. Each section includes: the evidence, the finding, the impact, and the specific fix required.</p>
+        <div style="margin-top:2rem;">
+          <a href="contact.html" class="btn-primary">Request a diagnostic</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Abhishek Kumar</p>
+      <div style="display:flex;gap:2rem;">
+        <a href="mailto:hello@abhishekkumar.org">hello@abhishekkumar.org</a>
+        <a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const c = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', c === 'dark' ? 'light' : 'dark');
+      localStorage.setItem('theme', document.documentElement.getAttribute('data-theme'));
+    }
+    function toggleMenu() { document.getElementById('mobileNav').classList.toggle('open'); }
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+</body>
+</html>

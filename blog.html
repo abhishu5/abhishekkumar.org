@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research & Writing — Abhishek Kumar AI Search Visibility Diagnostics</title>
+  <meta name="description" content="Research, experiments, and framework analysis on AI interpretation systems, entity clarity, answer extractability, and machine-readable brand visibility." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://abhishekkumar.org/blog.html" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-header { padding: 5rem 0 3rem; border-bottom: 0.5px solid var(--border); }
+    .page-header h1 { font-size: clamp(1.6rem,4vw,2.4rem); font-weight: 300; letter-spacing:-0.03em; margin: 0.75rem 0 1rem; }
+    .page-header p { color: var(--text2); max-width: 520px; font-size: 0.95rem; }
+
+    .posts-section { padding: 3rem 0; }
+
+    .post-item {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 2rem;
+      padding: 1.75rem 0;
+      border-bottom: 0.5px solid var(--border);
+      text-decoration: none;
+      transition: background 0.1s;
+    }
+    .post-item:last-child { border-bottom: none; }
+    .post-date { font-family: var(--mono); font-size: 11px; color: var(--text3); padding-top: 4px; }
+    .post-title { font-size: 1rem; font-weight: 500; color: var(--text); margin-bottom: 0.35rem; transition: color 0.15s; }
+    .post-item:hover .post-title { color: var(--text2); }
+    .post-excerpt { font-size: 0.88rem; color: var(--text2); line-height: 1.65; margin-bottom: 0.75rem; }
+    .post-tag { display: inline-block; font-family: var(--mono); font-size: 10px; color: var(--text3); border: 0.5px solid var(--border); border-radius: 3px; padding: 2px 7px; }
+
+    .linkedin-note {
+      border: 0.5px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .linkedin-note p { font-size: 0.9rem; color: var(--text2); }
+    .btn-secondary { font-family:var(--mono); font-size:12px; padding:9px 18px; background:none; color:var(--text2); border:0.5px solid var(--border2); border-radius:4px; cursor:pointer; transition:all 0.15s; text-decoration:none; display:inline-block; white-space:nowrap; }
+    .btn-secondary:hover { color:var(--text); border-color:var(--text); }
+
+    .section-label-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+
+    @media (max-width:640px) {
+      .post-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">abhishekkumar.org</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="methodology.html">Methodology</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Research & Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+      <button class="hamburger" onclick="toggleMenu()"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="methodology.html">Methodology</a><a href="about.html">About</a>
+    <a href="blog.html">Research & Writing</a><a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page">
+    <div class="container">
+
+      <header class="page-header">
+        <span class="mono-label">Research & Writing</span>
+        <h1>Analysis on AI search visibility</h1>
+        <p>Frameworks, diagnostics, and observations on how AI systems interpret brands — published every Tuesday and Thursday.</p>
+      </header>
+
+      <div class="posts-section">
+        <div class="section-label-row">
+          <span class="mono-label">Recent posts</span>
+        </div>
+
+        <a class="post-item" href="#">
+          <span class="post-date">Coming soon</span>
+          <div>
+            <div class="post-title">Correct sequencing for AI search visibility</div>
+            <div class="post-excerpt">Most brands try to fix AI visibility by adding more content. The correct sequence is structural — entity clarity before schema, schema before cross-web consistency, consistency before answerability.</div>
+            <span class="post-tag">GEO · AEO</span>
+          </div>
+        </a>
+
+        <a class="post-item" href="#">
+          <span class="post-date">Coming soon</span>
+          <div>
+            <div class="post-title">AI relabels companies when signals are fragmented</div>
+            <div class="post-excerpt">When your website says one thing, your LinkedIn says another, and G2 says something else entirely, AI systems don't pick the most accurate signal — they average all of them into a generic description.</div>
+            <span class="post-tag">Entity clarity</span>
+          </div>
+        </a>
+
+        <a class="post-item" href="#">
+          <span class="post-date">Coming soon</span>
+          <div>
+            <div class="post-title">The AI summarisation exposure test</div>
+            <div class="post-excerpt">A structured method for testing how your brand appears in AI-generated comparisons, category queries, and recommendation requests — and what the outputs reveal about your structural gaps.</div>
+            <span class="post-tag">Diagnostics</span>
+          </div>
+        </a>
+
+        <a class="post-item" href="#">
+          <span class="post-date">Coming soon</span>
+          <div>
+            <div class="post-title">Cross-web entity consistency</div>
+            <div class="post-excerpt">AI systems triangulate brand identity across sources they trust — your site, LinkedIn, Crunchbase, press. Where those sources conflict, AI defaults to hallucination. Where they align, AI cites you accurately.</div>
+            <span class="post-tag">Entity clarity</span>
+          </div>
+        </a>
+
+        <a class="post-item" href="#">
+          <span class="post-date">Coming soon</span>
+          <div>
+            <div class="post-title">Schema is structural reinforcement, not checkbox SEO</div>
+            <div class="post-excerpt">Most schema implementations are technically valid but strategically empty. Schema that doesn't reinforce your actual positioning, audience, and value proposition provides no AI visibility benefit.</div>
+            <span class="post-tag">Schema · GEO</span>
+          </div>
+        </a>
+
+        <a class="post-item" href="#">
+          <span class="post-date">Coming soon</span>
+          <div>
+            <div class="post-title">Most websites fail the 30-word extractability test</div>
+            <div class="post-excerpt">If an AI system cannot produce an accurate 30-word description of your brand from your homepage alone, your entity signals are insufficient. Here is how to test it and what to fix.</div>
+            <span class="post-tag">AEO · Extractability</span>
+          </div>
+        </a>
+
+        <a class="post-item" href="#">
+          <span class="post-date">Coming soon</span>
+          <div>
+            <div class="post-title">AI averages ambiguity</div>
+            <div class="post-excerpt">When AI systems encounter unclear or inconsistent brand signals, they do not pick the most prominent signal — they average all available signals into a generic category description. Precision is the only defence.</div>
+            <span class="post-tag">Entity clarity</span>
+          </div>
+        </a>
+
+        <div class="linkedin-note">
+          <p>Full posts and analysis published on LinkedIn every Tuesday and Thursday.</p>
+          <a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank" class="btn-secondary">Follow on LinkedIn →</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Abhishek Kumar</p>
+      <div style="display:flex;gap:2rem;">
+        <a href="mailto:hello@abhishekkumar.org">hello@abhishekkumar.org</a>
+        <a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const c = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', c === 'dark' ? 'light' : 'dark');
+      localStorage.setItem('theme', document.documentElement.getAttribute('data-theme'));
+    }
+    function toggleMenu() { document.getElementById('mobileNav').classList.toggle('open'); }
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.setAttribute('data-theme', 'dark');
+  </script>
+</body>
+</html>
