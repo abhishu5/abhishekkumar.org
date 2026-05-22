@@ -108,9 +108,10 @@ nav {
 .mono-label {
   font-family: var(--mono);
   font-size: 11px;
-  color: var(--text3);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  color: var(--text3);
+  display: inline-block;
 }
 
 /* TAGS */
