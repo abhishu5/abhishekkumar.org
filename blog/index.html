@@ -4,165 +4,210 @@ layout: null
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5NF138030"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
 
+   gtag('config', 'G-B5NF138030');
+  </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Research & Writing — Abhishek Kumar AI Search Visibility Diagnostics</title>
+<title>Writing | Abhishek Kumar</title>
 
-<meta name="description" content="Research, experiments, and framework analysis on AI interpretation systems, entity clarity, answer extractability, and machine-readable brand visibility.">
+<meta name="description" content="Research and analysis on AI search visibility, entity stability, semantic consistency, answer extractability, retrieval systems, and conversational AI interpretation.">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://abhishekkumar.org/blog/">
 
-<!-- OPEN GRAPH -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="AI Search Visibility Diagnostics">
-<meta property="og:description" content="Independent diagnostics on how AI systems interpret and surface brands.">
-<meta property="og:url" content="https://abhishekkumar.org/blog/">
-
-<!-- TWITTER/X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Search Visibility Diagnostics">
-<meta name="twitter:description" content="Independent diagnostics on how AI systems interpret and surface brands.">
-
-<!-- THEME -->
 <meta name="theme-color" content="#000000">
-
-<!-- FAVICONS -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
 
 <link rel="stylesheet" href="/style.css">
 
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
 <style>
 
-.page-header {
-  padding: 5rem 0 3rem;
-  border-bottom: 0.5px solid var(--border);
+.hero-section{
+padding:120px 0;
+border-bottom:1px solid var(--border);
 }
 
-.page-header h1 {
-  font-size: clamp(1.6rem,4vw,2.4rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  margin: 0.75rem 0 1rem;
+.hero-title{
+max-width:860px;
 }
 
-.page-header p {
-  color: var(--text2);
-  max-width: 520px;
-  font-size: 0.95rem;
+.hero-title h1{
+font-size:clamp(2.8rem,7vw,6.2rem);
+line-height:.93;
+letter-spacing:-0.07em;
+margin-bottom:32px;
+max-width:780px;
 }
 
-.posts-section {
-  padding: 3rem 0;
+.hero-title p{
+max-width:680px;
+font-size:1.05rem;
+line-height:1.85;
+color:var(--text2);
 }
 
-.post-item {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 2rem;
-  padding: 1.75rem 0;
-  border-bottom: 0.5px solid var(--border);
-  text-decoration: none;
-  transition: background 0.1s;
+.posts-wrapper{
+padding:120px 0;
+border-bottom:1px solid var(--border);
 }
 
-.post-item:last-child {
-  border-bottom: none;
+.posts-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:28px;
+margin-top:60px;
 }
 
-.post-date {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--text3);
-  padding-top: 4px;
+.post-card{
+border:1px solid var(--border);
+padding:34px;
+transition:border-color .2s ease;
+text-decoration:none;
+display:block;
 }
 
-.post-title {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text);
-  margin-bottom: 0.35rem;
-  transition: color 0.15s;
+.post-card:hover{
+border-color:var(--text2);
 }
 
-.post-item:hover .post-title {
-  color: var(--text2);
+.post-date{
+font-size:.7rem;
+letter-spacing:.18em;
+text-transform:uppercase;
+opacity:.45;
+margin-bottom:22px;
 }
 
-.post-excerpt {
-  font-size: 0.88rem;
-  color: var(--text2);
-  line-height: 1.65;
-  margin-bottom: 0.75rem;
+.post-title{
+font-size:1.5rem;
+line-height:1.2;
+letter-spacing:-0.04em;
+margin-bottom:20px;
+color:var(--text);
 }
 
-.post-tag {
-  display: inline-block;
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--text3);
-  border: 0.5px solid var(--border);
-  border-radius: 3px;
-  padding: 2px 7px;
+.post-description{
+font-size:.95rem;
+line-height:1.9;
+color:var(--text2);
+margin-bottom:24px;
 }
 
-.linkedin-note {
-  border: 0.5px solid var(--border);
-  border-radius: 6px;
-  padding: 1.5rem;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+.post-tag{
+display:inline-block;
+font-size:.7rem;
+letter-spacing:.12em;
+text-transform:uppercase;
+border:1px solid var(--border);
+padding:8px 12px;
+color:var(--text3);
 }
 
-.linkedin-note p {
-  font-size: 0.9rem;
-  color: var(--text2);
+.framework-section{
+padding:120px 0;
+border-bottom:1px solid var(--border);
 }
 
-.btn-secondary {
-  font-family: var(--mono);
-  font-size: 12px;
-  padding: 9px 18px;
-  background: none;
-  color: var(--text2);
-  border: 0.5px solid var(--border2);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.15s;
-  text-decoration: none;
-  display: inline-block;
-  white-space: nowrap;
+.framework-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:28px;
+margin-top:60px;
 }
 
-.btn-secondary:hover {
-  color: var(--text);
-  border-color: var(--text);
+.framework-card{
+border:1px solid var(--border);
+padding:34px;
 }
 
-.section-label-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
+.framework-card h3{
+font-size:1.3rem;
+line-height:1.2;
+margin-bottom:18px;
 }
 
-@media (max-width:640px) {
+.framework-card p{
+font-size:.92rem;
+line-height:1.9;
+color:var(--text2);
+}
 
-  .post-item {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
+.linkedin-section{
+padding:120px 0;
+}
+
+.linkedin-box{
+border:1px solid var(--border);
+padding:42px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:40px;
+}
+
+.linkedin-copy{
+max-width:620px;
+}
+
+.linkedin-copy h2{
+font-size:2rem;
+line-height:1.1;
+letter-spacing:-0.04em;
+margin-bottom:20px;
+}
+
+.linkedin-copy p{
+font-size:.95rem;
+line-height:1.9;
+color:var(--text2);
+}
+
+.linkedin-btn{
+display:inline-block;
+padding:16px 24px;
+border:1px solid var(--border);
+text-decoration:none;
+font-size:.78rem;
+letter-spacing:.12em;
+text-transform:uppercase;
+color:var(--text);
+white-space:nowrap;
+}
+
+.linkedin-btn:hover{
+border-color:var(--text2);
+}
+
+@media(max-width:900px){
+
+.posts-grid,
+.framework-grid{
+grid-template-columns:1fr;
+}
+
+.linkedin-box{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.hero-title h1{
+font-size:3.2rem;
+line-height:1;
+}
 
 }
 
@@ -173,170 +218,264 @@ layout: null
 <body>
 
 <nav>
-  <a href="/index.html" class="nav-logo">abhishekkumar.org</a>
 
-  <ul class="nav-links">
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/services.html">Services</a></li>
-    <li><a href="/methodology.html">Methodology</a></li>
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/blog/" class="active">Research & Writing</a></li>
-    <li><a href="/contact.html">Contact</a></li>
-  </ul>
+<a href="/index.html" class="nav-logo">
+abhishekkumar.org
+</a>
 
-  <div class="nav-right">
-    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
-    <button class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-    </button>
-  </div>
+<ul class="nav-links">
+<li><a href="/index.html">Home</a></li>
+<li><a href="/services.html">Services</a></li>
+<li><a href="/methodology.html">Methodology</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/blog/" class="active">Writing</a></li>
+<li><a href="/contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-right">
+<button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+<button class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+</button>
+</div>
+
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="/index.html">Home</a>
-  <a href="/services.html">Services</a>
-  <a href="/methodology.html">Methodology</a>
-  <a href="/about.html">About</a>
-  <a href="/blog/">Research & Writing</a>
-  <a href="/contact.html">Contact</a>
+
+<a href="/index.html">Home</a>
+<a href="/services.html">Services</a>
+<a href="/methodology.html">Methodology</a>
+<a href="/about.html">About</a>
+<a href="/blog/">Writing</a>
+<a href="/contact.html">Contact</a>
+
 </div>
 
 <div class="page">
 <div class="container">
 
-<header class="page-header">
+<section class="hero-section">
 
-<span class="mono-label">
-Research & Writing
-</span>
+<div class="mono-label">
+WRITING
+</div>
+
+<div class="hero-title">
 
 <h1>
-AI search visibility analysis
+AI search visibility is becoming an interpretation infrastructure discipline.
 </h1>
 
 <p>
-Frameworks, diagnostics, and structural analysis on how AI systems interpret, classify, and surface brands across search and answer engines.
+Research and analysis on how conversational AI systems classify, retrieve, compress, and describe companies across semantic search environments. These articles focus on entity stability, answer extractability, retrieval architecture, semantic consistency, and AI interpretation systems beyond traditional SEO.
 </p>
 
-</header>
-
-<div class="posts-section">
-
-<div class="section-label-row">
-<span class="mono-label">Recent posts</span>
 </div>
+
+</section>
+
+<section class="posts-wrapper">
+
+<div class="mono-label">
+LATEST RESEARCH
+</div>
+
+<div class="posts-grid">
 
 {% for post in site.posts %}
 
-<a class="post-item" href="{{ post.url }}">
+<a class="post-card" href="{{ post.url }}">
 
-<span class="post-date">
-{{ post.date | date: "%b %d, %Y" }}
-</span>
+<div class="post-date">
+{{ post.date | date: "%B %d, %Y" }}
+</div>
 
-<div>
-
-<div class="post-title">
+<h2 class="post-title">
 {{ post.title }}
-</div>
+</h2>
 
-<div class="post-excerpt">
+<p class="post-description">
 {{ post.description }}
-</div>
+</p>
 
 {% if post.tag %}
-<span class="post-tag">
+<div class="post-tag">
 {{ post.tag }}
-</span>
-{% endif %}
-
 </div>
+{% endif %}
 
 </a>
 
 {% endfor %}
 
-<div class="linkedin-note">
+</div>
+
+</section>
+
+<section class="framework-section">
+
+<div class="mono-label">
+RESEARCH THEMES
+</div>
+
+<div class="framework-grid">
+
+<div class="framework-card">
+
+<h3>
+Entity stability and semantic consistency
+</h3>
 
 <p>
-Full research notes and shorter analysis threads are also published on LinkedIn.
+How AI systems construct company identity across websites, LinkedIn, schema, metadata, citations, retrieval layers, and conversational memory systems.
 </p>
+
+</div>
+
+<div class="framework-card">
+
+<h3>
+Answer extractability and retrieval behaviour
+</h3>
+
+<p>
+Why AI systems retrieve some brands consistently while compressing or ignoring others during summarisation, comparison, and recommendation tasks.
+</p>
+
+</div>
+
+<div class="framework-card">
+
+<h3>
+Cross-model interpretation divergence
+</h3>
+
+<p>
+How ChatGPT, Gemini, Claude, Perplexity, Copilot, and AI Overviews generate different interpretations from fragmented semantic signals.
+</p>
+
+</div>
+
+<div class="framework-card">
+
+<h3>
+Conversational search infrastructure
+</h3>
+
+<p>
+How semantic chunking, citation structures, internal linking, retrieval architecture, and machine-readable systems influence AI visibility.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="linkedin-section">
+
+<div class="linkedin-box">
+
+<div class="linkedin-copy">
+
+<h2>
+Short-form analysis is published weekly on LinkedIn.
+</h2>
+
+<p>
+Research notes, retrieval observations, semantic interpretation patterns, and AI visibility analysis threads are published alongside longer-form articles and diagnostic frameworks.
+</p>
+
+</div>
 
 <a href="https://www.linkedin.com/in/abhishek-kumar314"
 target="_blank"
-class="btn-secondary">
-Follow on LinkedIn →
+class="linkedin-btn">
+
+Follow on LinkedIn
+
+</a>
+
+</div>
+
+</section>
+
+</div>
+</div>
+
+<footer>
+
+<div class="footer-inner">
+
+<p>
+© 2026 Abhishek Kumar
+</p>
+
+<div style="display:flex;gap:2rem;">
+
+<a href="mailto:hello@abhishekkumar.org">
+hello@abhishekkumar.org
+</a>
+
+<a href="https://www.linkedin.com/in/abhishek-kumar314"
+target="_blank">
+
+LinkedIn
+
 </a>
 
 </div>
 
 </div>
-</div>
-</div>
 
-<footer>
-  <div class="footer-inner">
-
-    <p>
-      © 2026 Abhishek Kumar
-    </p>
-
-    <div style="display:flex;gap:2rem;">
-
-      <a href="mailto:hello@abhishekkumar.org">
-        hello@abhishekkumar.org
-      </a>
-
-      <a href="https://www.linkedin.com/in/abhishek-kumar314"
-      target="_blank">
-        LinkedIn
-      </a>
-
-    </div>
-
-  </div>
 </footer>
 
 <script>
 
 function toggleTheme() {
 
-  const c =
-  document.documentElement.getAttribute('data-theme');
+const c =
+document.documentElement.getAttribute('data-theme');
 
-  document.documentElement.setAttribute(
-    'data-theme',
-    c === 'dark' ? 'light' : 'dark'
-  );
+document.documentElement.setAttribute(
+'data-theme',
+c === 'dark' ? 'light' : 'dark'
+);
 
-  localStorage.setItem(
-    'theme',
-    document.documentElement.getAttribute('data-theme')
-  );
+localStorage.setItem(
+'theme',
+document.documentElement.getAttribute('data-theme')
+);
+
 }
 
 function toggleMenu() {
 
-  document
-  .getElementById('mobileNav')
-  .classList.toggle('open');
+document
+.getElementById('mobileNav')
+.classList.toggle('open');
+
 }
 
 const saved =
 localStorage.getItem('theme');
 
-if (saved) {
+if(saved){
 
-  document.documentElement
-  .setAttribute('data-theme', saved);
+document.documentElement
+.setAttribute('data-theme', saved);
 
-} else if (
-  window.matchMedia('(prefers-color-scheme: dark)').matches
-) {
+}
+else if(
+window.matchMedia('(prefers-color-scheme: dark)').matches
+){
 
-  document.documentElement
-  .setAttribute('data-theme', 'dark');
+document.documentElement
+.setAttribute('data-theme', 'dark');
+
 }
 
 </script>
