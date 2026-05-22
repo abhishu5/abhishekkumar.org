@@ -1,0 +1,23 @@
+title: "Abhishek Kumar — AI Search Visibility Diagnostics"
+description: "Independent diagnostics on how AI systems interpret and surface brands across search and answer engines."
+url: "https://abhishekkumar.org"
+
+markdown: kramdown
+
+permalink: /blog/:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
