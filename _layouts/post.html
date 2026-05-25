@@ -77,9 +77,9 @@ a{
   height:60px;
   border-bottom:0.5px solid var(--border);
   display:flex;
-  justify-content:space-between;
   align-items:center;
   padding:0 2rem;
+  gap:4rem;
 }
 
 .logo a{
@@ -91,6 +91,7 @@ a{
 nav{
   display:flex;
   gap:2.5rem;
+  margin-left:auto;
 }
 
 nav a{
@@ -109,7 +110,7 @@ nav a:hover{
 }
 
 .article-wrap{
-  width:min(100%,760px);
+  width:min(100%,840px);
   margin:0 auto;
   padding:0 2rem;
 }
@@ -119,50 +120,46 @@ nav a:hover{
   letter-spacing:.28em;
   text-transform:uppercase;
   color:var(--text3);
-  margin-bottom:2.2rem;
+  margin-bottom:2.4rem;
 }
 
 .article-hero h1{
-  font-size:clamp(3rem,6vw,5.8rem);
-  line-height:.95;
+  font-size:clamp(3rem,5vw,4.8rem);
+  line-height:.96;
   font-weight:400;
   letter-spacing:-0.07em;
-  max-width:900px;
-}
-
-.article-shift{
-  display:block;
-  margin-top:1.8rem;
+  max-width:760px;
 }
 
 .article-meta{
-  margin-top:2.5rem;
+  margin-top:2rem;
   color:var(--text3);
-  font-size:.95rem;
+  font-size:.92rem;
 }
 
 .article-content{
-  padding:5rem 0 7rem;
+  padding:6rem 0 8rem;
 }
 
 .article-content p{
   font-size:1.08rem;
   line-height:1.95;
   color:#d4d4d8;
-  margin-bottom:1.7rem;
+  margin-bottom:1.8rem;
 }
 
 .article-content h2{
-  font-size:2rem;
-  line-height:1.1;
+  font-size:2.2rem;
+  line-height:1.08;
   letter-spacing:-0.05em;
   margin-top:5rem;
   margin-bottom:1.5rem;
   font-weight:500;
+  max-width:760px;
 }
 
 .article-content h3{
-  font-size:1.3rem;
+  font-size:1.35rem;
   margin-top:3rem;
   margin-bottom:1rem;
   font-weight:500;
@@ -190,7 +187,7 @@ nav a:hover{
   padding-left:1.5rem;
   margin:3rem 0;
   color:#c4c4c7;
-  font-size:1.1rem;
+  font-size:1.08rem;
   line-height:1.9;
 }
 
@@ -222,17 +219,38 @@ nav a:hover{
   margin:5rem 0;
 }
 
+.article-pagination{
+  border-top:0.5px solid var(--border);
+  padding-top:3rem;
+  margin-top:6rem;
+  display:flex;
+  justify-content:space-between;
+  gap:2rem;
+}
+
+.article-pagination a{
+  color:var(--text2);
+  font-size:.95rem;
+  transition:.2s ease;
+}
+
+.article-pagination a:hover{
+  color:var(--text);
+}
+
 .footer{
   border-top:0.5px solid var(--border);
   padding:2rem;
+  text-align:center;
   color:var(--text3);
-  font-size:.85rem;
+  font-size:.82rem;
 }
 
 @media(max-width:768px){
 
   .nav{
     padding:0 1rem;
+    gap:1rem;
   }
 
   nav{
@@ -252,12 +270,9 @@ nav a:hover{
   }
 
   .article-hero h1{
-    font-size:clamp(2.7rem,12vw,4.5rem);
+    font-size:clamp(2.7rem,12vw,4.2rem);
     line-height:1;
-  }
-
-  .article-shift{
-    margin-top:1.2rem;
+    max-width:100%;
   }
 
   .article-content{
@@ -271,6 +286,10 @@ nav a:hover{
 
   .article-content h2{
     font-size:1.7rem;
+  }
+
+  .article-pagination{
+    flex-direction:column;
   }
 
 }
@@ -325,6 +344,22 @@ nav a:hover{
   <div class="article-wrap">
 
     {{ content }}
+
+    <div class="article-pagination">
+
+      {% if page.previous.url %}
+      <a href="{{ page.previous.url }}">
+        ← Previous article
+      </a>
+      {% endif %}
+
+      {% if page.next.url %}
+      <a href="{{ page.next.url }}">
+        Next article →
+      </a>
+      {% endif %}
+
+    </div>
 
   </div>
 
