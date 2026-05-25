@@ -36,48 +36,80 @@ layout: null
 
 <style>
 
-.hero-section{
+.page-hero{
 padding:7rem 0 5rem;
-border-bottom:1px solid var(--border);
+border-bottom:0.5px solid var(--border);
 }
 
-.hero-title{
-max-width:860px;
+.page-label{
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.16em;
+text-transform:uppercase;
+color:var(--text3);
+margin-bottom:1.5rem;
+display:block;
 }
 
-.hero-title h1{
-font-size:clamp(2.3rem,4.5vw,4rem);
-line-height:1.02;
+.page-hero h1{
+font-size:clamp(2.2rem,4.5vw,3.8rem);
+line-height:1.05;
 letter-spacing:-0.05em;
-margin-bottom:32px;
-max-width:620px;
+font-weight:400;
+max-width:660px;
+margin:0 0 1.5rem;
 }
 
-.hero-title p{
-max-width:680px;
-font-size:1.05rem;
-line-height:1.85;
+.page-sub{
+max-width:620px;
+font-size:1rem;
+line-height:1.8;
 color:var(--text2);
 }
 
-.posts-wrapper{
-padding:6rem 0;
-border-bottom:1px solid var(--border);
+.posts-section{
+padding:5rem 0;
+border-bottom:0.5px solid var(--border);
+}
+
+.posts-header{
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+gap:2rem;
+margin-bottom:3rem;
+flex-wrap:wrap;
+}
+
+.posts-header h2{
+font-size:1.4rem;
+font-weight:500;
+letter-spacing:-0.03em;
+}
+
+.posts-meta{
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.12em;
+text-transform:uppercase;
+color:var(--text3);
 }
 
 .posts-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:20px;
-margin-top:60px;
+gap:1.2rem;
 }
 
 .post-card{
-border:1px solid var(--border);
-padding:34px;
+border:0.5px solid var(--border);
+padding:1.6rem;
 transition:border-color .2s ease;
 text-decoration:none;
-display:block;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:240px;
 }
 
 .post-card:hover{
@@ -85,78 +117,83 @@ border-color:var(--text2);
 }
 
 .post-date{
-font-size:.7rem;
-letter-spacing:.18em;
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.08em;
+color:var(--text3);
+margin-bottom:1.2rem;
 text-transform:uppercase;
-opacity:.45;
-margin-bottom:22px;
 }
 
 .post-title{
-font-size:1.5rem;
-line-height:1.2;
-letter-spacing:-0.04em;
-margin-bottom:20px;
+font-size:1.2rem;
+line-height:1.3;
+letter-spacing:-0.03em;
+margin-bottom:1rem;
 color:var(--text);
+font-weight:500;
 }
 
 .post-description{
-font-size:.95rem;
-line-height:1.9;
+font-size:0.92rem;
+line-height:1.8;
 color:var(--text2);
-margin-bottom:24px;
+margin-bottom:1.5rem;
 }
 
 .post-tag{
 display:inline-block;
-font-size:.7rem;
-letter-spacing:.12em;
+font-family:var(--mono);
+font-size:10px;
+letter-spacing:0.08em;
 text-transform:uppercase;
-border:1px solid var(--border);
-padding:8px 12px;
+border:0.5px solid var(--border);
+padding:7px 10px;
 color:var(--text3);
 }
 
-.framework-section{
-padding:120px 0;
-border-bottom:1px solid var(--border);
+.research-section{
+padding:5rem 0;
+border-bottom:0.5px solid var(--border);
 }
 
-.framework-grid{
+.research-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:28px;
-margin-top:60px;
+gap:1.2rem;
+margin-top:2rem;
 }
 
-.framework-card{
-border:1px solid var(--border);
-padding:34px;
+.research-card{
+border:0.5px solid var(--border);
+padding:1.6rem;
 }
 
-.framework-card h3{
-font-size:1.3rem;
-line-height:1.2;
-margin-bottom:18px;
+.research-card h3{
+font-size:1rem;
+line-height:1.35;
+margin-bottom:0.8rem;
+font-weight:500;
 }
 
-.framework-card p{
-font-size:.92rem;
-line-height:1.9;
+.research-card p{
+font-size:0.9rem;
+line-height:1.8;
 color:var(--text2);
 }
 
 .linkedin-section{
-padding:120px 0;
+padding:5rem 0;
 }
 
 .linkedin-box{
-border:1px solid var(--border);
-padding:42px;
+border:0.5px solid var(--border);
+padding:2rem;
 display:flex;
 justify-content:space-between;
-align-items:center;
-gap:40px;
+align-items:flex-start;
+gap:2rem;
+flex-wrap:wrap;
 }
 
 .linkedin-copy{
@@ -164,25 +201,27 @@ max-width:620px;
 }
 
 .linkedin-copy h2{
-font-size:2rem;
-line-height:1.1;
-letter-spacing:-0.04em;
-margin-bottom:20px;
+font-size:1.6rem;
+line-height:1.2;
+letter-spacing:-0.03em;
+margin-bottom:1rem;
+font-weight:500;
 }
 
 .linkedin-copy p{
-font-size:.95rem;
-line-height:1.9;
+font-size:0.95rem;
+line-height:1.8;
 color:var(--text2);
 }
 
 .linkedin-btn{
 display:inline-block;
-padding:16px 24px;
-border:1px solid var(--border);
+padding:14px 20px;
+border:0.5px solid var(--border);
 text-decoration:none;
-font-size:.78rem;
-letter-spacing:.12em;
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.12em;
 text-transform:uppercase;
 color:var(--text);
 white-space:nowrap;
@@ -195,18 +234,31 @@ border-color:var(--text2);
 @media(max-width:900px){
 
 .posts-grid,
-.framework-grid{
+.research-grid{
 grid-template-columns:1fr;
+}
+
+.page-hero{
+padding:6rem 0 4rem;
+}
+
+.page-hero h1{
+font-size:clamp(2rem,8vw,3.1rem);
+line-height:1.05;
+}
+
+.posts-section,
+.research-section,
+.linkedin-section{
+padding:4rem 0;
 }
 
 .linkedin-box{
 flex-direction:column;
-align-items:flex-start;
 }
 
-.hero-title h1{
-font-size:3.2rem;
-line-height:1;
+.post-card{
+min-height:auto;
 }
 
 }
@@ -233,12 +285,16 @@ abhishekkumar.org
 </ul>
 
 <div class="nav-right">
-<button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+<button class="theme-btn" onclick="toggleTheme()">
+🌙
+</button>
 
 <button class="hamburger" onclick="toggleMenu()">
 <span></span>
 <span></span>
 </button>
+
 </div>
 
 </nav>
@@ -257,30 +313,42 @@ abhishekkumar.org
 <div class="page">
 <div class="container">
 
-<section class="hero-section">
+<section class="page-hero">
 
-<div class="mono-label">
+<span class="page-label">
 WRITING
-</div>
-
-<div class="hero-title">
+</span>
 
 <h1>
-AI search visibility is becoming an interpretation infrastructure discipline.
+Research on how AI systems interpret, retrieve, and describe companies.
 </h1>
 
-<p>
-Research and analysis on how conversational AI systems classify, retrieve, compress, and describe companies across semantic search environments. These articles focus on entity stability, answer extractability, retrieval architecture, semantic consistency, and AI interpretation systems beyond traditional SEO.
+<p class="page-sub">
+Analysis on entity stability, semantic consistency, conversational retrieval, answer extractability, AI summarisation behaviour, and interpretation infrastructure across modern search systems.
 </p>
-
-</div>
 
 </section>
 
-<section class="posts-wrapper">
+<section class="posts-section">
+
+<div class="posts-header">
+
+<div>
 
 <div class="mono-label">
 LATEST RESEARCH
+</div>
+
+<h2>
+Published articles and diagnostic analysis
+</h2>
+
+</div>
+
+<div class="posts-meta">
+Updated weekly
+</div>
+
 </div>
 
 <div class="posts-grid">
@@ -288,6 +356,8 @@ LATEST RESEARCH
 {% for post in site.posts %}
 
 <a class="post-card" href="{{ post.url }}">
+
+<div>
 
 <div class="post-date">
 {{ post.date | date: "%B %d, %Y" }}
@@ -301,10 +371,14 @@ LATEST RESEARCH
 {{ post.description }}
 </p>
 
+</div>
+
 {% if post.tag %}
+
 <div class="post-tag">
 {{ post.tag }}
 </div>
+
 {% endif %}
 
 </a>
@@ -315,39 +389,39 @@ LATEST RESEARCH
 
 </section>
 
-<section class="framework-section">
+<section class="research-section">
 
 <div class="mono-label">
 RESEARCH THEMES
 </div>
 
-<div class="framework-grid">
+<div class="research-grid">
 
-<div class="framework-card">
+<div class="research-card">
 
 <h3>
 Entity stability and semantic consistency
 </h3>
 
 <p>
-How AI systems construct company identity across websites, LinkedIn, schema, metadata, citations, retrieval layers, and conversational memory systems.
+How conversational AI systems construct company identity across websites, schema, metadata, citations, retrieval layers, and external semantic references.
 </p>
 
 </div>
 
-<div class="framework-card">
+<div class="research-card">
 
 <h3>
 Answer extractability and retrieval behaviour
 </h3>
 
 <p>
-Why AI systems retrieve some brands consistently while compressing or ignoring others during summarisation, comparison, and recommendation tasks.
+Why some companies become easily retrievable and accurately summarised while others are compressed into generic categories or omitted entirely.
 </p>
 
 </div>
 
-<div class="framework-card">
+<div class="research-card">
 
 <h3>
 Cross-model interpretation divergence
@@ -359,14 +433,14 @@ How ChatGPT, Gemini, Claude, Perplexity, Copilot, and AI Overviews generate diff
 
 </div>
 
-<div class="framework-card">
+<div class="research-card">
 
 <h3>
-Conversational search infrastructure
+Conversational retrieval infrastructure
 </h3>
 
 <p>
-How semantic chunking, citation structures, internal linking, retrieval architecture, and machine-readable systems influence AI visibility.
+How semantic chunking, internal linking, structured reinforcement, citation behaviour, and retrieval architecture influence AI visibility.
 </p>
 
 </div>
@@ -382,11 +456,11 @@ How semantic chunking, citation structures, internal linking, retrieval architec
 <div class="linkedin-copy">
 
 <h2>
-Short-form analysis is published weekly on LinkedIn.
+Short-form research notes are published on LinkedIn.
 </h2>
 
 <p>
-Research notes, retrieval observations, semantic interpretation patterns, and AI visibility analysis threads are published alongside longer-form articles and diagnostic frameworks.
+Ongoing observations on conversational retrieval systems, semantic interpretation patterns, AI recommendation behaviour, and visibility diagnostics are published alongside longer-form research articles.
 </p>
 
 </div>
