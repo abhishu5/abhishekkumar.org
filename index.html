@@ -79,6 +79,38 @@
   align-items: center;
 }
 
+.btn-primary,
+.btn-secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 26px;
+  border:0.5px solid var(--border2);
+  text-decoration:none;
+  font-size:.92rem;
+  transition:.15s ease;
+  border-radius:4px;
+}
+
+.btn-primary{
+  background:var(--text);
+  color:var(--bg);
+}
+
+.btn-primary:hover{
+  opacity:.9;
+}
+
+.btn-secondary{
+  background:transparent;
+  color:var(--text2);
+}
+
+.btn-secondary:hover{
+  border-color:var(--text);
+  color:var(--text);
+}
+    
 .section {
   padding: 5rem 0;
   border-bottom: 0.5px solid var(--border);
