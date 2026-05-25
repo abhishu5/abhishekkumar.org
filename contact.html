@@ -15,11 +15,22 @@
 
 <title>Contact | Abhishek Kumar</title>
 
-<meta name="description" content="Request an AI Search Visibility Diagnostic audit analysing entity stability, semantic consistency, retrieval visibility, answer extractability, and AI interpretation accuracy across conversational search systems.">
+<meta name="description" content="Request an AI Search Visibility Diagnostic analysing entity stability, conversational retrieval visibility, semantic consistency, answer extractability, and AI interpretation behaviour across modern AI systems.">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://abhishekkumar.org/contact.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Search Visibility Diagnostics">
+<meta property="og:description" content="Independent diagnostics on how AI systems classify, retrieve, summarise, and recommend brands.">
+<meta property="og:url" content="https://abhishekkumar.org/contact.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Search Visibility Diagnostics">
+<meta name="twitter:description" content="Independent diagnostics on how AI systems classify, retrieve, summarise, and recommend brands.">
+
+<meta name="theme-color" content="#000000">
 
 <link rel="stylesheet" href="style.css">
 
@@ -31,60 +42,84 @@
 
 <style>
 
-.page-section{
-padding:6rem 0 5rem;
-border-bottom:1px solid var(--border);
+.page-hero{
+padding:7rem 0 5rem;
+border-bottom:0.5px solid var(--border);
 }
 
-.hero-title{
-max-width:720px;
-margin-bottom:32px;
-}
-
-.hero-title h1{
-font-size:clamp(2.2rem,4vw,3.8rem);
-line-height:1.02;
-letter-spacing:-0.05em;
-margin-bottom:28px;
-max-width:560px;
-}
-
-.hero-title p{
-max-width:620px;
-font-size:1.05rem;
-line-height:1.8;
-color:var(--text2);
-}
-
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:48px;
-margin-top:56px;
-}
-
-.info-block{
-margin-bottom:48px;
-}
-
-.info-label{
-font-size:.72rem;
-letter-spacing:.18em;
+.page-label{
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.16em;
 text-transform:uppercase;
-opacity:.5;
-margin-bottom:12px;
+color:var(--text3);
+margin-bottom:1.5rem;
+display:block;
 }
 
-.info-value{
+.page-hero h1{
+font-size:clamp(2.2rem,4.5vw,3.8rem);
+line-height:1.05;
+letter-spacing:-0.05em;
+font-weight:400;
+max-width:620px;
+margin:0 0 1.5rem;
+}
+
+.page-sub{
+max-width:620px;
 font-size:1rem;
 line-height:1.8;
 color:var(--text2);
 }
 
+.contact-section{
+padding:5rem 0;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:0.95fr 1.05fr;
+gap:3rem;
+align-items:start;
+}
+
+.info-column{
+display:flex;
+flex-direction:column;
+gap:2.5rem;
+}
+
+.info-block{
+padding-bottom:2rem;
+border-bottom:0.5px solid var(--border);
+}
+
+.info-block:last-child{
+border-bottom:none;
+padding-bottom:0;
+}
+
+.info-label{
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.12em;
+text-transform:uppercase;
+color:var(--text3);
+margin-bottom:1rem;
+}
+
+.info-value{
+font-size:0.95rem;
+line-height:1.8;
+color:var(--text2);
+max-width:520px;
+}
+
 .info-value a{
 color:var(--text2);
 text-decoration:none;
-border-bottom:1px solid var(--border);
+border-bottom:0.5px solid var(--border);
 }
 
 .info-value a:hover{
@@ -93,37 +128,62 @@ color:var(--text);
 
 .process-list{
 display:grid;
-gap:20px;
-margin-top:40px;
+gap:1rem;
+margin-top:1.5rem;
 }
 
 .process-item{
-padding:24px;
-border:1px solid var(--border);
+border:0.5px solid var(--border);
+padding:1.4rem;
 }
 
 .process-item h3{
-font-size:.9rem;
-margin-bottom:10px;
+font-size:0.95rem;
+margin-bottom:0.6rem;
+font-weight:500;
 }
 
 .process-item p{
-font-size:.9rem;
-line-height:1.8;
+font-size:0.9rem;
+line-height:1.75;
 color:var(--text2);
 }
 
+.form-wrapper{
+border:0.5px solid var(--border);
+padding:2rem;
+}
+
+.form-header{
+margin-bottom:2rem;
+}
+
+.form-header h2{
+font-size:1.4rem;
+letter-spacing:-0.03em;
+margin-bottom:0.8rem;
+font-weight:500;
+}
+
+.form-header p{
+font-size:0.92rem;
+line-height:1.8;
+color:var(--text2);
+max-width:520px;
+}
+
 .form-group{
-margin-bottom:24px;
+margin-bottom:1.5rem;
 }
 
 .form-label{
 display:block;
-font-size:.72rem;
-letter-spacing:.18em;
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.12em;
 text-transform:uppercase;
-opacity:.5;
-margin-bottom:12px;
+color:var(--text3);
+margin-bottom:0.8rem;
 }
 
 .form-input,
@@ -131,9 +191,9 @@ margin-bottom:12px;
 .form-select{
 width:100%;
 background:transparent;
-border:1px solid var(--border);
-padding:16px;
-font-size:.95rem;
+border:0.5px solid var(--border);
+padding:15px;
+font-size:0.95rem;
 color:var(--text);
 font-family:inherit;
 }
@@ -146,55 +206,71 @@ border-color:var(--text2);
 }
 
 .form-textarea{
-min-height:180px;
+min-height:170px;
 resize:vertical;
+line-height:1.7;
 }
 
 .submit-btn{
-padding:16px 28px;
+padding:15px 22px;
 background:var(--text);
 color:var(--bg);
 border:none;
-font-size:.82rem;
-letter-spacing:.12em;
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.12em;
 text-transform:uppercase;
 cursor:pointer;
-margin-top:10px;
+margin-top:0.5rem;
 }
 
 .submit-btn:hover{
-opacity:.85;
+opacity:.9;
 }
 
 .note{
-margin-top:24px;
-font-size:.85rem;
+margin-top:1.5rem;
+font-size:0.85rem;
 line-height:1.7;
 color:var(--text3);
+max-width:520px;
 }
 
 .success-msg{
 display:none;
-padding:28px;
-border:1px solid var(--border);
-margin-top:24px;
+border:0.5px solid var(--border);
+padding:1.6rem;
+margin-top:1.5rem;
 }
 
 .success-msg p{
+font-size:0.92rem;
 line-height:1.8;
 color:var(--text2);
 }
 
 @media(max-width:900px){
 
-.contact-grid{
-grid-template-columns:1fr;
-gap:80px;
+.page-hero{
+padding:6rem 0 4rem;
 }
 
-.hero-title h1{
-font-size:2.9rem;
-line-height:1;
+.page-hero h1{
+font-size:clamp(2rem,8vw,3.1rem);
+line-height:1.05;
+}
+
+.contact-section{
+padding:4rem 0;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+gap:3rem;
+}
+
+.form-wrapper{
+padding:1.5rem;
 }
 
 }
@@ -206,7 +282,10 @@ line-height:1;
 <body>
 
 <nav>
-<a href="index.html" class="nav-logo">abhishekkumar.org</a>
+
+<a href="index.html" class="nav-logo">
+abhishekkumar.org
+</a>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -218,127 +297,170 @@ line-height:1;
 </ul>
 
 <div class="nav-right">
-<button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+<button class="theme-btn" onclick="toggleTheme()">
+🌙
+</button>
+
 <button class="hamburger" onclick="toggleMenu()">
 <span></span>
 <span></span>
 </button>
+
 </div>
+
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
+
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="methodology.html">Methodology</a>
 <a href="about.html">About</a>
 <a href="/blog/">Writing</a>
 <a href="contact.html">Contact</a>
+
 </div>
 
 <div class="page">
 <div class="container">
 
-<section class="page-section">
+<section class="page-hero">
 
-<div class="mono-label">
+<span class="page-label">
 CONTACT
-</div>
-
-<div class="hero-title">
+</span>
 
 <h1>
 AI visibility problems are usually interpretation problems.
 </h1>
 
-<p>
-Request a diagnostic review analysing how conversational AI systems classify, retrieve, summarise, and recommend your company across AI search environments.
+<p class="page-sub">
+Request a diagnostic review analysing how conversational AI systems classify, retrieve, summarise, compare, and recommend your company across modern AI search environments.
 </p>
 
-</div>
+</section>
+
+<section class="contact-section">
 
 <div class="contact-grid">
 
-<div>
+<div class="info-column">
 
 <div class="info-block">
-<div class="info-label">Email</div>
+
+<div class="info-label">
+EMAIL
+</div>
 
 <div class="info-value">
+
 <a href="mailto:hello@abhishekkumar.org">
 hello@abhishekkumar.org
 </a>
+
 </div>
+
 </div>
 
 <div class="info-block">
-<div class="info-label">LinkedIn</div>
+
+<div class="info-label">
+LINKEDIN
+</div>
 
 <div class="info-value">
+
 <a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank">
 abhishek-kumar314
 </a>
+
 </div>
+
 </div>
 
 <div class="info-block">
-<div class="info-label">Markets</div>
+
+<div class="info-label">
+FOCUS
+</div>
 
 <div class="info-value">
-SaaS, AI software, developer tools, workflow platforms, and technical B2B companies operating in competitive English-language markets.
+Entity stability, semantic consistency, conversational retrieval visibility, answer extractability, AI summarisation analysis, and interpretation diagnostics across modern retrieval systems.
 </div>
+
 </div>
 
 <div class="info-block">
-<div class="info-label">Focus</div>
 
-<div class="info-value">
-Entity stability, semantic consistency, answer extractability, conversational retrieval visibility, and AI interpretation analysis.
-</div>
+<div class="info-label">
+PROCESS
 </div>
 
 <div class="process-list">
 
 <div class="process-item">
+
 <h3>
 01 — Structural review
 </h3>
 
 <p>
-Homepage positioning, entity definition, semantic consistency, and extractability layers are analysed.
+Homepage positioning, semantic clarity, extractability, and entity definition layers are analysed first.
 </p>
+
 </div>
 
 <div class="process-item">
+
 <h3>
 02 — Retrieval analysis
 </h3>
 
 <p>
-AI responses across ChatGPT, Gemini, Claude, Perplexity, AI Overviews, and conversational systems are compared.
+Responses across ChatGPT, Gemini, Claude, Perplexity, Copilot, and AI Overviews are compared for interpretation consistency.
 </p>
+
 </div>
 
 <div class="process-item">
+
 <h3>
-03 — Interpretation mapping
+03 — Diagnostic mapping
 </h3>
 
 <p>
-Conflicting entity signals, category drift, and semantic compression risks are identified.
+Retrieval weaknesses, semantic fragmentation, category drift, and interpretation inconsistencies are identified.
 </p>
-</div>
 
 </div>
 
 </div>
 
-<div>
+</div>
+
+</div>
+
+<div class="form-wrapper">
+
+<div class="form-header">
+
+<h2>
+Request diagnostic review
+</h2>
+
+<p>
+Provide your company website and a brief description of the visibility or interpretation issue you are observing.
+</p>
+
+</div>
 
 <form id="contactForm" action="https://formspree.io/f/mbdwnpoe" method="POST">
 
 <div class="form-group">
+
 <label class="form-label">
-Your name
+Name
 </label>
 
 <input
@@ -347,9 +469,11 @@ type="text"
 name="name"
 placeholder="Jane Smith"
 required>
+
 </div>
 
 <div class="form-group">
+
 <label class="form-label">
 Work email
 </label>
@@ -360,9 +484,11 @@ type="email"
 name="email"
 placeholder="jane@company.com"
 required>
+
 </div>
 
 <div class="form-group">
+
 <label class="form-label">
 Company website
 </label>
@@ -373,50 +499,74 @@ type="url"
 name="website"
 placeholder="https://yourcompany.com"
 required>
+
 </div>
 
 <div class="form-group">
+
 <label class="form-label">
 Primary issue
 </label>
 
 <select class="form-select" name="issue">
 
-<option>Not sure yet</option>
-<option>AI systems describe us incorrectly</option>
-<option>Weak AI visibility</option>
-<option>Category confusion</option>
-<option>Inconsistent brand interpretation</option>
-<option>Competitive AI visibility gap</option>
+<option>
+Not sure yet
+</option>
+
+<option>
+AI systems describe us incorrectly
+</option>
+
+<option>
+Weak AI visibility
+</option>
+
+<option>
+Category confusion
+</option>
+
+<option>
+Inconsistent brand interpretation
+</option>
+
+<option>
+Competitive AI visibility gap
+</option>
 
 </select>
+
 </div>
 
 <div class="form-group">
+
 <label class="form-label">
-What does your company do?
+Company description
 </label>
 
 <textarea
 class="form-textarea"
 name="message"
-placeholder="Describe your product, positioning, category, and current visibility concerns."></textarea>
+placeholder="Describe your product, category, positioning, and current visibility concerns."></textarea>
+
 </div>
 
 <button type="submit" class="submit-btn">
-Request Diagnostic Review
+Request Diagnostic
 </button>
 
 <div class="note">
-Most diagnostic reviews begin with entity stability analysis and conversational retrieval testing across multiple AI systems.
+Most reviews begin with semantic consistency analysis and conversational retrieval testing across multiple AI systems.
 </div>
 
 </form>
 
 <div class="success-msg" id="successMsg">
+
 <p>
 Request received. Response is typically sent within 1 business day.
 </p>
+
 </div>
 
 </div>
@@ -429,6 +579,7 @@ Request received. Response is typically sent within 1 business day.
 </div>
 
 <footer>
+
 <div class="footer-inner">
 
 <p>
@@ -436,16 +587,22 @@ Request received. Response is typically sent within 1 business day.
 </p>
 
 <div style="display:flex;gap:2rem;">
+
 <a href="mailto:hello@abhishekkumar.org">
 hello@abhishekkumar.org
 </a>
 
-<a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank">
+<a href="https://www.linkedin.com/in/abhishek-kumar314"
+target="_blank">
+
 LinkedIn
+
 </a>
+
 </div>
 
 </div>
+
 </footer>
 
 <script>
@@ -468,19 +625,34 @@ document.documentElement.getAttribute('data-theme')
 }
 
 function toggleMenu() {
-document.getElementById('mobileNav').classList.toggle('open');
+
+document
+.getElementById('mobileNav')
+.classList.toggle('open');
+
 }
 
-const saved = localStorage.getItem('theme');
+const saved =
+localStorage.getItem('theme');
 
 if(saved){
-document.documentElement.setAttribute('data-theme', saved);
+
+document.documentElement
+.setAttribute('data-theme', saved);
+
 }
-else if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-document.documentElement.setAttribute('data-theme', 'dark');
+else if(
+window.matchMedia('(prefers-color-scheme: dark)').matches
+){
+
+document.documentElement
+.setAttribute('data-theme', 'dark');
+
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(e){
+document
+.getElementById('contactForm')
+.addEventListener('submit', function(e){
 
 e.preventDefault();
 
@@ -498,7 +670,9 @@ if(r.ok){
 
 form.style.display='none';
 
-document.getElementById('successMsg').style.display='block';
+document
+.getElementById('successMsg')
+.style.display='block';
 
 }
 
