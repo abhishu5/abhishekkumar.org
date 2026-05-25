@@ -21,21 +21,17 @@
 
 <link rel="canonical" href="https://abhishekkumar.org/about.html" />
 
-<!-- OPEN GRAPH -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI Search Visibility Diagnostics">
 <meta property="og:description" content="Independent diagnostics on how AI systems interpret and surface brands.">
 <meta property="og:url" content="https://abhishekkumar.org/about.html">
 
-<!-- TWITTER/X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Search Visibility Diagnostics">
 <meta name="twitter:description" content="Independent diagnostics on how AI systems interpret and surface brands.">
 
-<!-- THEME -->
 <meta name="theme-color" content="#000000">
 
-<!-- FAVICONS -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -63,29 +59,39 @@
 
 <style>
 
-.hero-section{
+.page-hero{
 padding:7rem 0 5rem;
 border-bottom:0.5px solid var(--border);
 }
 
-.hero-section h1{
-font-size:clamp(2.5rem,5vw,4.4rem);
-line-height:1;
-letter-spacing:-0.05em;
-font-weight:400;
-max-width:650px;
-margin-bottom:2rem;
+.page-label{
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.16em;
+text-transform:uppercase;
+color:var(--text3);
+margin-bottom:1.5rem;
+display:block;
 }
 
-.hero-section p{
-max-width:580px;
-font-size:1.05rem;
-line-height:1.9;
+.page-hero h1{
+font-size:clamp(2.2rem,4.5vw,3.8rem);
+line-height:1.05;
+letter-spacing:-0.05em;
+font-weight:400;
+max-width:680px;
+margin:0 0 1.5rem;
+}
+
+.page-sub{
+max-width:620px;
+font-size:1rem;
+line-height:1.8;
 color:var(--text2);
 }
 
 .content-section{
-padding:6rem 0;
+padding:5rem 0;
 border-bottom:0.5px solid var(--border);
 }
 
@@ -95,44 +101,43 @@ font-size:11px;
 letter-spacing:0.16em;
 text-transform:uppercase;
 color:var(--text3);
-margin-bottom:2rem;
+margin-bottom:1.5rem;
 display:block;
 }
 
 .content-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:4rem;
+gap:3rem;
 }
 
 .content-block h2{
-font-size:2rem;
-line-height:1.1;
-font-weight:400;
-letter-spacing:-0.04em;
-margin-bottom:1.5rem;
+font-size:1.6rem;
+line-height:1.2;
+font-weight:500;
+letter-spacing:-0.03em;
+margin-bottom:1.2rem;
 max-width:420px;
 }
 
 .content-block p{
-font-size:0.98rem;
-line-height:1.9;
+font-size:0.95rem;
+line-height:1.8;
 color:var(--text2);
-margin-bottom:1.5rem;
+margin-bottom:1.3rem;
 max-width:560px;
 }
 
 .principles-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:1rem;
-margin-top:3rem;
+gap:1.2rem;
+margin-top:2rem;
 }
 
 .principle-card{
 border:0.5px solid var(--border);
-padding:2rem;
-min-height:220px;
+padding:1.6rem;
 }
 
 .principle-card span{
@@ -140,91 +145,73 @@ font-family:var(--mono);
 font-size:11px;
 color:var(--text3);
 display:block;
-margin-bottom:1rem;
+margin-bottom:0.8rem;
 }
 
 .principle-card h3{
-font-size:1.1rem;
+font-size:1rem;
 font-weight:500;
-margin-bottom:1rem;
+margin-bottom:0.7rem;
 line-height:1.4;
 }
 
 .principle-card p{
-font-size:0.92rem;
-line-height:1.8;
+font-size:0.9rem;
+line-height:1.75;
 color:var(--text2);
 }
 
 .quote-section{
-padding:6rem 0;
+padding:5rem 0;
 border-bottom:0.5px solid var(--border);
 }
 
 .quote{
-font-size:2.5rem;
-line-height:1.25;
-letter-spacing:-0.05em;
-max-width:900px;
+font-size:clamp(1.9rem,4vw,3rem);
+line-height:1.15;
+letter-spacing:-0.04em;
+max-width:760px;
 font-weight:400;
 }
 
 .quote-sub{
-margin-top:2rem;
-font-size:1rem;
-line-height:1.9;
+margin-top:1.5rem;
+font-size:0.98rem;
+line-height:1.85;
 color:var(--text2);
-max-width:650px;
+max-width:620px;
 }
 
-.cta-row{
+.page-actions{
 display:flex;
 gap:1rem;
-margin-top:3rem;
+margin-top:2.5rem;
 flex-wrap:wrap;
-}
-
-.btn-primary{
-font-family:var(--mono);
-font-size:12px;
-padding:11px 22px;
-background:var(--text);
-color:var(--bg);
-border:none;
-border-radius:4px;
-text-decoration:none;
-display:inline-block;
-}
-
-.btn-secondary{
-font-family:var(--mono);
-font-size:12px;
-padding:11px 22px;
-border:0.5px solid var(--border2);
-color:var(--text2);
-text-decoration:none;
-border-radius:4px;
-display:inline-block;
-}
-
-.btn-secondary:hover{
-border-color:var(--text);
-color:var(--text);
 }
 
 @media(max-width:900px){
 
 .content-grid{
 grid-template-columns:1fr;
-gap:3rem;
+gap:2rem;
 }
 
 .principles-grid{
 grid-template-columns:1fr;
 }
 
-.hero-section h1{
-font-size:clamp(2.5rem,12vw,4rem);
+.page-hero{
+padding:6rem 0 4rem;
+}
+
+.page-hero h1{
+font-size:clamp(2rem,8vw,3.1rem);
+line-height:1.05;
+}
+
+.content-section,
+.quote-section{
+padding:4rem 0;
 }
 
 .quote{
@@ -240,7 +227,10 @@ font-size:2rem;
 <body>
 
 <nav>
-<a href="index.html" class="nav-logo">abhishekkumar.org</a>
+
+<a href="index.html" class="nav-logo">
+abhishekkumar.org
+</a>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -252,29 +242,37 @@ font-size:2rem;
 </ul>
 
 <div class="nav-right">
-<button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+<button class="theme-btn" onclick="toggleTheme()">
+🌙
+</button>
+
 <button class="hamburger" onclick="toggleMenu()">
 <span></span>
 <span></span>
 </button>
+
 </div>
+
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
+
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="methodology.html">Methodology</a>
 <a href="about.html">About</a>
 <a href="/blog/">Writing</a>
 <a href="contact.html">Contact</a>
+
 </div>
 
 <div class="page">
 <div class="container">
 
-<section class="hero-section">
+<section class="page-hero">
 
-<span class="section-label">
+<span class="page-label">
 ABOUT
 </span>
 
@@ -282,8 +280,8 @@ ABOUT
 AI visibility is becoming an interpretation infrastructure problem.
 </h1>
 
-<p>
-I study how AI systems classify, retrieve, compress, and describe companies across conversational search environments. My work focuses on the structural reasons brands become misrepresented, averaged into generic categories, or excluded entirely from AI-generated answers.
+<p class="page-sub">
+I study how AI systems classify, retrieve, compress, and describe companies across conversational search environments. My work focuses on the structural reasons brands become misrepresented, averaged into generic categories, or excluded from AI-generated answers entirely.
 </p>
 
 </section>
@@ -307,7 +305,7 @@ Traditional SEO explains rankings. It does not explain AI interpretation.
 <div class="content-block">
 
 <p>
-The turning point came when companies with strong Google rankings started losing visibility inside AI systems. Their competitors were appearing inside ChatGPT, Gemini, Claude, Perplexity, and AI Overviews. They were not.
+The turning point came when companies with strong Google visibility started disappearing inside conversational AI systems while weaker competitors appeared repeatedly in AI-generated recommendations.
 </p>
 
 <p>
@@ -315,11 +313,11 @@ The problem was not rankings. The problem was interpretation stability.
 </p>
 
 <p>
-Most websites still describe themselves differently across pages, metadata, schema, LinkedIn, directories, and structured references. AI systems compress those fragmented signals into simplified category assumptions.
+Most companies still describe themselves differently across pages, metadata, schema, LinkedIn, citations, directories, and structured references. AI systems compress those fragmented signals into simplified category assumptions.
 </p>
 
 <p>
-That compression layer is where visibility breaks.
+That semantic compression layer is where visibility increasingly breaks.
 </p>
 
 </div>
@@ -347,7 +345,7 @@ Most companies do not have an AI visibility problem. They have a semantic consis
 <div class="content-block">
 
 <p>
-My work focuses on retrieval behaviour, entity stability, answer extractability, semantic chunking, cross-web reinforcement, and AI summarisation exposure.
+My work focuses on retrieval behaviour, entity stability, answer extractability, semantic chunking, cross-web reinforcement, conversational retrieval, and AI summarisation exposure.
 </p>
 
 <p>
@@ -361,43 +359,67 @@ The objective is not producing more content. The objective is ensuring AI system
 <div class="principles-grid">
 
 <div class="principle-card">
-<span>01</span>
+
+<span>
+01
+</span>
+
 <h3>
 Entity Stability
 </h3>
+
 <p>
 Whether AI systems consistently understand what category your company belongs to across homepage messaging, metadata, schema, citations, and retrieval layers.
 </p>
+
 </div>
 
 <div class="principle-card">
-<span>02</span>
+
+<span>
+02
+</span>
+
 <h3>
 Answer Extractability
 </h3>
+
 <p>
 Whether AI systems can accurately extract and summarise your company without hallucination, distortion, or semantic drift.
 </p>
+
 </div>
 
 <div class="principle-card">
-<span>03</span>
+
+<span>
+03
+</span>
+
 <h3>
 Cross-Web Consensus
 </h3>
+
 <p>
-Whether trusted external sources reinforce the same positioning across LinkedIn, Crunchbase, reviews, citations, and structured references.
+Whether trusted external sources reinforce the same positioning across LinkedIn, reviews, citations, structured references, and semantic associations.
 </p>
+
 </div>
 
 <div class="principle-card">
-<span>04</span>
+
+<span>
+04
+</span>
+
 <h3>
 Interpretation Consistency
 </h3>
+
 <p>
-Whether AI systems retrieve and describe your company similarly across conversational retrieval environments and recommendation queries.
+Whether conversational AI systems retrieve and describe your company similarly across recommendation environments and semantic retrieval contexts.
 </p>
+
 </div>
 
 </div>
@@ -418,14 +440,20 @@ AI systems do not discover companies the way search engines ranked websites.
 They retrieve fragments, compress meaning, reinforce consensus, and generate probabilistic interpretations. Visibility increasingly depends on whether your company becomes structurally understandable to machine reasoning systems.
 </div>
 
-<div class="cta-row">
+<div class="page-actions">
+
 <a href="contact.html" class="btn-primary">
 Request diagnostic
 </a>
 
-<a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank" class="btn-secondary">
+<a href="https://www.linkedin.com/in/abhishek-kumar314"
+target="_blank"
+class="btn-secondary">
+
 Read research
+
 </a>
+
 </div>
 
 </section>
@@ -434,6 +462,7 @@ Read research
 </div>
 
 <footer>
+
 <div class="footer-inner">
 
 <p>
@@ -441,24 +470,41 @@ Read research
 </p>
 
 <div style="display:flex;gap:2rem;">
+
 <a href="mailto:hello@abhishekkumar.org">
 hello@abhishekkumar.org
 </a>
 
-<a href="https://www.linkedin.com/in/abhishek-kumar314" target="_blank">
+<a href="https://www.linkedin.com/in/abhishek-kumar314"
+target="_blank">
+
 LinkedIn
+
 </a>
+
 </div>
 
 </div>
+
 </footer>
 
 <script>
 
 function toggleTheme() {
-const c = document.documentElement.getAttribute('data-theme');
-document.documentElement.setAttribute('data-theme', c === 'dark' ? 'light' : 'dark');
-localStorage.setItem('theme', document.documentElement.getAttribute('data-theme'));
+
+const c =
+document.documentElement.getAttribute('data-theme');
+
+document.documentElement.setAttribute(
+'data-theme',
+c === 'dark' ? 'light' : 'dark'
+);
+
+localStorage.setItem(
+'theme',
+document.documentElement.getAttribute('data-theme')
+);
+
 }
 
 function toggleMenu() {
@@ -467,10 +513,10 @@ document.getElementById('mobileNav').classList.toggle('open');
 
 const saved = localStorage.getItem('theme');
 
-if (saved)
+if(saved)
 document.documentElement.setAttribute('data-theme', saved);
 
-else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+else if(window.matchMedia('(prefers-color-scheme: dark)').matches)
 document.documentElement.setAttribute('data-theme', 'dark');
 
 </script>
