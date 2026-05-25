@@ -41,24 +41,34 @@
 
 <style>
 
-.page-header{
-padding:8rem 0 5rem;
+.page-hero{
+padding:7rem 0 5rem;
 border-bottom:0.5px solid var(--border);
 }
 
-.page-header h1{
-font-size:clamp(2.3rem,4.8vw,4rem);
-line-height:1.02;
-font-weight:500;
-letter-spacing:-0.05em;
-max-width:680px;
-margin:1.2rem 0 2rem;
+.page-label{
+font-family:var(--mono);
+font-size:11px;
+letter-spacing:0.16em;
+text-transform:uppercase;
+color:var(--text3);
+margin-bottom:1.5rem;
+display:block;
 }
 
-.page-header p{
-max-width:760px;
-font-size:1.05rem;
-line-height:1.9;
+.page-hero h1{
+font-size:clamp(2.2rem,4.5vw,3.8rem);
+line-height:1.05;
+letter-spacing:-0.05em;
+font-weight:400;
+max-width:680px;
+margin:0 0 1.5rem;
+}
+
+.page-sub{
+max-width:620px;
+font-size:1rem;
+line-height:1.8;
 color:var(--text2);
 }
 
@@ -68,32 +78,32 @@ border-bottom:0.5px solid var(--border);
 }
 
 .section h2{
-font-size:2rem;
+font-size:1.6rem;
 font-weight:500;
+line-height:1.2;
 letter-spacing:-0.03em;
-margin:1rem 0 2rem;
-max-width:850px;
+margin:1rem 0 1.5rem;
+max-width:760px;
 }
 
 .section-intro{
-max-width:760px;
-font-size:1rem;
-line-height:1.9;
+max-width:680px;
+font-size:0.98rem;
+line-height:1.8;
 color:var(--text2);
-margin-bottom:4rem;
+margin-bottom:3rem;
 }
 
 .principle-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:2rem;
-margin-top:3rem;
+gap:1.2rem;
+margin-top:2rem;
 }
 
 .principle-card{
 border:0.5px solid var(--border);
-padding:2rem;
-min-height:250px;
+padding:1.6rem;
 }
 
 .principle-number{
@@ -101,31 +111,31 @@ font-family:var(--mono);
 font-size:11px;
 letter-spacing:0.08em;
 color:var(--text3);
-margin-bottom:1.5rem;
+margin-bottom:1rem;
 }
 
 .principle-title{
-font-size:1.1rem;
+font-size:1rem;
 font-weight:500;
-margin-bottom:1rem;
+margin-bottom:0.8rem;
 line-height:1.4;
 }
 
 .principle-text{
-font-size:0.92rem;
-line-height:1.8;
+font-size:0.9rem;
+line-height:1.75;
 color:var(--text2);
 }
 
 .process{
-margin-top:3rem;
+margin-top:2rem;
 }
 
 .process-step{
 display:grid;
-grid-template-columns:90px 1fr;
-gap:2rem;
-padding:2.5rem 0;
+grid-template-columns:70px 1fr;
+gap:1.5rem;
+padding:1.8rem 0;
 border-bottom:0.5px solid var(--border);
 }
 
@@ -137,57 +147,58 @@ border-bottom:none;
 font-family:var(--mono);
 font-size:11px;
 color:var(--text3);
-padding-top:4px;
+padding-top:3px;
 }
 
 .process-content h3{
-font-size:1.05rem;
-margin-bottom:0.8rem;
+font-size:0.98rem;
+margin-bottom:0.5rem;
 }
 
 .process-content p{
-font-size:0.95rem;
-line-height:1.9;
+font-size:0.9rem;
+line-height:1.75;
 color:var(--text2);
-max-width:760px;
+max-width:680px;
 }
 
 .evidence-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:2rem;
-margin-top:3rem;
+gap:1.2rem;
+margin-top:2rem;
 }
 
 .evidence-item{
-padding-bottom:2rem;
+padding-bottom:1.5rem;
 border-bottom:0.5px solid var(--border);
 }
 
 .evidence-item h3{
-font-size:1rem;
-margin-bottom:0.8rem;
+font-size:0.98rem;
+margin-bottom:0.7rem;
 }
 
 .evidence-item p{
 font-size:0.9rem;
-line-height:1.8;
+line-height:1.75;
 color:var(--text2);
 }
 
 .closing-note{
-max-width:820px;
-font-size:1rem;
-line-height:1.9;
+max-width:700px;
+font-size:0.98rem;
+line-height:1.85;
 color:var(--text2);
-margin-top:2rem;
+margin-top:1.5rem;
 }
 
-.cta-row{
-margin-top:3rem;
+.page-actions{
 display:flex;
 gap:1rem;
 flex-wrap:wrap;
+align-items:center;
+margin-top:2.5rem;
 }
 
 @media (max-width:900px){
@@ -197,21 +208,22 @@ flex-wrap:wrap;
 grid-template-columns:1fr;
 }
 
-.page-header{
+.page-hero{
 padding:6rem 0 4rem;
 }
 
-.page-header h1{
-font-size:clamp(2.2rem,8vw,3.8rem);
+.page-hero h1{
+font-size:clamp(2rem,8vw,3.1rem);
+line-height:1.05;
 }
 
 .section{
-padding:5rem 0;
+padding:4rem 0;
 }
 
 .process-step{
 grid-template-columns:1fr;
-gap:1rem;
+gap:0.8rem;
 }
 
 }
@@ -223,7 +235,10 @@ gap:1rem;
 <body>
 
 <nav>
-<a href="index.html" class="nav-logo">abhishekkumar.org</a>
+
+<a href="index.html" class="nav-logo">
+abhishekkumar.org
+</a>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -235,32 +250,39 @@ gap:1rem;
 </ul>
 
 <div class="nav-right">
-<button class="theme-btn" onclick="toggleTheme()">🌙</button>
+
+<button class="theme-btn" onclick="toggleTheme()">
+🌙
+</button>
 
 <button class="hamburger" onclick="toggleMenu()">
 <span></span>
 <span></span>
 </button>
+
 </div>
+
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
+
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
 <a href="methodology.html">Methodology</a>
 <a href="about.html">About</a>
 <a href="/blog/">Writing</a>
 <a href="contact.html">Contact</a>
+
 </div>
 
 <div class="page">
 <div class="container">
 
-<header class="page-header">
+<section class="page-hero">
 
-<div class="mono-label">
+<span class="page-label">
 METHODOLOGY
-</div>
+</span>
 
 <h1>
 Evidence first.
@@ -268,11 +290,11 @@ Interpretation second.
 Recommendations last.
 </h1>
 
-<p>
+<p class="page-sub">
 Every diagnostic follows a strict separation between evidence gathering, retrieval analysis, semantic interpretation, and final conclusions. No recommendation exists without observable structural evidence behind it.
 </p>
 
-</header>
+</section>
 
 <section class="section">
 
@@ -281,61 +303,77 @@ FOUNDATIONAL PRINCIPLES
 </div>
 
 <h2>
-AI visibility is increasingly determined by interpretation stability, not ranking position.
+AI visibility increasingly depends on interpretation stability.
 </h2>
 
 <p class="section-intro">
-Traditional SEO systems primarily evaluated documents. Modern AI systems increasingly evaluate semantic relationships between entities, passages, structured signals, citations, categories, and conversational retrieval layers.
+Traditional SEO systems primarily evaluated webpages and documents. Modern conversational AI systems increasingly evaluate semantic relationships between entities, citations, passages, categories, retrieval layers, and contextual reinforcement signals.
 </p>
 
 <div class="principle-grid">
 
 <div class="principle-card">
-<div class="principle-number">01</div>
+
+<div class="principle-number">
+01
+</div>
 
 <div class="principle-title">
 AI systems average ambiguity
 </div>
 
 <div class="principle-text">
-When websites produce inconsistent entity signals across pages, directories, schema, and external references, AI systems compress those contradictions into broader generic categories.
+When websites produce inconsistent entity signals across pages, schema, citations, metadata, and external references, AI systems compress those contradictions into broader generic categories.
 </div>
+
 </div>
 
 <div class="principle-card">
-<div class="principle-number">02</div>
+
+<div class="principle-number">
+02
+</div>
 
 <div class="principle-title">
 Extractability matters more than volume
 </div>
 
 <div class="principle-text">
-Retrieval systems reward content that can be accurately extracted, chunked, summarised, and cited without semantic distortion.
+Retrieval systems reward content that can be accurately extracted, chunked, summarised, cited, and reused without semantic distortion.
 </div>
+
 </div>
 
 <div class="principle-card">
-<div class="principle-number">03</div>
+
+<div class="principle-number">
+03
+</div>
 
 <div class="principle-title">
 Cross-web consistency becomes trust
 </div>
 
 <div class="principle-text">
-AI systems increasingly triangulate brand identity across LinkedIn, directories, schema, reviews, press mentions, citations, and semantic associations.
+AI systems increasingly triangulate company identity across LinkedIn, directories, reviews, citations, schema layers, and semantic associations.
 </div>
+
 </div>
 
 <div class="principle-card">
-<div class="principle-number">04</div>
+
+<div class="principle-number">
+04
+</div>
 
 <div class="principle-title">
 Retrieval systems behave differently from ranking systems
 </div>
 
 <div class="principle-text">
-AI retrieval environments prioritise semantic relevance, passage clarity, conversational usefulness, and contextual coherence over traditional page-ranking mechanics.
+Conversational retrieval environments prioritise semantic relevance, contextual coherence, answer usefulness, and passage clarity over traditional ranking mechanics.
 </div>
+
 </div>
 
 </div>
@@ -367,10 +405,11 @@ Multi-model interrogation
 </h3>
 
 <p>
-Structured queries are executed across ChatGPT, Gemini, Claude, Perplexity, Copilot, and AI Overviews to evaluate how systems classify, summarise, compare, and recommend the company.
+Structured queries are executed across ChatGPT, Gemini, Claude, Perplexity, Copilot, and AI Overviews to analyse classification behaviour, recommendation visibility, and interpretation consistency.
 </p>
 
 </div>
+
 </div>
 
 <div class="process-step">
@@ -386,10 +425,11 @@ Entity stability mapping
 </h3>
 
 <p>
-Homepage positioning, product positioning, about-page identity, metadata, headings, semantic structures, and schema layers are analysed for consistency and interpretation clarity.
+Homepage positioning, product positioning, metadata, headings, schema, semantic structures, and about-page identity are evaluated for interpretation consistency.
 </p>
 
 </div>
+
 </div>
 
 <div class="process-step">
@@ -405,10 +445,11 @@ Retrieval structure analysis
 </h3>
 
 <p>
-Content structures are evaluated for passage-level retrieval behaviour, semantic chunking quality, conversational extraction readiness, and citation suitability.
+Content architecture is analysed for semantic chunking quality, conversational extraction readiness, citation suitability, and passage-level retrieval behaviour.
 </p>
 
 </div>
+
 </div>
 
 <div class="process-step">
@@ -424,10 +465,11 @@ Cross-web consensus evaluation
 </h3>
 
 <p>
-External references including LinkedIn, Crunchbase, directories, structured citations, press mentions, and category databases are analysed for semantic reinforcement or contradiction.
+LinkedIn, Crunchbase, directories, citations, structured references, and public mentions are analysed for semantic reinforcement or contradiction.
 </p>
 
 </div>
+
 </div>
 
 <div class="process-step">
@@ -443,10 +485,11 @@ Interpretation synthesis
 </h3>
 
 <p>
-Findings are constructed only after evidence patterns become observable across multiple systems. Recommendations are tied directly to measurable structural failures.
+Recommendations are constructed only after evidence patterns become observable across multiple retrieval systems and conversational environments.
 </p>
 
 </div>
+
 </div>
 
 </div>
@@ -466,6 +509,7 @@ What constitutes valid diagnostic evidence
 <div class="evidence-grid">
 
 <div class="evidence-item">
+
 <h3>
 LLM response analysis
 </h3>
@@ -473,49 +517,59 @@ LLM response analysis
 <p>
 Verbatim AI-generated outputs recorded across multiple systems, prompts, retrieval scenarios, recommendation flows, and comparison environments.
 </p>
+
 </div>
 
 <div class="evidence-item">
+
 <h3>
 Passage extraction analysis
 </h3>
 
 <p>
-Evaluation of whether homepage and product content can be accurately summarised by AI systems without hallucination or category drift.
+Evaluation of whether homepage and product content can be accurately summarised without hallucination, semantic drift, or category distortion.
 </p>
+
 </div>
 
 <div class="evidence-item">
+
 <h3>
 Semantic consistency mapping
 </h3>
 
 <p>
-Analysis of whether all structural surfaces reinforce the same entity definition, category positioning, and retrieval interpretation.
+Analysis of whether all structural surfaces reinforce the same entity definition, positioning, and retrieval interpretation.
 </p>
+
 </div>
 
 <div class="evidence-item">
+
 <h3>
 Structured-data reinforcement
 </h3>
 
 <p>
-Review of schema alignment against actual semantic positioning and AI interpretation behaviour rather than technical validation alone.
+Review of schema alignment against actual semantic positioning and interpretation behaviour rather than technical validation alone.
 </p>
+
 </div>
 
 <div class="evidence-item">
+
 <h3>
 Cross-system divergence
 </h3>
 
 <p>
-Measurement of how differently AI systems classify and describe the company across retrieval environments and conversational contexts.
+Measurement of how differently conversational AI systems classify and describe the company across retrieval environments.
 </p>
+
 </div>
 
 <div class="evidence-item">
+
 <h3>
 Competitive retrieval comparison
 </h3>
@@ -523,6 +577,7 @@ Competitive retrieval comparison
 <p>
 Analysis of which competitors appear more consistently in AI-generated recommendations and what structural advantages enable that visibility.
 </p>
+
 </div>
 
 </div>
@@ -540,18 +595,18 @@ This is not traditional SEO auditing.
 </h2>
 
 <p class="closing-note">
-Most SEO audits still focus on rankings, keywords, backlinks, crawlability, and publishing activity. Those systems primarily evaluated pages.
+Most SEO audits still focus on rankings, crawlability, backlinks, keywords, and publishing frequency. Those systems primarily evaluated webpages.
 </p>
 
 <p class="closing-note">
-Modern AI retrieval systems increasingly evaluate whether information can be interpreted, compressed, retrieved, reinforced, and synthesised consistently across distributed semantic environments.
+Modern conversational AI systems increasingly evaluate whether information can be interpreted, compressed, retrieved, reinforced, and synthesised consistently across distributed semantic environments.
 </p>
 
 <p class="closing-note">
 The methodology exists to diagnose where those interpretation systems break.
 </p>
 
-<div class="cta-row">
+<div class="page-actions">
 
 <a href="contact.html" class="btn-primary">
 Request diagnostic
