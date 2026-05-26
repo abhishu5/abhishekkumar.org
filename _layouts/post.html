@@ -266,13 +266,25 @@
 
 </main>
 
-<footer>
+<footer class="footer">
 
   <div class="footer-inner">
 
     <p>
       © 2026 Abhishek Kumar
     </p>
+
+    <div class="footer-links">
+
+      <a href="mailto:hello@abhishekkumar.org">
+        hello@abhishekkumar.org
+      </a>
+
+      <a href="https://linkedin.com">
+        LinkedIn
+      </a>
+
+    </div>
 
   </div>
 
@@ -282,19 +294,43 @@
 
 const themeToggle = document.getElementById('theme-toggle');
 
-themeToggle.addEventListener('click', () => {
+function applyTheme(theme){
 
-  const currentTheme = document.documentElement.getAttribute('data-theme');
+  if(theme === 'dark'){
 
-  if(currentTheme === 'dark'){
-
-    document.documentElement.removeAttribute('data-theme');
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeToggle.innerHTML = '☀';
 
   } else {
 
-    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.removeAttribute('data-theme');
+    themeToggle.innerHTML = '☾';
 
   }
+
+}
+
+const savedTheme = localStorage.getItem('theme');
+
+if(savedTheme){
+
+  applyTheme(savedTheme);
+
+}
+
+themeToggle.addEventListener('click', () => {
+
+  const currentTheme =
+    document.documentElement.getAttribute('data-theme');
+
+  const newTheme =
+    currentTheme === 'dark'
+    ? 'light'
+    : 'dark';
+
+  localStorage.setItem('theme', newTheme);
+
+  applyTheme(newTheme);
 
 });
 
