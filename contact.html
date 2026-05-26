@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5NF138030"></script>
@@ -288,21 +289,49 @@ abhishekkumar.org
 </a>
 
 <ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="methodology.html">Methodology</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="/blog/">Writing</a></li>
-<li><a href="contact.html" class="active">Contact</a></li>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="services.html">Services</a>
+</li>
+
+<li>
+<a href="methodology.html">Methodology</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="/blog/">Writing</a>
+</li>
+
+<li>
+<a href="contact.html" class="active">
+Contact
+</a>
+</li>
+
 </ul>
 
 <div class="nav-right">
 
-<button class="theme-btn" onclick="toggleTheme()">
-🌙
+<button
+class="theme-btn"
+id="theme-toggle"
+>
+☾
 </button>
 
-<button class="hamburger" onclick="toggleMenu()">
+<button
+class="hamburger"
+id="hamburger"
+>
+<span></span>
 <span></span>
 <span></span>
 </button>
@@ -311,7 +340,10 @@ abhishekkumar.org
 
 </nav>
 
-<div class="mobile-nav" id="mobileNav">
+<div
+class="mobile-nav"
+id="mobile-nav"
+>
 
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
@@ -592,8 +624,10 @@ Request received. Response is typically sent within 1 business day.
 hello@abhishekkumar.org
 </a>
 
-<a href="https://www.linkedin.com/in/abhishek-kumar314"
-target="_blank">
+<a
+href="https://www.linkedin.com/in/abhishek-kumar314"
+target="_blank"
+>
 
 LinkedIn
 
@@ -607,46 +641,87 @@ LinkedIn
 
 <script>
 
-function toggleTheme() {
+const themeToggle =
+document.getElementById('theme-toggle');
 
-const c =
-document.documentElement.getAttribute('data-theme');
+function applyTheme(theme){
 
-document.documentElement.setAttribute(
-'data-theme',
-c === 'dark' ? 'light' : 'dark'
-);
-
-localStorage.setItem(
-'theme',
-document.documentElement.getAttribute('data-theme')
-);
-
-}
-
-function toggleMenu() {
-
-document
-.getElementById('mobileNav')
-.classList.toggle('open');
-
-}
-
-const saved =
-localStorage.getItem('theme');
-
-if(saved){
-
-document.documentElement
-.setAttribute('data-theme', saved);
-
-}
-else if(
-window.matchMedia('(prefers-color-scheme: dark)').matches
-){
+if(theme === 'dark'){
 
 document.documentElement
 .setAttribute('data-theme', 'dark');
+
+if(themeToggle){
+themeToggle.innerHTML = '☀';
+}
+
+}else{
+
+document.documentElement
+.removeAttribute('data-theme');
+
+if(themeToggle){
+themeToggle.innerHTML = '☾';
+}
+
+}
+
+}
+
+const savedTheme =
+localStorage.getItem('theme');
+
+if(savedTheme){
+
+applyTheme(savedTheme);
+
+}else if(
+window.matchMedia(
+'(prefers-color-scheme: dark)'
+).matches
+){
+
+applyTheme('dark');
+
+}
+
+if(themeToggle){
+
+themeToggle.addEventListener('click', () => {
+
+const currentTheme =
+document.documentElement
+.getAttribute('data-theme');
+
+const newTheme =
+currentTheme === 'dark'
+? 'light'
+: 'dark';
+
+localStorage.setItem(
+'theme',
+newTheme
+);
+
+applyTheme(newTheme);
+
+});
+
+}
+
+const hamburger =
+document.getElementById('hamburger');
+
+const mobileNav =
+document.getElementById('mobile-nav');
+
+if(hamburger && mobileNav){
+
+hamburger.addEventListener('click', () => {
+
+mobileNav.classList.toggle('open');
+
+});
 
 }
 
