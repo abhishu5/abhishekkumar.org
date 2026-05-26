@@ -69,7 +69,7 @@
   letter-spacing:-0.065em;
   font-weight:500;
   color:var(--text);
-  max-width:760px;
+  max-width:950px;
   margin:0;
 }
 
@@ -176,28 +176,51 @@
 
 <body>
 
-<header class="nav">
+<nav>
 
-  <div class="logo">
+  <div class="nav-logo">
     <a href="/">abhishekkumar.org</a>
   </div>
 
-  <nav>
+  <div class="nav-links">
     <a href="/">Home</a>
     <a href="/services.html">Services</a>
     <a href="/methodology.html">Methodology</a>
     <a href="/about.html">About</a>
     <a href="/blog/">Writing</a>
     <a href="/contact.html">Contact</a>
-  </nav>
+  </div>
 
-  <button id="theme-toggle" class="theme-toggle">
-    ☾
-  </button>
+  <div class="nav-right">
 
-</header>
+    <button class="theme-btn" id="theme-toggle">
+      ☾
+    </button>
 
-<main>
+    <button class="hamburger" id="hamburger">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+
+</nav>
+
+<div class="mobile-nav" id="mobile-nav">
+
+  <a href="/">Home</a>
+  <a href="/services.html">Services</a>
+  <a href="/methodology.html">Methodology</a>
+  <a href="/about.html">About</a>
+  <a href="/blog/">Writing</a>
+  <a href="/contact.html">Contact</a>
+
+</div>
+
+<main class="page">
 
 <section class="article-hero">
 
@@ -243,16 +266,45 @@
 
 </main>
 
-<footer class="footer">
-  © 2026 Abhishek Kumar
+<footer>
+
+  <div class="footer-inner">
+
+    <p>
+      © 2026 Abhishek Kumar
+    </p>
+
+  </div>
+
 </footer>
 
 <script>
 
-const toggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById('theme-toggle');
 
-toggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
+themeToggle.addEventListener('click', () => {
+
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+
+  if(currentTheme === 'dark'){
+
+    document.documentElement.removeAttribute('data-theme');
+
+  } else {
+
+    document.documentElement.setAttribute('data-theme', 'dark');
+
+  }
+
+});
+
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobile-nav');
+
+hamburger.addEventListener('click', () => {
+
+  mobileNav.classList.toggle('open');
+
 });
 
 </script>
