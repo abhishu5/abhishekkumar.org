@@ -2925,34 +2925,35 @@ retrieval survival before synthesis.
 ## References
 
 1. Robertson, S., & Zaragoza, H. (2009). *The Probabilistic Relevance Framework: BM25 and Beyond*. Foundations and Trends in Information Retrieval.
-   https://www.nowpublishers.com/article/Details/INR-019
+   [Source](https://www.nowpublishers.com/article/Details/INR-019)
 
 2. Robertson, S. E., & Sparck Jones, K. (1976). *Relevance Weighting of Search Terms*. Journal of the American Society for Information Science.
-   https://dl.acm.org/doi/10.5555/360336.360340
+   [Source](https://dl.acm.org/doi/10.5555/360336.360340)
 
 3. Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). *The PageRank Citation Ranking: Bringing Order to the Web*. Stanford University.
-   https://ilpubs.stanford.edu:8090/422/
+   [Source](https://ilpubs.stanford.edu:8090/422/)
 
 4. Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*.
-   https://arxiv.org/abs/2005.11401
+   [Source](https://arxiv.org/abs/2005.11401)
 
 5. Karpukhin, V., Oguz, B., Min, S., Lewis, P., Wu, L., Edunov, S., Chen, D., & Yih, W. (2020). *Dense Passage Retrieval for Open-Domain Question Answering*.
-   https://arxiv.org/abs/2004.04906
+   [Source](https://arxiv.org/abs/2004.04906)
 
 6. Reimers, N., & Gurevych, I. (2019). *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*.
-   https://arxiv.org/abs/1908.10084
+   [Source](https://arxiv.org/abs/1908.10084)
 
 7. Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F., & Liang, P. (2023). *Lost in the Middle: How Language Models Use Long Contexts*.
-   https://arxiv.org/abs/2307.03172
+   [Source](https://arxiv.org/abs/2307.03172)
 
 8. Anthropic. (2024). *Introducing Contextual Retrieval*.
-   https://www.anthropic.com/news/contextual-retrieval
+   [Source](https://www.anthropic.com/news/contextual-retrieval)
 
 9. Cormack, G. V., Clarke, C. L. A., & Büttcher, S. (2009). *Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods*.
-   https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf
+   [Source](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf)
 
 10. Nogueira, R., & Cho, K. (2019). *Passage Re-ranking with BERT*.
-    https://arxiv.org/abs/1901.04085
+    [Source](https://arxiv.org/abs/1901.04085)
 
 11. Khattab, O., & Zaharia, M. (2020). *ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT*.
-    https://arxiv.org/abs/2004.12832
+    [Source](https://arxiv.org/abs/2004.12832)
+
