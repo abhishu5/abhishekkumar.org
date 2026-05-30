@@ -1130,7 +1130,8 @@ Metadata functions as continuity scaffolding attached to otherwise isolated retr
 
 More advanced systems attempt contextual retrieval directly.
 
-Anthropic’s contextual retrieval architecture prepends an LLM-generated contextual description derived from the parent document onto each chunk before embedding generation.
+*[Anthropic's](https://www.anthropic.com/engineering/contextual-retrieval
+)* contextual retrieval architecture prepends an LLM-generated contextual description derived from the parent document onto each chunk before embedding generation.
 
 A chunk such as:
 
