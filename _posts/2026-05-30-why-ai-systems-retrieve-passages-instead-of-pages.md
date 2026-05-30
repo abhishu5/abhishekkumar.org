@@ -2924,36 +2924,21 @@ retrieval survival before synthesis.
 
 ## References
 
-1. Robertson, S., & Zaragoza, H. (2009). *The Probabilistic Relevance Framework: BM25 and Beyond*. Foundations and Trends in Information Retrieval.
-   [Source](https://www.nowpublishers.com/article/Details/INR-019)
+1. Robertson, S., & Zaragoza, H. (2009). *The Probabilistic Relevance Framework: BM25 and Beyond*. Foundations and Trends in Information Retrieval. <a href="https://www.nowpublishers.com/article/Details/INR-019" target="_blank" rel="noopener noreferrer">Source</a>
 
-2. Robertson, S. E., & Sparck Jones, K. (1976). *Relevance Weighting of Search Terms*. Journal of the American Society for Information Science.
-   [Source](https://dl.acm.org/doi/10.5555/360336.360340)
+2. Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*. <a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener noreferrer">Source</a>
 
-3. Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). *The PageRank Citation Ranking: Bringing Order to the Web*. Stanford University.
-   [Source](https://ilpubs.stanford.edu:8090/422/)
+3. Karpukhin, V., Oguz, B., Min, S., Lewis, P., Wu, L., Edunov, S., Chen, D., & Yih, W. (2020). *Dense Passage Retrieval for Open-Domain Question Answering*. <a href="https://arxiv.org/abs/2004.04906" target="_blank" rel="noopener noreferrer">Source</a>
 
-4. Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*.
-   [Source](https://arxiv.org/abs/2005.11401)
+4. Reimers, N., & Gurevych, I. (2019). *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*. <a href="https://arxiv.org/abs/1908.10084" target="_blank" rel="noopener noreferrer">Source</a>
 
-5. Karpukhin, V., Oguz, B., Min, S., Lewis, P., Wu, L., Edunov, S., Chen, D., & Yih, W. (2020). *Dense Passage Retrieval for Open-Domain Question Answering*.
-   [Source](https://arxiv.org/abs/2004.04906)
+5. Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F., & Liang, P. (2023). *Lost in the Middle: How Language Models Use Long Contexts*. <a href="https://arxiv.org/abs/2307.03172" target="_blank" rel="noopener noreferrer">Source</a>
 
-6. Reimers, N., & Gurevych, I. (2019). *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*.
-   [Source](https://arxiv.org/abs/1908.10084)
+6. Anthropic. (2024). *Introducing Contextual Retrieval*. <a href="https://www.anthropic.com/news/contextual-retrieval" target="_blank" rel="noopener noreferrer">Source</a>
 
-7. Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F., & Liang, P. (2023). *Lost in the Middle: How Language Models Use Long Contexts*.
-   [Source](https://arxiv.org/abs/2307.03172)
+7. Cormack, G. V., Clarke, C. L. A., & Büttcher, S. (2009). *Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods*. <a href="https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf" target="_blank" rel="noopener noreferrer">Source</a>
 
-8. Anthropic. (2024). *Introducing Contextual Retrieval*.
-   [Source](https://www.anthropic.com/news/contextual-retrieval)
+8. Nogueira, R., & Cho, K. (2019). *Passage Re-ranking with BERT*. <a href="https://arxiv.org/abs/1901.04085" target="_blank" rel="noopener noreferrer">Source</a>
 
-9. Cormack, G. V., Clarke, C. L. A., & Büttcher, S. (2009). *Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods*.
-   [Source](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf)
-
-10. Nogueira, R., & Cho, K. (2019). *Passage Re-ranking with BERT*.
-    [Source](https://arxiv.org/abs/1901.04085)
-
-11. Khattab, O., & Zaharia, M. (2020). *ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT*.
-    [Source](https://arxiv.org/abs/2004.12832)
+9. Khattab, O., & Zaharia, M. (2020). *ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT*. <a href="https://arxiv.org/abs/2004.12832" target="_blank" rel="noopener noreferrer">Source</a>
 
