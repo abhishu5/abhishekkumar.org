@@ -1804,7 +1804,7 @@ Every passage inserted into synthesis context consumes limited computational res
 
 Context windows therefore function as competitive allocation environments rather than passive storage containers.
 
-Research such as *[Lost in the Middle](URL)* demonstrates that increasing retrieval volume does not reliably improve synthesis quality. Excess evidence frequently introduces distractor competition, weakens grounding clarity, and reduces evidence salience.
+Research such as *[Lost in the Middle](https://arxiv.org/abs/2307.03172)* demonstrates that increasing retrieval volume does not reliably improve synthesis quality. Excess evidence frequently introduces distractor competition, weakens grounding clarity, and reduces evidence salience.
 
 Retrieval pipelines therefore optimize around evidence efficiency rather than retrieval volume alone.
 
