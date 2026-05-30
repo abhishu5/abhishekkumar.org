@@ -148,9 +148,9 @@ Traditional search infrastructure operated around a navigational retrieval model
 
 Retrieval systems surfaced relevant documents, while humans interpreted those documents, identified relevant sections, and extracted the information necessary to answer their questions. As established in the previous section, this created a stable operational dependency:
 
-retrieval located documents,
+* retrieval located documents,
 
-humans performed extraction.
+* humans performed extraction.
 
 Retrieval-augmented generation systems destabilize this architecture because retrieval no longer terminates at document discovery.
 
@@ -425,9 +425,8 @@ Larger context windows increase how much information fits into the model, but th
 
 Two operational failures emerge:
 
-attention dilution
-
-distractor interference
+* attention dilution
+* distractor interference
 
 Attention dilution occurs when relevant evidence competes against excessive contextual mass, weakening the model’s ability to consistently prioritize high-value informational spans.
 
@@ -583,10 +582,10 @@ Operationally, this transformation requires passage-level indexing infrastructur
 
 Instead of storing one embedding per document, modern retrieval systems increasingly generate embeddings for:
 
-passages
-semantic spans
-paragraph-level segments
-independently retrievable retrieval units
+* passages
+* semantic spans
+* paragraph-level segments
+* independently retrievable retrieval units
 
 Each indexed segment becomes independently searchable inside vector retrieval systems.
 
