@@ -3,7 +3,7 @@ layout: post
 title: "Why AI Systems Retrieve Passages Instead Of Pages"
 description: "Modern AI systems retrieve passages instead of pages because retrieval pipelines optimize for evidence selection, context efficiency, reranking, and synthesis compatibility."
 date: 2026-05-30
-permalink: /why-ai-systems-retrieve-passages-instead-of-pages/
+permalink: /blog/why-ai-systems-retrieve-passages-instead-of-pages/
 ---
 
 # Why AI Systems Retrieve Passages Instead Of Pages
