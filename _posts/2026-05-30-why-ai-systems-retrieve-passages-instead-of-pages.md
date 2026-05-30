@@ -8,8 +8,6 @@ permalink: /why-ai-systems-retrieve-passages-instead-of-pages/
 
 # Why AI Systems Retrieve Passages Instead Of Pages
 
-Why AI Systems Retrieve Passages Instead Of Pages
-
 ## Introduction
 
 Traditional search systems were built around a relatively stable assumption:
@@ -26,29 +24,29 @@ As retrieval becomes upstream infrastructure for generation systems, the retriev
 
 Rather than retrieving entire pages, modern AI systems increasingly isolate:
 
-passages
+* passages
 
-semantic spans
+* semantic spans
 
-localized evidence fragments
+* localized evidence fragments
 
-retrievable chunks
+* retrievable chunks
 
 These smaller retrieval units are not merely formatting decisions. They emerge from operational pressures inside modern retrieval architectures.
 
 A full webpage often contains:
 
-multiple topics
+* multiple topics
 
-mixed intents
+* mixed intents
 
-navigational structures
+* navigational structures
 
-redundant context
+* redundant context
 
-low-density informational regions
+* low-density informational regions
 
-semantically unrelated sections
+* semantically unrelated sections
 
 Traditional search systems tolerated this because humans could navigate documents manually after retrieval. Retrieval systems only needed to surface potentially relevant pages.
 
@@ -70,13 +68,13 @@ The page no longer behaves as the guaranteed operational unit of retrieval.
 
 Instead, retrieval systems increasingly prioritize the extraction of localized evidence capable of surviving:
 
-retrieval constraints
+* retrieval constraints
 
-context limitations
+* context limitations
 
-candidate competition
+* candidate competition
 
-synthesis allocation
+* synthesis allocation
 
 This creates the central infrastructure question explored throughout the article:
 
@@ -106,15 +104,15 @@ Rather than evaluating only textual relevance, PageRank treated hyperlinks as di
 
 The architecture optimized around:
 
-document discoverability
+* document discoverability
 
-URL ranking
+* URL ranking
 
-navigational efficiency
+* navigational efficiency
 
-lexical relevance estimation
+* lexical relevance estimation
 
-document-level authority
+* document-level authority
 
 Importantly, these systems were designed for document retrieval rather than evidence extraction.
 
@@ -281,15 +279,15 @@ semantic dilution.
 
 Large documents contain:
 
-multiple semantic regions
+* multiple semantic regions
 
-heterogeneous topical zones
+* heterogeneous topical zones
 
-mixed informational intent
+* mixed informational intent
 
-unrelated supporting context
+* unrelated supporting context
 
-competing informational signals
+* competing informational signals
 
 When an embedding model compresses an entire document into a single vector representation, these distinct semantic regions become aggregated into one representational object.
 
@@ -355,7 +353,7 @@ But semantic precision alone does not fully stabilize retrieval systems.
 
 Even semantically precise retrieval remains operationally constrained once retrieved evidence must compete inside finite generation contexts with limited token budgets and attention allocation.
 
-Context Compression Makes Whole-Page Retrieval Operationally Inefficient
+## 4. Context Compression Makes Whole-Page Retrieval Operationally Inefficient
 
 As previous section established that whole-page embeddings become mechanically unstable because dense retrieval systems compress too many competing semantic signals into single vector representations.
 
@@ -365,13 +363,13 @@ Even highly relevant passages must still survive inside constrained generation e
 
 Modern retrieval pipelines operate under finite:
 
-context windows
+* context windows
 
-token budgets
+* token budgets
 
-attention allocation capacity
+* attention allocation capacity
 
-synthesis bandwidth
+* synthesis bandwidth
 
 Retrieved information therefore competes for limited representational space inside generation pipelines. The context window is not merely a storage container for retrieved text. It is a constrained allocation environment where every retrieved token displaces alternative information that could occupy the same synthesis capacity.
 
@@ -393,13 +391,13 @@ Generation systems inherit that burden directly.
 
 Every irrelevant paragraph, navigational block, repeated disclaimer, or low-density informational region inserted into context consumes:
 
-token budget
+* token budget
 
-attention capacity
+* attention capacity
 
-inference cost
+* inference cost
 
-synthesis opportunity
+* synthesis opportunity
 
 without proportionally improving grounding quality.
 
@@ -437,15 +435,15 @@ Distractor interference occurs when irrelevant or tangential content introduces 
 
 Retrieval quality therefore becomes increasingly tied to:
 
-informational density
+* informational density
 
-evidence concentration
+* evidence concentration
 
-context efficiency
+* context efficiency
 
-synthesis visibility
+* synthesis visibility
 
-compression efficiency
+* compression efficiency
 
 The operational objective becomes:
 
@@ -459,15 +457,15 @@ Passage retrieval emerges as the operational response to this imbalance.
 
 Smaller retrieval units improve:
 
-informational density
+* informational density
 
-evidence concentration
+* evidence concentration
 
-context efficiency
+* context efficiency
 
-synthesis precision
+* synthesis precision
 
-attention survivability
+* attention survivability
 
 A highly relevant paragraph inserted into context introduces far less distractor mass than an entire webpage containing surrounding navigational structures, redundant explanations, unrelated sections, and semantically competing material.
 
@@ -483,13 +481,13 @@ Retrieval systems increasingly optimize around finite evidence-allocation capaci
 
 Smaller retrieval units survive these constraints more effectively because they preserve:
 
-higher evidence density
+* higher evidence density
 
-stronger attention visibility
+* stronger attention visibility
 
-lower distractor interference
+* lower distractor interference
 
-greater synthesis efficiency
+* greater synthesis efficiency
 
 Once retrieval systems become dependent on smaller evidence units operationally, document-level retrieval objects become increasingly impractical as direct indexing units.
 
@@ -506,10 +504,10 @@ Combined with the semantic dilution problems established in Section 3, these pre
 
 Once retrieval systems optimize around:
 
-localized semantic precision
-evidence concentration
-synthesis efficiency
-context survivability
+* localized semantic precision
+* evidence concentration
+* synthesis efficiency
+* context survivability
 
 document-level retrieval architectures begin breaking down structurally.
 
@@ -525,11 +523,11 @@ This is fundamentally a retrieval granularity transformation.
 
 Retrieval granularity determines the size of the unit that:
 
-receives an embedding
-enters the retrieval index
-participates in similarity search
-competes during candidate selection
-survives into synthesis environments
+* receives an embedding
+* enters the retrieval index
+* participates in similarity search
+* competes during candidate selection
+* survives into synthesis environments
 
 Changing the retrieval unit changes the operational behavior of the entire retrieval system.
 
@@ -557,11 +555,11 @@ retrieval systems perform more effectively when semantic regions compete indepen
 
 Passage-level retrieval improves:
 
-retrieval precision
-retrieval recall
-semantic separability
-synthesis compatibility
-evidence allocation efficiency
+* retrieval precision
+* retrieval recall
+* semantic separability
+* synthesis compatibility
+* evidence allocation efficiency
 
 because smaller retrieval units preserve tighter semantic boundaries and sharper query alignment.
 
@@ -628,10 +626,10 @@ Instead of retrieving a single “best document,” passage retrieval systems re
 
 Retrieval therefore becomes increasingly:
 
-probabilistic
-competitive
-recall-oriented
-candidate-centric
+* probabilistic
+* competitive
+* recall-oriented
+* candidate-centric
 
 The retrieval objective shifts toward maximizing evidence survivability under constrained retrieval latency and synthesis capacity.
 
@@ -641,10 +639,10 @@ Retrieval systems no longer optimize primarily around routing users toward webpa
 
 They increasingly optimize around:
 
-localized evidence isolation
-retrieval compression
-synthesis-compatible retrieval units
-scalable candidate competition
+* localized evidence isolation
+* retrieval compression
+* synthesis-compatible retrieval units
+* scalable candidate competition
 
 The dominant operational retrieval object increasingly becomes:
 
@@ -656,16 +654,16 @@ Once retrieval systems depend on independently retrievable semantic units, docum
 
 Retrieval systems must now determine:
 
-where retrieval boundaries should exist
-how documents should be segmented
-how semantic continuity survives decomposition
-how retrieval units preserve contextual coherence after separation
+* where retrieval boundaries should exist
+* how documents should be segmented
+* how semantic continuity survives decomposition
+* how retrieval units preserve contextual coherence after separation
 
 Passage retrieval therefore creates the next infrastructure requirement:
 
 documents must be operationally segmented into stable retrievable boundaries before indexing can occur.
 
-Chunking Operationalizes Passage Retrieval
+## 6. Chunking Operationalizes Passage Retrieval
 
 As previous section established that passage retrieval reorganizes retrieval systems around independently searchable semantic regions rather than monolithic documents.
 
@@ -673,12 +671,12 @@ But passages do not naturally exist inside retrieval pipelines.
 
 Documents arrive as continuous semantic structures:
 
-webpages,
-knowledge-base articles,
-PDFs,
-API references,
-support documentation,
-multi-section documents.
+* webpages,
+* knowledge-base articles,
+* PDFs,
+* API references,
+* support documentation,
+* multi-section documents.
 
 Before retrieval systems can index, embed, or retrieve localized evidence, these continuous structures must first be decomposed into stable retrieval units.
 
@@ -690,29 +688,29 @@ It is retrieval-unit construction.
 
 Without segmentation systems, passage retrieval cannot function operationally because there would be:
 
-no stable embedding boundaries
-no scalable retrieval granularity
-no independently searchable retrieval units
-no manageable vector-index structure
+* no stable embedding boundaries
+* no scalable retrieval granularity
+* no independently searchable retrieval units
+* no manageable vector-index structure
 
 Chunking imposes retrieval boundaries onto inherently continuous semantic information.
 
 Every segmentation decision determines:
 
-what information remains grouped together
-what contextual relationships become separated
-what competes independently during retrieval
-what survives embedding compression
-what enters generation contexts together
+* what information remains grouped together
+* what contextual relationships become separated
+* what competes independently during retrieval
+* what survives embedding compression
+* what enters generation contexts together
 
 Chunking therefore directly shapes retrieval behavior itself.
 
 Before indexing occurs, retrieval pipelines must determine how documents will be partitioned into retrievable units. Each chunk receives:
 
-its own embedding
-its own retrieval identity
-its own vector-space position
-its own candidate-competition behavior
+* its own embedding
+* its own retrieval identity
+* its own vector-space position
+* its own candidate-competition behavior
 
 Retrieval systems therefore no longer search documents directly.
 
@@ -722,19 +720,19 @@ The most common segmentation strategy is fixed-size chunking.
 
 Under this approach, documents are divided into uniform spans based on:
 
-token count
-character count
-sentence windows
+* token count
+* character count
+* sentence windows
 
 Most production retrieval systems segment documents into chunks of roughly 200–500 tokens, often with configurable overlap between adjacent chunks.
 
 Fixed-size chunking remains operationally attractive because it provides:
 
-deterministic indexing behavior
-predictable embedding distribution
-stable index expansion
-computational scalability
-efficient ANN retrieval behavior
+* deterministic indexing behavior
+* predictable embedding distribution
+* stable index expansion
+* computational scalability
+* efficient ANN retrieval behavior
 
 Uniform chunk sizes simplify retrieval engineering substantially.
 
@@ -750,10 +748,10 @@ But fixed-size chunking introduces decomposition instability.
 
 Arbitrary segmentation boundaries frequently divide:
 
-sentences
-multi-step explanations
-supporting context
-related informational regions
+* sentences
+* multi-step explanations
+* supporting context
+* related informational regions
 
 into separate retrieval units.
 
@@ -769,10 +767,10 @@ Semantic chunking emerged as an attempt to reduce these decomposition failures.
 
 Rather than segmenting documents at arbitrary token intervals, semantic chunking attempts to detect topic boundaries dynamically using:
 
-sentence embeddings
-cosine-similarity shifts
-structural transitions
-discourse segmentation patterns
+* sentence embeddings
+* cosine-similarity shifts
+* structural transitions
+* discourse segmentation patterns
 
 The objective is to preserve semantically coherent informational regions within individual retrieval units.
 
@@ -786,11 +784,11 @@ This exposes a deeper retrieval tradeoff.
 
 Semantic chunking improves topical coherence but introduces operational instability through:
 
-inconsistent retrieval boundaries
-variable chunk sizes
-irregular index structures
-segmentation drift
-unpredictable retrieval granularity
+* inconsistent retrieval boundaries
+* variable chunk sizes
+* irregular index structures
+* segmentation drift
+* unpredictable retrieval granularity
 
 Boundary-detection systems based on embedding similarity are themselves probabilistic approximations.
 
@@ -802,10 +800,10 @@ This creates segmentation ambiguity.
 
 Retrieval systems may:
 
-over-segment coherent material into excessively narrow retrieval units
-under-segment heterogeneous regions into overly broad chunks
-produce inconsistent segmentation behavior across similar documents
-destabilize downstream candidate competition
+* over-segment coherent material into excessively narrow retrieval units
+* under-segment heterogeneous regions into overly broad chunks
+* produce inconsistent segmentation behavior across similar documents
+* destabilize downstream candidate competition
 
 Fixed-size chunking therefore trades semantic precision for infrastructural predictability.
 
@@ -829,11 +827,11 @@ But overlap introduces additional retrieval costs.
 
 Every overlapping region expands:
 
-index size
-embedding volume
-retrieval redundancy
-duplicate candidate competition
-retrieval noise
+* index size
+* embedding volume
+* retrieval redundancy
+* duplicate candidate competition
+* retrieval noise
 
 The same informational span may now compete multiple times through partially overlapping embeddings.
 
@@ -845,13 +843,13 @@ chunking is retrieval-boundary engineering under competing operational constrain
 
 Retrieval systems must continuously balance:
 
-semantic coherence
-retrieval granularity
-computational scalability
-embedding efficiency
-context preservation
-retrieval precision
-indexing predictability
+* semantic coherence
+* retrieval granularity
+* computational scalability
+* embedding efficiency
+* context preservation
+* retrieval precision
+* indexing predictability
 
 No chunking strategy optimizes all of these simultaneously.
 
@@ -885,7 +883,7 @@ The answer introduces the next retrieval instability:
 
 the fragmentation pressures created by passage segmentation itself.
 
-Passage Segmentation Creates Context Fragmentation
+## 7. Passage Segmentation Creates Context Fragmentation
 
 Previous section established that passage retrieval architectures depend on segmentation systems capable of decomposing continuous documents into independently retrievable units.
 
@@ -893,10 +891,10 @@ But segmentation introduces a deeper retrieval instability.
 
 Passage retrieval improves:
 
-retrieval precision
-evidence concentration
-semantic separability
-synthesis efficiency
+* retrieval precision
+* evidence concentration
+* semantic separability
+* synthesis efficiency
 
 while simultaneously weakening the contextual structures that originally stabilized meaning inside continuous documents.
 
@@ -914,13 +912,13 @@ A chunk may align strongly with a query vector while still lacking the surroundi
 
 Continuous documents contain layered dependency structures:
 
-entity references
-discourse continuity
-explanatory sequencing
-referential relationships
-argumentative progression
-temporal ordering
-parent-document identity
+* entity references
+* discourse continuity
+* explanatory sequencing
+* referential relationships
+* argumentative progression
+* temporal ordering
+* parent-document identity
 
 Segmentation partially severs these relationships.
 
@@ -960,7 +958,7 @@ A chunk can match a query while still lacking sufficient grounding structure for
 
 Several recurring fragmentation failures emerge from this.
 
-Pronoun Disconnection
+### Pronoun Disconnection
 
 Pronouns frequently survive segmentation while their referents remain isolated in neighboring chunks.
 
@@ -970,42 +968,42 @@ A chunk containing:
 
 may lose:
 
-the entity being discussed
-the measured variable
-the temporal frame
-the comparison baseline
+* the entity being discussed
+* the measured variable
+* the temporal frame
+* the comparison baseline
 
 The retrieval system surfaces syntactically complete text while retrieving operationally incomplete evidence.
 
-Entity Ambiguity
+### Entity Ambiguity
 
 Many entities inherit meaning relationally rather than locally.
 
 References such as:
 
-“the company”
-“the framework”
-“the API”
-“the release”
+* “the company”
+* “the framework”
+* “the API”
+* “the release”
 
 may depend entirely on contextual anchors removed during segmentation.
 
 Entity references therefore become ambiguous once detached from parent-document continuity.
 
-Dependency Collapse
+### Dependency Collapse
 
 Informational spans often depend on prior constraints, assumptions, or definitions established elsewhere in the document.
 
 A segmented troubleshooting instruction may remain individually retrievable while losing:
 
-prerequisite conditions
-causal qualifiers
-setup dependencies
-earlier limitations
+* prerequisite conditions
+* causal qualifiers
+* setup dependencies
+* earlier limitations
 
 The chunk remains locally relevant while becoming globally incomplete.
 
-Discourse Fragmentation
+### Discourse Fragmentation
 
 Documents contain implicit reasoning structure.
 
@@ -1017,10 +1015,10 @@ Later sections depend on previously introduced concepts.
 
 Independent chunks lose portions of:
 
-conceptual sequencing
-argumentative continuity
-explanatory buildup
-narrative dependency structure
+* conceptual sequencing
+* argumentative continuity
+* explanatory buildup
+* narrative dependency structure
 
 Retrieval systems increasingly surface isolated informational fragments detached from the broader reasoning architecture that originally gave them interpretive stability.
 
@@ -1058,11 +1056,11 @@ If retrieved evidence lacks sufficient contextual inheritance, synthesis systems
 
 A highly relevant chunk may therefore still produce:
 
-incomplete grounding
-referential ambiguity
-unstable synthesis
-factual distortion
-misleading interpretation
+* incomplete grounding
+* referential ambiguity
+* unstable synthesis
+* factual distortion
+* misleading interpretation
 
 even when retrieval technically succeeds.
 
@@ -1070,9 +1068,9 @@ This changes retrieval optimization priorities fundamentally.
 
 Retrieval systems increasingly optimize not only for:
 
-semantic similarity
-embedding proximity
-retrieval precision
+* semantic similarity
+* embedding proximity
+* retrieval precision
 
 but for:
 
@@ -1094,42 +1092,42 @@ These systems do not eliminate fragmentation.
 
 They attempt to reconstruct portions of the continuity segmentation previously weakened.
 
-Neighboring-Chunk Recovery
+### Neighboring-Chunk Recovery
 
 Instead of retrieving only the highest-ranked chunk, retrieval systems may retrieve:
 
-adjacent chunks
-sliding contextual windows
-parent-section expansions
-surrounding semantic regions
+* adjacent chunks
+* sliding contextual windows
+* parent-section expansions
+* surrounding semantic regions
 
 The objective is continuity reconstruction.
 
 Nearby retrieval units restore:
 
-missing referents
-dependency chains
-discourse continuity
-entity relationships
+* missing referents
+* dependency chains
+* discourse continuity
+* entity relationships
 
 while partially sacrificing retrieval compression efficiency.
 
-Metadata Enrichment
+### Metadata Enrichment
 
 Chunks increasingly inherit:
 
-section headers
-document titles
-timestamps
-entity labels
-source identifiers
-hierarchical metadata
+* section headers
+* document titles
+* timestamps
+* entity labels
+* source identifiers
+* hierarchical metadata
 
 before embedding and indexing occur.
 
 Metadata functions as continuity scaffolding attached to otherwise isolated retrieval units.
 
-Contextual Retrieval
+### Contextual Retrieval
 
 More advanced systems attempt contextual retrieval directly.
 
@@ -1141,9 +1139,9 @@ A chunk such as:
 
 may therefore receive additional contextual anchoring identifying:
 
-the company
-the reporting period
-the broader document context
+* the company
+* the reporting period
+* the broader document context
 
 before entering retrieval indexes.
 
@@ -1161,10 +1159,10 @@ Even contextualized chunks remain approximations of original document continuity
 
 This becomes increasingly important as retrieval systems optimize toward:
 
-smaller retrieval units
-narrower semantic spans
-higher evidence density
-finer retrieval granularity
+* smaller retrieval units
+* narrower semantic spans
+* higher evidence density
+* finer retrieval granularity
 
 Smaller chunks improve retrieval precision while simultaneously increasing fragmentation risk.
 
@@ -1186,12 +1184,12 @@ But semantic similarity alone cannot reliably handle all query classes.
 
 A chunk containing the correct meaning may still fail retrieval when the query depends on:
 
-exact terminology
-identifiers
-product SKUs
-code strings
-version numbers
-sparse lexical precision
+* exact terminology
+* identifiers
+* product SKUs
+* code strings
+* version numbers
+* sparse lexical precision
 
 Embedding similarity weakens under these conditions because semantically related concepts do not necessarily preserve exact lexical identity.
 
@@ -1212,19 +1210,19 @@ semantic similarity does not guarantee lexical recoverability.
 
 A chunk may contain the correct meaning while still failing retrieval when queries depend on:
 
-exact identifiers
+* exact identifiers
 
-product SKUs
+* product SKUs
 
-code strings
+* code strings
 
-version numbers
+* version numbers
 
-literal terminology
+* literal terminology
 
-rare entity names
+* rare entity names
 
-symbolic precision
+* symbolic precision
 
 This creates a retrieval gap that dense retrieval alone cannot reliably resolve.
 
@@ -1242,17 +1240,17 @@ It is because different retrieval systems solve different retrieval problems.
 
 Dense retrieval excels at:
 
-semantic similarity
+* semantic similarity
 
-paraphrase recovery
+* paraphrase recovery
 
-latent conceptual matching
+* latent conceptual matching
 
-intent-level retrieval
+* intent-level retrieval
 
-synonym expansion
+* synonym expansion
 
-semantic recall across vocabulary mismatch
+* semantic recall across vocabulary mismatch
 
 A query such as:
 “pricing tiers for enterprise plans”
@@ -1310,19 +1308,19 @@ Sparse lexical retrieval preserves exact token structure through inverted indexe
 
 If a chunk contains:
 
-a product identifier
+* a product identifier
 
-an exact API parameter
+* an exact API parameter
 
-a legal clause number
+* a legal clause number
 
-a function signature
+* a function signature
 
-a chemical compound
+* a chemical compound
 
-a medical dosage
+* a medical dosage
 
-a firmware version
+* a firmware version
 
 BM25 can often recover it more reliably than dense vector retrieval.
 
@@ -1338,17 +1336,17 @@ Subsequent retrieval research demonstrated that dense and sparse retrieval syste
 
 Dense retrieval remains exceptionally effective for:
 
-paraphrases
-natural-language variation
-conceptual association
-intent-level retrieval
+* paraphrases
+* natural-language variation
+* conceptual association
+* intent-level retrieval
 
 Sparse lexical retrieval remains exceptionally effective for:
 
-symbolic precision
-literal phrase recovery
-rare lexical entities
-exact terminology preservation
+* symbolic precision
+* literal phrase recovery
+* rare lexical entities
+* exact terminology preservation
 
 This reinforces a broader retrieval reality:
 
@@ -1362,22 +1360,21 @@ This creates hybrid retrieval architecture.
 
 Hybrid retrieval systems run:
 
-sparse lexical retrieval
-and
+* sparse lexical retrieval
 
-dense semantic retrieval
+* dense semantic retrieval
 
 in parallel across the same corpus.
 
-A production retrieval pipeline may therefore:
+1. A production retrieval pipeline may therefore:
 
-retrieve BM25 candidates through inverted-index lexical matching
+2. retrieve BM25 candidates through inverted-index lexical matching
 
-retrieve dense candidates through ANN vector similarity search
+3. retrieve dense candidates through ANN vector similarity search
 
-merge candidate pools
+4. merge candidate pools
 
-deduplicate overlapping passages
+5. deduplicate overlapping passages
 
 pass the combined candidate set downstream for filtering and reranking
 
@@ -1404,13 +1401,13 @@ Modern retrieval systems therefore behave increasingly like orchestration layers
 
 Dense retrieval retrieves:
 
-conceptual similarity.
+* conceptual similarity.
 
-Sparse lexical retrieval retrieves:
+* Sparse lexical retrieval retrieves:
 
-lexical identity.
+* lexical identity.
 
-Neither reliably subsumes the other.
+* Neither reliably subsumes the other.
 
 As retrieval environments become increasingly heterogeneous, retrieval architectures increasingly specialize across retrieval modalities rather than collapsing into a single universal retrieval method.
 
@@ -1420,21 +1417,21 @@ Dense and sparse lexical retrieval systems produce fundamentally incompatible sc
 
 BM25 produces open-ended lexical relevance scores derived from:
 
-term frequency
+* term frequency
 
-inverse document frequency
+* inverse document frequency
 
-document normalization
+* document normalization
 
-sparse token weighting
+* sparse token weighting
 
 Dense retrieval systems instead produce:
 
-cosine similarity
+* cosine similarity
 
-dot-product similarity
+* dot-product similarity
 
-vector-distance proximity
+* vector-distance proximity
 
 These scoring systems do not exist on compatible numerical scales.
 
@@ -1450,10 +1447,8 @@ Instead of merging raw retrieval scores, RRF merges ranked candidate lists using
 
 A passage ranking consistently well across:
 
-BM25 retrieval
-and
-
-dense vector retrieval
+* BM25 retrieval
+* dense vector retrieval
 
 receives stronger combined ranking priority than passages performing strongly in only one retrieval modality.
 
@@ -1468,13 +1463,10 @@ retrieval signal arbitration.
 
 The retrieval pipeline must continuously determine:
 
-which retrieval modality dominates
-
-which query classes require lexical weighting
-
-how semantic recall interacts with exact-match precision
-
-how candidate pools compete downstream
+* which retrieval modality dominates
+* which query classes require lexical weighting
+* how semantic recall interacts with exact-match precision
+* how candidate pools compete downstream
 
 This produces increasingly heterogeneous candidate sets.
 
@@ -1486,15 +1478,11 @@ or evidence satisfying both retrieval signals simultaneously.
 
 Hybrid retrieval therefore expands:
 
-retrieval coverage
-
-retrieval redundancy
-
-candidate overlap
-
-retrieval noise
-
-candidate-pool size
+* retrieval coverage
+* retrieval redundancy
+* candidate overlap
+* retrieval noise
+* candidate-pool size
 
 Retrieval systems may now generate dozens or hundreds of partially relevant candidates across multiple retrieval engines.
 
@@ -1506,32 +1494,25 @@ Generation quality still degrades under excessive retrieval noise.
 
 Retrieval pipelines therefore require another infrastructure layer capable of:
 
-filtering candidate pools
-
-compressing retrieval sets
-
-selecting the strongest passages
-
-resolving candidate competition
-
-prioritizing synthesis-ready evidence
+* filtering candidate pools
+* compressing retrieval sets
+* selecting the strongest passages
+* resolving candidate competition
+* prioritizing synthesis-ready evidence
 
 This creates the transition into:
 multi-stage retrieval pipelines
 and
 reranking systems that operate as competitive filtering architectures between retrieval and synthesis.
 
-Modern Retrieval Pipelines Operate Through Multi-Stage Candidate Compression
+## 9. Modern Retrieval Pipelines Operate Through Multi-Stage Candidate Compression
 
 Section 8 established that hybrid retrieval systems dramatically expand retrieval coverage by combining:
 
-dense semantic retrieval
-
-sparse lexical retrieval
-
-parallel candidate generation
-
-retrieval fusion architectures
+* dense semantic retrieval
+* sparse lexical retrieval
+* parallel candidate generation
+* retrieval fusion architectures
 
 But hybrid retrieval introduces a new systems problem.
 
@@ -1539,19 +1520,13 @@ Retrieval pipelines now generate far more potentially relevant passages than dow
 
 A modern retrieval pipeline may retrieve:
 
-semantically similar passages
-
-exact lexical matches
-
-overlapping chunks
-
-partially redundant evidence spans
-
-competing contextual fragments
-
-metadata-qualified candidates
-
-retrieval artifacts from multiple engines simultaneously
+* semantically similar passages
+* exact lexical matches
+* overlapping chunks
+* partially redundant evidence spans
+* competing contextual fragments
+* metadata-qualified candidates
+* retrieval artifacts from multiple engines simultaneously
 
 This improves retrieval recall substantially.
 
@@ -1559,15 +1534,11 @@ But recall alone is insufficient.
 
 Downstream synthesis systems operate under constrained:
 
-context capacity
-
-attention allocation
-
-token budgets
-
-inference latency
-
-retrieval-noise tolerance
+* context capacity
+* attention allocation
+* token budgets
+* inference latency
+* retrieval-noise tolerance
 
 This creates a structural compression problem.
 
@@ -1591,16 +1562,12 @@ Most retrieved passages never reach generation systems.
 
 A passage may:
 
-qualify initially for retrieval
-while still
-
-failing later compression stages
-
-losing reranking competition
-
-being excluded from context allocation
-
-never influencing synthesis at all
+* qualify initially for retrieval
+  while still
+* failing later compression stages
+* losing reranking competition
+* being excluded from context allocation
+* never influencing synthesis at all
 
 This creates a foundational distinction between:
 retrieval qualification
@@ -1613,22 +1580,18 @@ Survival determines whether the passage ultimately receives synthesis visibility
 
 These stages operate under different optimization objectives.
 
-First-Stage Retrieval Prioritizes Recall
+### First-Stage Retrieval Prioritizes Recall
 
 Modern retrieval pipelines typically begin with:
 high-recall first-stage retrieval systems.
 
 This stage prioritizes:
 
-retrieval speed
-
-broad candidate generation
-
-scalable search
-
-retrieval coverage
-
-approximate relevance estimation
+* retrieval speed
+* broad candidate generation
+* scalable search
+* retrieval coverage
+* approximate relevance estimation
 
 The primary objective is:
 avoid missing potentially useful evidence.
@@ -1637,15 +1600,11 @@ This creates recall-oriented retrieval architecture.
 
 First-stage retrieval systems intentionally tolerate:
 
-redundancy
-
-noisy candidates
-
-overlapping passages
-
-approximate matches
-
-partially relevant evidence
+* redundancy
+* noisy candidates
+* overlapping passages
+* approximate matches
+* partially relevant evidence
 
 because early elimination errors cannot be corrected downstream.
 
@@ -1662,10 +1621,9 @@ This is why dense bi-encoder retrieval systems became dominant for large-scale c
 
 Bi-encoder retrieval architectures independently encode:
 
-queries
-and
-
-passages
+* queries
+  and
+* passages
 
 into vector representations before retrieval occurs.
 
@@ -1673,13 +1631,10 @@ At query time, retrieval systems perform approximate nearest-neighbor search acr
 
 This enables retrieval systems to scale across:
 
-millions of passages
-
-high-throughput retrieval environments
-
-production-scale latency constraints
-
-large vector indexes
+* millions of passages
+* high-throughput retrieval environments
+* production-scale latency constraints
+* large vector indexes
 
 Bi-encoders therefore optimize:
 retrieval scalability.
@@ -1693,27 +1648,20 @@ compressed vector representations.
 
 They do not deeply evaluate:
 
-local phrase dependencies
-
-token-level relationships
-
-fine-grained evidence alignment
-
-passage-specific contextual relevance
+* local phrase dependencies
+* token-level relationships
+* fine-grained evidence alignment
+* passage-specific contextual relevance
 
 This creates approximation error.
 
 A passage may rank highly because it is broadly semantically related while still being:
 
-contextually incomplete
-
-structurally weak
-
-partially redundant
-
-poorly extractable
-
-inferior to competing evidence spans
+* contextually incomplete
+* structurally weak
+* partially redundant
+* poorly extractable
+* inferior to competing evidence spans
 
 First-stage retrieval therefore intentionally overgenerates candidates.
 
@@ -1741,13 +1689,10 @@ precision arbitration infrastructure.
 
 Candidate pools generated through:
 
-dense retrieval
-
-sparse lexical retrieval
-
-hybrid fusion
-
-overlapping chunk retrieval
+* dense retrieval
+* sparse lexical retrieval
+* hybrid fusion
+* overlapping chunk retrieval
 
 contain too many partially relevant passages for downstream synthesis systems to process efficiently.
 
@@ -1761,13 +1706,10 @@ retrieval ranking
 
 but for:
 
-synthesis visibility
-
-context allocation
-
-downstream reasoning influence
-
-attention survivability
+* synthesis visibility
+* context allocation
+* downstream reasoning influence
+* attention survivability
 
 A passage that survives reranking enters the synthesis context window.
 
@@ -1776,16 +1718,15 @@ A passage excluded during reranking becomes operationally invisible to the gener
 The reranking layer therefore acts as:
 evidence allocation governance.
 
-Cross-Encoders Resolve Candidate Competition
+### Cross-Encoders Resolve Candidate Competition
 
 This is where cross-encoder reranking systems become important.
 
 Unlike bi-encoders, cross-encoders jointly process:
 
-the query
-and
-
-the candidate passage
+* the query
+  and
+* the candidate passage
 
 inside the same transformer attention space.
 
@@ -1794,17 +1735,12 @@ deep query-passage interaction modeling.
 
 Cross-encoders evaluate:
 
-token-level alignment
-
-phrase relationships
-
-semantic precision
-
-local contextual dependencies
-
-evidence specificity
-
-grounding quality
+* token-level alignment
+* phrase relationships
+* semantic precision
+* local contextual dependencies
+* evidence specificity
+* grounding quality
 
 rather than relying solely on vector-space proximity.
 
@@ -1818,10 +1754,9 @@ Exhaustive cross-encoder evaluation therefore becomes computationally infeasible
 
 Production retrieval systems separate:
 
-scalable recall generation
-from
-
-expensive precision arbitration
+* scalable recall generation
+  from
+* expensive precision arbitration
 
 creating the canonical:
 bi-encoder → cross-encoder retrieval pipeline.
@@ -1838,30 +1773,24 @@ Only a small subset of passages survive this arbitration stage.
 
 A retrieval pipeline may:
 
-retrieve 100 passages initially
-
-rerank 50 candidates
-
-allocate only 5–10 passages into synthesis context
+* retrieve 100 passages initially
+* rerank 50 candidates
+* allocate only 5–10 passages into synthesis context
 
 This is retrieval compression in practice.
 
-Retrieval Pipelines Govern Evidence Compression
+### Retrieval Pipelines Govern Evidence Compression
 
 Modern retrieval systems increasingly operate through:
 layered candidate compression.
 
 Each pipeline stage progressively reduces:
 
-retrieval noise
-
-distractor passages
-
-overlapping candidates
-
-redundancy
-
-candidate-set size
+* retrieval noise
+* distractor passages
+* overlapping candidates
+* redundancy
+* candidate-set size
 
 The retrieval pipeline therefore behaves like:
 an evidence compression funnel.
@@ -1876,7 +1805,7 @@ Every passage inserted into synthesis context consumes limited computational res
 
 Context windows therefore function as competitive allocation environments rather than passive storage containers.
 
-Research such as Lost in the Middle demonstrates that increasing retrieval volume does not reliably improve synthesis quality. Excess evidence frequently introduces distractor competition, weakens grounding clarity, and reduces evidence salience.
+Research such as *[Lost in the Middle](URL)* demonstrates that increasing retrieval volume does not reliably improve synthesis quality. Excess evidence frequently introduces distractor competition, weakens grounding clarity, and reduces evidence salience.
 
 Retrieval pipelines therefore optimize around evidence efficiency rather than retrieval volume alone.
 
@@ -1892,7 +1821,7 @@ the most information.
 It succeeds when it retrieves:
 the most synthesis-useful evidence under constrained context allocation.
 
-Candidate Competition Intensifies Inside Hybrid Retrieval
+### Candidate Competition Intensifies Inside Hybrid Retrieval
 
 Hybrid retrieval architectures intensify this pressure further.
 
@@ -1917,26 +1846,22 @@ Two passages may both be relevant while competing for the same limited synthesis
 
 The retrieval pipeline must therefore continuously evaluate:
 
-which passage is most extractable
-
-which passage contains the strongest grounding
-
-which passage minimizes redundancy
-
-which passage preserves contextual completeness
-
-which passage most efficiently uses limited context allocation
+* which passage is most extractable
+* which passage contains the strongest grounding
+* which passage minimizes redundancy
+* which passage preserves contextual completeness
+* which passage most efficiently uses limited context allocation
 
 Retrieval systems increasingly optimize not merely for retrievability, but for survivability under constrained synthesis allocation.
 
 The retrieval pipeline therefore evolves into a staged evidence-selection system that progressively compresses broad retrieval possibility into a small set of synthesis-visible evidence.
 
-Late Interaction Architectures Partially Reduce Compression Tradeoffs
+### Late Interaction Architectures Partially Reduce Compression Tradeoffs
 
 Some retrieval architectures attempt to partially reduce the tradeoff between:
-bi-encoder scalability
-and
-cross-encoder precision.
+* bi-encoder scalability
+  and
+* cross-encoder precision.
 
 ColBERT introduced a late-interaction retrieval architecture preserving token-level embeddings rather than collapsing entire passages into single-vector representations.
 
@@ -1945,9 +1870,9 @@ Instead of comparing one vector per document, ColBERT computes token-level MaxSi
 This preserves richer interaction information while remaining substantially more scalable than full cross-encoder evaluation.
 
 Late-interaction architectures therefore partially blur the boundary between:
-first-stage retrieval
-and
-precision reranking.
+* first-stage retrieval
+  and
+* precision reranking.
 
 But the broader compression reality remains unchanged.
 
@@ -1961,25 +1886,18 @@ Retrieval systems can generate more potentially relevant evidence than synthesis
 
 This pushes retrieval systems toward:
 
-concise evidence spans
-
-extractable information units
-
-grounding-efficient passages
-
-synthesis-compatible retrieval artifacts
+* concise evidence spans
+* extractable information units
+* grounding-efficient passages
+* synthesis-compatible retrieval artifacts
 
 Passages that are:
 
-dense
-
-localized
-
-structurally clear
-
-contextually self-contained
-
-highly extractable
+* dense
+* localized
+* structurally clear
+* contextually self-contained
+* highly extractable
 
 gain survivability advantages inside compression-heavy retrieval pipelines.
 
@@ -1988,7 +1906,7 @@ This creates the next retrieval evolution:
 modern retrieval systems increasingly prioritize:
 synthesis-ready evidence rather than merely retrievable information.
 
-Synthesis Systems Require Extractable Evidence
+## 10. Synthesis Systems Require Extractable Evidence
 
 Section 9 established that modern retrieval systems increasingly operate as:
 multi-stage candidate compression architectures.
@@ -2020,17 +1938,12 @@ Generation systems do not consume retrieved evidence passively.
 
 They must:
 
-interpret it
-
-ground against it
-
-integrate it
-
-reconcile it with competing evidence
-
-compress it into constrained context environments
-
-synthesize it into response structures
+* interpret it
+* ground against it
+* integrate it
+* reconcile it with competing evidence
+* compress it into constrained context environments
+* synthesize it into response structures
 
 This changes retrieval incentives fundamentally.
 
@@ -2043,7 +1956,7 @@ whether retrieved evidence can survive downstream synthesis efficiently.
 This creates:
 extractability pressure.
 
-Retrieval Relevance And Synthesis Usability Are Different Problems
+### Retrieval Relevance And Synthesis Usability Are Different Problems
 
 Traditional retrieval systems primarily optimized:
 relevance estimation.
@@ -2060,24 +1973,18 @@ These are not equivalent objectives.
 
 A retrieved passage may:
 
-contain relevant information
-while still
-
-performing poorly inside downstream generation systems
+* contain relevant information
+  while still
+* performing poorly inside downstream generation systems
 
 because the evidence itself may be:
 
-diffuse
-
-noisy
-
-contextually unstable
-
-semantically fragmented
-
-weakly grounded
-
-inefficient to compress into synthesis context
+* diffuse
+* noisy
+* contextually unstable
+* semantically fragmented
+* weakly grounded
+* inefficient to compress into synthesis context
 
 This creates a new operational retrieval property:
 extractability.
@@ -2090,17 +1997,12 @@ a retrieval characteristic describing how efficiently evidence functions inside 
 
 Passages with high extractability typically exhibit:
 
-concentrated information density
-
-semantic cohesion
-
-contextual clarity
-
-grounding stability
-
-concise evidence spans
-
-low interpretive ambiguity
+* concentrated information density
+* semantic cohesion
+* contextual clarity
+* grounding stability
+* concise evidence spans
+* low interpretive ambiguity
 
 These properties improve downstream synthesis performance directly.
 
@@ -2113,7 +2015,7 @@ a retrieval optimization strategy.
 It is also:
 a synthesis compatibility strategy.
 
-Generation Systems Inherit Retrieval Inefficiencies Directly
+### Generation Systems Inherit Retrieval Inefficiencies Directly
 
 Generation systems do not reliably repair retrieval failures.
 
@@ -2123,23 +2025,17 @@ This is one of the most important architectural realities inside modern retrieva
 
 If retrieval systems surface:
 
-noisy passages
-
-semantically diluted chunks
-
-fragmented contextual spans
-
-distractor-heavy candidates
-
-weak evidence regions
+* noisy passages
+* semantically diluted chunks
+* fragmented contextual spans
+* distractor-heavy candidates
+* weak evidence regions
 
 generation systems must still allocate:
 
-attention bandwidth
-
-context capacity
-
-reasoning resources
+* attention bandwidth
+* context capacity
+* reasoning resources
 
 toward processing those retrieval artifacts.
 
@@ -2147,13 +2043,10 @@ This creates synthesis instability.
 
 Large language models operate under constrained synthesis environments where:
 
-context windows are finite
-
-attention allocation is competitive
-
-evidence salience weakens under overload
-
-distractor passages dilute grounding clarity
+* context windows are finite
+* attention allocation is competitive
+* evidence salience weakens under overload
+* distractor passages dilute grounding clarity
 
 This creates direct retrieval-to-generation dependency.
 
@@ -2161,20 +2054,17 @@ Generation systems are probabilistic synthesis architectures rather than determi
 
 Retrieval pipelines therefore increasingly optimize around evidence concentration and grounding clarity rather than retrieval volume alone.
 
-Extractability Emerges As A Retrieval Optimization Objective
+### Extractability Emerges As A Retrieval Optimization Objective
 
 Modern retrieval systems increasingly optimize toward:
 extractable evidence spans.
 
 Traditional document retrieval systems could tolerate:
 
-navigational clutter
-
-broad topical regions
-
-structurally diffuse pages
-
-low-density informational sections
+* navigational clutter
+* broad topical regions
+* structurally diffuse pages
+* low-density informational sections
 
 because humans performed post-retrieval interpretation manually.
 
@@ -2182,15 +2072,11 @@ Synthesis systems operate differently.
 
 The generator performs better when retrieved evidence:
 
-contains concentrated semantic signal
-
-minimizes irrelevant context
-
-preserves local coherence
-
-communicates stable factual relationships
-
-supports efficient grounding
+* contains concentrated semantic signal
+* minimizes irrelevant context
+* preserves local coherence
+* communicates stable factual relationships
+* supports efficient grounding
 
 This creates:
 evidence density pressure.
@@ -2208,17 +2094,12 @@ distributed informational structure.
 
 Long diffuse pages frequently contain:
 
-navigation scaffolding
-
-repeated boilerplate
-
-unrelated topical regions
-
-mixed semantic intent
-
-weak contextual transitions
-
-low informational concentration
+* navigation scaffolding
+* repeated boilerplate
+* unrelated topical regions
+* mixed semantic intent
+* weak contextual transitions
+* low informational concentration
 
 These reduce evidence efficiency during generation.
 
@@ -2233,7 +2114,7 @@ This explains why passage retrieval architectures became dominant inside RAG pip
 The retrieval objective increasingly prioritizes:
 usable evidence density.
 
-Grounding Pressure Reshapes Retrieval Behavior
+### Grounding Pressure Reshapes Retrieval Behavior
 
 Grounding introduces additional retrieval constraints.
 
@@ -2251,15 +2132,11 @@ grounding pressure.
 
 Grounding-compatible evidence typically exhibits:
 
-factual specificity
-
-localized semantic clarity
-
-stable referential structure
-
-concise claim boundaries
-
-strong query-evidence alignment
+* factual specificity
+* localized semantic clarity
+* stable referential structure
+* concise claim boundaries
+* strong query-evidence alignment
 
 Diffuse contextual spans perform poorly because grounding becomes ambiguous.
 
@@ -2267,13 +2144,10 @@ For example:
 
 A long page discussing:
 
-multiple products
-
-several entities
-
-unrelated explanations
-
-overlapping concepts
+* multiple products
+* several entities
+* unrelated explanations
+* overlapping concepts
 
 creates uncertainty around:
 which subsection actually supports the generated claim.
@@ -2287,33 +2161,26 @@ multi-source synthesis.
 
 Modern generation systems frequently synthesize responses from:
 
-multiple passages
-
-multiple retrieval engines
-
-multiple evidence fragments
-
-multiple contextual spans simultaneously
+* multiple passages
+* multiple retrieval engines
+* multiple evidence fragments
+* multiple contextual spans simultaneously
 
 This creates:
 evidence integration pressure.
 
 Poorly extractable evidence complicates:
 
-synthesis alignment
-
-claim attribution
-
-contextual reconciliation
-
-citation consistency
-
-response compression
+* synthesis alignment
+* claim attribution
+* contextual reconciliation
+* citation consistency
+* response compression
 
 Retrieval systems therefore increasingly favor passages that:
 minimize downstream interpretive friction.
 
-Retrieval Pipelines Increasingly Function As Generation Preconditioning Systems
+### Retrieval Pipelines Increasingly Function As Generation Preconditioning Systems
 
 This creates a broader architectural shift.
 
@@ -2328,13 +2195,10 @@ a preconditioning system for generation.
 
 Retrieved evidence must be:
 
-compact enough to survive context allocation
-
-concentrated enough to justify synthesis inclusion
-
-clear enough to preserve grounding
-
-stable enough to support downstream reasoning
+* compact enough to survive context allocation
+* concentrated enough to justify synthesis inclusion
+* clear enough to preserve grounding
+* stable enough to support downstream reasoning
 
 This changes the meaning of:
 retrieval quality.
@@ -2345,17 +2209,12 @@ high relevance ranking.
 
 Modern synthesis-oriented retrieval increasingly evaluates:
 
-extractability
-
-context efficiency
-
-semantic concentration
-
-grounding stability
-
-evidence compression efficiency
-
-synthesis compatibility
+* extractability
+* context efficiency
+* semantic concentration
+* grounding stability
+* evidence compression efficiency
+* synthesis compatibility
 
 These become operational retrieval properties.
 
@@ -2372,24 +2231,19 @@ distractor information dominates the retrieval span
 The retrieval pipeline therefore increasingly functions as:
 generation-oriented evidence selection infrastructure.
 
-Synthesis-Compatible Retrieval Favors Stable Semantic Units
+### Synthesis-Compatible Retrieval Favors Stable Semantic Units
 
 Passages increasingly compete through:
 synthesis compatibility.
 
 A synthesis-compatible retrieval unit typically:
 
-compresses efficiently into constrained context windows
-
-preserves semantic cohesion
-
-minimizes ambiguity
-
-supports grounded citation
-
-reduces interpretive branching
-
-contains concentrated informational value
+* compresses efficiently into constrained context windows
+* preserves semantic cohesion
+* minimizes ambiguity
+* supports grounded citation
+* reduces interpretive branching
+* contains concentrated informational value
 
 This creates structural advantages for:
 concise semantic spans.
@@ -2417,7 +2271,7 @@ Modern retrieval architectures therefore continuously negotiate between semantic
 
 The optimization target increasingly becomes evidence behavior during generation rather than retrievability alone.
 
-Retrievable Information And Synthesis-Efficient Evidence Diverge
+### Retrievable Information And Synthesis-Efficient Evidence Diverge
 
 This creates one of the article’s most important distinctions:
 
@@ -2427,17 +2281,12 @@ synthesis-efficient evidence.
 
 A passage may remain fully retrievable while still failing operationally during generation because:
 
-information density is too low
-
-semantic boundaries are weak
-
-contextual noise dominates the span
-
-grounding references remain ambiguous
-
-evidence extraction requires excessive interpretation
-
-the retrieved region consumes disproportionate context capacity
+* information density is too low
+* semantic boundaries are weak
+* contextual noise dominates the span
+* grounding references remain ambiguous
+* evidence extraction requires excessive interpretation
+* the retrieved region consumes disproportionate context capacity
 
 This distinction becomes increasingly important as retrieval pipelines evolve toward:
 generation-oriented architectures.
@@ -2450,25 +2299,18 @@ surface evidence capable of surviving downstream synthesis efficiently.
 
 A passage may be relevant while still performing poorly during generation because:
 
-evidence density is weak
-
-grounding remains unstable
-
-contextual ambiguity increases
-
-interpretive overhead becomes excessive
+* evidence density is weak
+* grounding remains unstable
+* contextual ambiguity increases
+* interpretive overhead becomes excessive
 
 Retrieval systems therefore increasingly favor evidence that is:
 
-extractable
-
-grounding-efficient
-
-semantically concentrated
-
-context-efficient
-
-synthesis-compatible
+* extractable
+* grounding-efficient
+* semantically concentrated
+* context-efficient
+* synthesis-compatible
 
 The retrieval problem is no longer simply:
 
@@ -2488,15 +2330,15 @@ But once retrieval systems increasingly prioritize evidence according to these s
 
 The same forces that determine what survives synthesis increasingly begin influencing what survives retrieval systems altogether.
 
-Retrieval Eligibility Becomes The New Visibility Bottleneck
+## 11. Retrieval Eligibility Becomes The New Visibility Bottleneck
 
 Section 10 established that modern retrieval systems increasingly prioritize evidence exhibiting:
 
-context efficiency
-grounding stability
-extractability
-evidence density
-synthesis compatibility
+* context efficiency
+* grounding stability
+* extractability
+* evidence density
+* synthesis compatibility
 
 because these properties improve synthesis survivability.
 
@@ -2516,13 +2358,10 @@ This distinction changes where visibility failure occurs.
 
 A document may:
 
-exist inside the retrieval corpus
-
-remain indexed
-
-contain technically correct information
-
-even rank traditionally
+* exist inside the retrieval corpus
+* remain indexed
+* contain technically correct information
+* even rank traditionally
 
 while still failing operationally before synthesis systems ever generate responses.
 
@@ -2535,7 +2374,7 @@ document presence
 toward:
 pipeline persistence.
 
-Structural Retrievability Governs Visibility
+### Structural Retrievability Governs Visibility
 
 Not all information survives retrieval systems equally.
 
@@ -2543,11 +2382,11 @@ Modern retrieval architectures increasingly privilege evidence that remains oper
 
 Evidence exhibiting:
 
-semantically recoverable structure
-structural coherence
-extractability
-grounding compatibility
-contextual stability
+* semantically recoverable structure
+* structural coherence
+* extractability
+* grounding compatibility
+* contextual stability
 
 typically persists more successfully through retrieval-generation pipelines.
 
@@ -2556,15 +2395,11 @@ structural retrievability.
 
 Structural retrievability describes how effectively information persists after:
 
-segmentation
-
-embedding compression
-
-candidate qualification
-
-reranking arbitration
-
-synthesis allocation
+* segmentation
+* embedding compression
+* candidate qualification
+* reranking arbitration
+* synthesis allocation
 
 have transformed the original document into retrievable evidence units.
 
@@ -2584,27 +2419,21 @@ This creates a structural asymmetry.
 
 Evidence with:
 
-stable semantic boundaries
-
-concentrated informational density
-
-coherent entity references
-
-low contextual ambiguity
+* stable semantic boundaries
+* concentrated informational density
+* coherent entity references
+* low contextual ambiguity
 
 typically survives retrieval infrastructure more effectively than information distributed diffusely across:
 
-weakly bounded sections
-
-inconsistent semantic regions
-
-long transitional prose
-
-fragmented contextual dependencies
+* weakly bounded sections
+* inconsistent semantic regions
+* long transitional prose
+* fragmented contextual dependencies
 
 Visibility therefore becomes unevenly distributed across evidence structure itself.
 
-Visibility Increasingly Functions As Multi-Stage Pipeline Persistence
+### Visibility Increasingly Functions As Multi-Stage Pipeline Persistence
 
 Traditional search systems primarily retrieved:
 documents for human navigation.
