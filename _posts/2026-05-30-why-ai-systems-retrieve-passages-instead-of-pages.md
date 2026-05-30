@@ -2445,33 +2445,23 @@ Generation systems inherit only the evidence that survives upstream filtering.
 
 Visibility therefore increasingly depends on persistence through:
 
-segmentation
-
-embedding representation
-
-retrieval qualification
-
-candidate fusion
-
-reranking compression
-
-synthesis allocation
-
-grounding integration
+* segmentation
+* embedding representation
+* retrieval qualification
+* candidate fusion
+* reranking compression
+* synthesis allocation
+* grounding integration
 
 Each stage introduces elimination pressure.
 
 Evidence may fail because:
 
-chunk boundaries weaken semantic continuity
-
-embedding representations dilute topical specificity
-
-lexical recoverability weakens
-
-reranking systems deprioritize the span
-
-synthesis allocation capacity becomes constrained
+* chunk boundaries weaken semantic continuity
+* embedding representations dilute topical specificity
+* lexical recoverability weakens
+* reranking systems deprioritize the span
+* synthesis allocation capacity becomes constrained
 
 This creates the article’s central visibility inversion:
 
@@ -2481,7 +2471,7 @@ which evidence survives retrieval infrastructure,
 not merely:
 which documents exist online.
 
-Segmentation Creates Structural Visibility Pressure
+### Segmentation Creates Structural Visibility Pressure
 
 Chunking does not merely reorganize documents.
 
@@ -2495,25 +2485,19 @@ segmentation pressure.
 
 Claims relying heavily on:
 
-distant contextual framing
-
-unresolved entity references
-
-implicit narrative continuity
-
-surrounding explanation
+* distant contextual framing
+* unresolved entity references
+* implicit narrative continuity
+* surrounding explanation
 
 often fragment poorly after chunking.
 
 Section 7 established that chunk boundaries destabilize:
 
-referential continuity
-
-semantic completeness
-
-contextual inheritance
-
-entity grounding
+* referential continuity
+* semantic completeness
+* contextual inheritance
+* entity grounding
 
 Section 10 extended this further by showing that synthesis systems inherit these fragmentation failures directly.
 
@@ -2523,13 +2507,10 @@ fragmentation instability reduces retrieval eligibility.
 
 Evidence that:
 
-loses coherence after segmentation
-
-weakens semantic separability
-
-distributes meaning diffusely across multiple chunks
-
-becomes contextually ambiguous
+* loses coherence after segmentation
+* weakens semantic separability
+* distributes meaning diffusely across multiple chunks
+* becomes contextually ambiguous
 
 often fails retrieval competition upstream.
 
@@ -2543,7 +2524,7 @@ this does not imply:
 The operational requirement is:
 structural recoverability under segmentation constraints.
 
-Embedding Compression Introduces Another Visibility Filter
+### Embedding Compression Introduces Another Visibility Filter
 
 Embedding systems introduce additional retrieval-selection pressure.
 
@@ -2563,25 +2544,19 @@ embedding survivability pressure.
 
 Chunks containing:
 
-concentrated topical focus
-
-coherent informational relationships
-
-strong entity anchoring
-
-semantically stable phrasing
+* concentrated topical focus
+* coherent informational relationships
+* strong entity anchoring
+* semantically stable phrasing
 
 typically form stronger embedding neighborhoods.
 
 Chunks containing:
 
-mixed semantic regions
-
-diffuse thematic structure
-
-weak informational concentration
-
-multiple competing concepts
+* mixed semantic regions
+* diffuse thematic structure
+* weak informational concentration
+* multiple competing concepts
 
 often become less retrieval-stable after embedding compression.
 
@@ -2589,13 +2564,10 @@ This weakens downstream retrieval precision.
 
 The retrieval system may:
 
-misclassify the chunk
-
-surface semantically adjacent but incorrect candidates
-
-lower retrieval qualification priority
-
-weaken reranking competitiveness
+* misclassify the chunk
+* surface semantically adjacent but incorrect candidates
+* lower retrieval qualification priority
+* weaken reranking competitiveness
 
 Visibility therefore increasingly depends on:
 embedding-compatible semantic structure.
@@ -2604,7 +2576,7 @@ The bottleneck begins not during generation,
 but during:
 representation formation.
 
-Candidate Competition Further Compresses Visibility
+### Candidate Competition Further Compresses Visibility
 
 Hybrid retrieval and reranking systems intensify visibility competition further.
 
@@ -2624,15 +2596,11 @@ other evidence spans.
 
 Two passages may both contain relevant information while only one survives because:
 
-one remains more semantically recoverable after embedding compression
-
-one preserves stronger retrieval qualification signals
-
-one maintains greater structural coherence
-
-one competes more effectively during reranking
-
-one persists more successfully across retrieval infrastructure stages
+* one remains more semantically recoverable after embedding compression
+* one preserves stronger retrieval qualification signals
+* one maintains greater structural coherence
+* one competes more effectively during reranking
+* one persists more successfully across retrieval infrastructure stages
 
 Visibility therefore becomes:
 
@@ -2644,44 +2612,34 @@ simple inclusion.
 
 Only a subset of retrieved evidence ultimately survives downstream allocation and influence processes.
 
-Machine Readability Increasingly Influences Retrieval Qualification
+### Machine Readability Increasingly Influences Retrieval Qualification
 
 Formatting increasingly affects retrieval behavior directly because retrieval systems depend on:
 machine-readable semantic organization.
 
 Retrieval pipelines increasingly process:
 
-heading hierarchy
-
-semantic grouping
-
-evidence boundaries
-
-structural separation
-
-informational clustering
+* heading hierarchy
+* semantic grouping
+* evidence boundaries
+* structural separation
+* informational clustering
 
 during:
 
-parsing
-
-chunk formation
-
-embedding generation
-
-retrieval qualification
+* parsing
+* chunk formation
+* embedding generation
+* retrieval qualification
 
 Poor structural organization weakens retrieval performance operationally.
 
 For example:
 
-weak heading hierarchy obscures semantic boundaries
-
-inconsistent structure complicates chunk segmentation
-
-diffuse formatting weakens informational concentration
-
-unstable grouping reduces retrieval coherence
+* weak heading hierarchy obscures semantic boundaries
+* inconsistent structure complicates chunk segmentation
+* diffuse formatting weakens informational concentration
+* unstable grouping reduces retrieval coherence
 
 Machine readability therefore becomes:
 a retrieval infrastructure dependency.
@@ -2694,7 +2652,7 @@ semantic structure visibility
 increasingly affects:
 retrieval persistence across the pipeline.
 
-Indexed Information And Retrieval-Eligible Evidence Diverge
+### Indexed Information And Retrieval-Eligible Evidence Diverge
 
 This creates one of the article’s most important distinctions:
 
@@ -2704,35 +2662,27 @@ retrieval-eligible evidence.
 
 A document may:
 
-remain indexed
-
-remain accessible
-
-contain correct information
+* remain indexed
+* remain accessible
+* contain correct information
 
 while still failing operationally because its evidence:
 
 fragments poorly
 
-weakens during embedding compression
-
-loses contextual continuity
-
-performs poorly during reranking
-
-reduces retrieval qualification strength
-
-fails persistence requirements imposed by retrieval infrastructure
+* weakens during embedding compression
+* loses contextual continuity
+* performs poorly during reranking
+* reduces retrieval qualification strength
+* fails persistence requirements imposed by retrieval infrastructure
 
 This distinction reshapes visibility architecture itself.
 
 Traditional visibility primarily depended on:
 
-discoverability
-
-indexing
-
-ranking prominence
+* discoverability
+* indexing
+* ranking prominence
 
 Modern retrieval visibility increasingly depends on:
 pipeline persistence.
@@ -2743,7 +2693,7 @@ The bottleneck shifts from:
 toward:
 “Can the evidence survive retrieval-generation infrastructure successfully?”
 
-Retrieval Systems Increasingly Reward Retrieval-Compatible Evidence
+### Retrieval Systems Increasingly Reward Retrieval-Compatible Evidence
 
 Retrieval systems increasingly reward evidence that remains operationally stable throughout retrieval infrastructure.
 
@@ -2767,7 +2717,7 @@ a systems-level persistence property.
 Not merely:
 a publishing property.
 
-The Visibility Inversion
+### The Visibility Inversion
 
 This creates the article’s final visibility inversion.
 
@@ -2783,19 +2733,13 @@ whether information exists online.
 It is:
 whether evidence survives operationally through:
 
-segmentation
-
-embedding representation
-
-retrieval qualification
-
-candidate competition
-
-reranking arbitration
-
-synthesis allocation
-
-grounding integration
+* segmentation
+* embedding representation
+* retrieval qualification
+* candidate competition
+* reranking arbitration
+* synthesis allocation
+* grounding integration
 
 before generation systems ever produce responses.
 
@@ -2807,9 +2751,11 @@ and which knowledge persists long enough to shape generated outputs.
 Modern AI visibility therefore increasingly functions as:
 retrieval-governed evidence persistence across synthesis-oriented infrastructure systems.
 
-CONCLUSION
+## CONCLUSION
 
-AI Visibility Increasingly Depends On Retrieval Survival Before Synthesis
+### AI Visibility Increasingly Depends On Retrieval Survival Before Synthesis
+
+![The Retrieval-to-Visibility Chain](/assets/images/articles/retrieve-passages/6th-diagram.png)
 
 The transition from:
 page retrieval
@@ -2830,29 +2776,21 @@ Modern retrieval pipelines no longer retrieve documents primarily for humans to 
 
 They increasingly retrieve evidence for synthesis systems operating under constrained:
 
-context windows
-
-attention allocation
-
-token budgets
-
-inference capacity
-
-grounding requirements
+* context windows
+* attention allocation
+* token budgets
+* inference capacity
+* grounding requirements
 
 This fundamentally changes retrieval behavior.
 
 Whole-document retrieval becomes operationally inefficient because large documents frequently contain:
 
-mixed semantic regions
-
-redundant context
-
-navigational scaffolding
-
-unrelated topical sections
-
-low-density informational spans
+* mixed semantic regions
+* redundant context
+* navigational scaffolding
+* unrelated topical sections
+* low-density informational spans
 
 As retrieval systems increasingly operated through semantic representations and generation-oriented workflows, broad documents became progressively less efficient retrieval objects.
 
@@ -2867,15 +2805,11 @@ This transformed retrieval infrastructure itself.
 
 Documents increasingly became segmented into independently retrievable units through:
 
-chunking systems
-
-passage-level indexing
-
-vector retrieval architectures
-
-hybrid retrieval pipelines
-
-multi-stage reranking systems
+* chunking systems
+* passage-level indexing
+* vector retrieval architectures
+* hybrid retrieval pipelines
+* multi-stage reranking systems
 
 Retrieval no longer operated primarily through:
 document competition.
@@ -2883,17 +2817,12 @@ document competition.
 It increasingly operated through:
 evidence competition.
 
-Passages began competing independently for:
-
-retrieval qualification
-
-reranking survival
-
-context allocation
-
-synthesis influence
-
-grounding participation
+* Passages began competing independently for:
+* retrieval qualification
+* reranking survival
+* context allocation
+* synthesis influence
+* grounding participation
 
 Modern retrieval pipelines therefore evolved into:
 multi-stage evidence compression systems.
@@ -2918,15 +2847,11 @@ synthesis-compatible evidence behavior.
 
 A passage may remain retrievable while still failing operationally because:
 
-semantic structure fragments
-
-contextual continuity collapses
-
-grounding becomes unstable
-
-evidence density weakens
-
-retrieval overhead exceeds synthesis value
+* semantic structure fragments
+* contextual continuity collapses
+* grounding becomes unstable
+* evidence density weakens
+* retrieval overhead exceeds synthesis value
 
 This introduced:
 retrieval survivability
@@ -2934,52 +2859,38 @@ as the dominant operational constraint.
 
 Modern retrieval systems increasingly reward evidence that remains:
 
-structurally coherent
-
-semantically concentrated
-
-grounding-compatible
-
-extraction-efficient
-
-retrieval-stable
+* structurally coherent
+* semantically concentrated
+* grounding-compatible
+* extraction-efficient
+* retrieval-stable
 
 across:
 
-segmentation
-
-embedding compression
-
-retrieval qualification
-
-reranking arbitration
-
-synthesis allocation
+* segmentation
+* embedding compression
+* retrieval qualification
+* reranking arbitration
+* synthesis allocation
 
 This transformed visibility itself.
 
 Traditional visibility systems optimized:
 
-indexing
-
-ranking prominence
-
-document discoverability
-
-navigational exposure
+* indexing
+* ranking prominence
+* document discoverability
+* navigational exposure
 
 Modern retrieval-generation systems increasingly optimize:
 evidence persistence across retrieval infrastructure.
 
 A document may remain:
 
-indexed
-
-accessible
-
-technically correct
-
-traditionally discoverable
+* indexed
+* accessible
+* technically correct
+* traditionally discoverable
 
 while still failing operationally because its evidence does not survive retrieval-generation pipelines successfully.
 
@@ -3011,4 +2922,4 @@ Modern AI visibility increasingly depends on:
 retrieval survival before synthesis.
 
 
-![The Retrieval-to-Visibility Chain](/assets/images/articles/retrieve-passages/6th-diagram.png)
+
