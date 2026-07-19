@@ -134,26 +134,48 @@
     margin: 4rem 0;
 }
 
-.article-content img {
+.article-content figure img {
     display: block;
-
     width: 100%;
 
-    margin: 4rem auto;
+    margin: 0;
 
-    border: .5px solid var(--border);
+    border: 0.5px solid var(--border);
     border-radius: 16px;
 }
 
-.article-content figcaption {
-    margin-top: 1rem;
+.article-content figure figcaption {
+    max-width: 92%;
 
-    font-size: .9rem;
-    line-height: 1.7;
+    margin: 1rem auto 0;
+
     text-align: center;
+
+    font-size: 0.92rem;
+    line-height: 1.75;
+
     font-style: italic;
 
     color: var(--text3);
+}
+
+/* =====================================================
+   WIDE FIGURES
+   ===================================================== */
+
+.article-content figure.wide {
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.article-content figure.medium {
+    max-width: 900px;
+    margin: 4rem auto;
+}
+
+.article-content figure.small {
+    max-width: 600px;
+    margin: 4rem auto;
 }
 
 /* =====================================================
