@@ -11,7 +11,7 @@ permalink: /blog/why-ai-systems-retrieve-passages-instead-of-pages/
 <figure>
 
 <img
-src="/assets/images/articles/retrieve-passages/why-ai-systems-retrieve-passages-instead-of-pages-og.webp"
+src="/assets/images/articles/retrieve-passages/why-ai-systems-retrieve-passages-instead-of-pages-og.png"
 alt="Why AI Systems Retrieve Passages Instead Of Pages">
 
 <figcaption>
