@@ -9,7 +9,6 @@ permalink: /blog/why-ai-systems-retrieve-passages-instead-of-pages/
 ---
 
 ![Why AI Systems Retrieve Passages Instead Of Pages](/assets/images/articles/retrieve-passages/why-ai-systems-retrieve-passages-instead-of-pages-og.png)
-
 *The evolution of retrieval architecture from document retrieval to passage retrieval, showing how retrieval objective shifts, semantic dilution, and context compression transformed modern AI search systems into evidence-selection infrastructures.*
 
 
