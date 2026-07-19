@@ -8,17 +8,12 @@ permalink: /blog/why-ai-systems-retrieve-passages-instead-of-pages/
 
 ---
 
+![Why AI Systems Retrieve Passages Instead Of Pages](/assets/images/articles/retrieve-passages/why-ai-systems-retrieve-passages-instead-of-pages-og.png)
+
+*The evolution of retrieval architecture from document retrieval to passage retrieval, showing how retrieval objective shifts, semantic dilution, and context compression transformed modern AI search systems into evidence-selection infrastructures.*
 
 
-# Why AI Systems Retrieve Passages Instead Of Pages
-
-
-
-The evolution of retrieval architecture from document retrieval to passage retrieval, showing how retrieval objective shifts, semantic dilution, and context compression transformed modern AI search systems into evidence-selection infrastructures.
-
-
-
-The Retrieval Shift From Pages To Passages
+# The Retrieval Shift From Pages To Passages
 
 AI systems retrieve passages instead of pages because large language models generate answers under constrained context windows, finite attention allocation, and limited synthesis capacity. Entire documents often contain multiple topics, navigational structures, redundant context, and semantically unrelated content that reduce retrieval efficiency inside generation pipelines. Modern retrieval architectures therefore increasingly isolate Passage Retrieval Units, Evidence Spans, and implementation-specific retrievable chunks that provide higher Evidence Density and stronger query alignment than Document Retrieval Units. As retrieval systems become upstream infrastructure for synthesis systems rather than navigational systems, retrieval optimization shifts from Document Retrieval Visibility toward Evidence Selection. This transition explains why Passage Retrieval has increasingly replaced full-page retrieval as the dominant operational unit inside modern AI retrieval pipelines.
 
