@@ -40,13 +40,13 @@ As retrieval becomes upstream infrastructure for generation systems, the Retriev
 
 Rather than retrieving entire Document Retrieval Units, modern AI systems increasingly isolate:
 
-Passage Retrieval Units
+* Passage Retrieval Units
 
-Evidence Spans
+* Evidence Spans
 
-localized Evidence
+* localized Evidence
 
-implementation-specific retrievable chunks
+* implementation-specific retrievable chunks
 
 These smaller Retrieval Units are not merely formatting decisions. They emerge from operational pressures inside modern retrieval architectures.
 
