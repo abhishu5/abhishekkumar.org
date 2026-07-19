@@ -24,7 +24,7 @@ The evolution of retrieval architecture from document retrieval to passage retri
 
 # The Retrieval Shift From Pages To Passages
 
-AI systems retrieve passages instead of pages because large language models generate answers under constrained context windows, finite attention allocation, and limited synthesis capacity. Entire documents often contain multiple topics, navigational structures, redundant context, and semantically unrelated content that reduce retrieval efficiency inside generation pipelines. Modern retrieval architectures therefore increasingly isolate Passage Retrieval Units, Evidence Spans, and implementation-specific retrievable chunks that provide higher Evidence Density and stronger query alignment than Document Retrieval Units. As retrieval systems become upstream infrastructure for synthesis systems rather than navigational systems, retrieval optimization shifts from Document Retrieval Visibility toward Evidence Selection. This transition explains why Passage Retrieval has increasingly replaced full-page retrieval as the dominant operational unit inside modern AI retrieval pipelines.
+*AI systems retrieve passages instead of pages because large language models generate answers under constrained context windows, finite attention allocation, and limited synthesis capacity. Entire documents often contain multiple topics, navigational structures, redundant context, and semantically unrelated content that reduce retrieval efficiency inside generation pipelines. Modern retrieval architectures therefore increasingly isolate Passage Retrieval Units, Evidence Spans, and implementation-specific retrievable chunks that provide higher Evidence Density and stronger query alignment than Document Retrieval Units. As retrieval systems become upstream infrastructure for synthesis systems rather than navigational systems, retrieval optimization shifts from Document Retrieval Visibility toward Evidence Selection. This transition explains why Passage Retrieval has increasingly replaced full-page retrieval as the dominant operational unit inside modern AI retrieval pipelines.*
 
 Traditional search systems were built around a relatively stable assumption:
 
@@ -133,7 +133,7 @@ Passage Retrieval emerged as the architectural response. By allowing localized S
 
 <img
 src="/assets/images/articles/retrieve-passages/evolution-of-retrieval-architecture-diagram.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Diagram showing the evolution of AI retrieval architecture from document retrieval to passage retrieval through retrieval objective shifts, semantic dilution, context compression, and passage-level retrieval.">
 
 <figcaption>
 
@@ -146,7 +146,7 @@ The evolution of retrieval architecture from document retrieval to passage retri
 
 ## Why Did Traditional Search Systems Treat Entire Pages As Retrieval Units?
 
-Traditional search systems treated entire pages as Document Retrieval Units because webpages represented the most stable, indexable, and computationally manageable retrieval entities available within the early web graph. Information retrieval systems such as TF-IDF and later BM25 evaluated relevance at the document level, estimating how strongly a query matched the lexical composition of a complete page rather than an individual passage. PageRank reinforced this architecture by assigning authority through page-level link relationships, making Document Retrieval Units the primary objects of ranking, retrieval, and navigation. Under this model, retrieval systems were optimized to surface relevant Document Retrieval Units, not isolate specific Evidence or Evidence Spans. Once a page was retrieved, Evidence Extraction remained a human responsibility, with users interpreting context, locating relevant sections, and synthesizing answers manually. This document-centric architecture remained operationally effective because retrieval terminated at navigation rather than downstream synthesis.
+*Traditional search systems treated entire pages as Document Retrieval Units because webpages represented the most stable, indexable, and computationally manageable retrieval entities available within the early web graph. Information retrieval systems such as TF-IDF and later BM25 evaluated relevance at the document level, estimating how strongly a query matched the lexical composition of a complete page rather than an individual passage. PageRank reinforced this architecture by assigning authority through page-level link relationships, making Document Retrieval Units the primary objects of ranking, retrieval, and navigation. Under this model, retrieval systems were optimized to surface relevant Document Retrieval Units, not isolate specific Evidence or Evidence Spans. Once a page was retrieved, Evidence Extraction remained a human responsibility, with users interpreting context, locating relevant sections, and synthesizing answers manually. This document-centric architecture remained operationally effective because retrieval terminated at navigation rather than downstream synthesis.*
 
 Before modern retrieval systems became tightly coupled to generative models, web search operated on a fundamentally document-centric architecture.
 
@@ -203,7 +203,7 @@ while humans performed Evidence Extraction.
 
 <img
 src="/assets/images/articles/retrieve-passages/traditional-document-retrieval-architecture.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Diagram illustrating the traditional document retrieval architecture where search engines retrieve and rank entire documents, users select a result, and manually extract the required information from the webpage.">
 
 <figcaption>
 
@@ -248,11 +248,12 @@ Did the system retrieve Evidence that can actually be used inside synthesis pipe
 
 This distinction fundamentally changes retrieval incentives.
 
+
 <figure>
 
 <img
 src="/assets/images/articles/retrieve-passages/traditional-vs-generative-retrieval-comparison.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Comparison diagram showing traditional retrieval and generative retrieval workflows, illustrating how both use the same retrieval infrastructure while differing in retrieval objectives, evidence selection, and answer generation.">
 
 <figcaption>
 
@@ -374,7 +375,7 @@ Semantic Dilution.
 
 <img
 src="/assets/images/articles/retrieve-passages/semantic-dilution-in-document-retrieval.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Diagram illustrating semantic dilution in document retrieval, showing how multiple topics in a large document are compressed into a single vector representation, causing competing semantic signals and reduced retrieval precision.">
 
 <figcaption>
 
@@ -415,7 +416,7 @@ Retrieval precision begins degrading because localized Evidence loses semantic s
 
 <img
 src="/assets/images/articles/retrieve-passages/document-vs-passage-retrieval-vector-space-comparison.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Comparison diagram illustrating document-level retrieval using a single document embedding versus passage retrieval using independent passage embeddings, showing how separate vector representations improve retrieval precision.">
 
 <figcaption>
 
@@ -510,11 +511,12 @@ Retrieved information therefore competes for limited representational space insi
 
 This creates retrieval compression pressure.
 
+
 <figure>
 
 <img
 src="/assets/images/articles/retrieve-passages/context-window-allocation-and-compression.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Diagram illustrating context-window allocation in AI retrieval systems, showing how relevant evidence competes with distractor content, navigation, boilerplate, and redundant text for limited synthesis capacity.">
 
 <figcaption>
 
@@ -567,11 +569,12 @@ This instability becomes more severe as context length increases.
 
 Research on long-context transformer behavior exposed this directly. The Stanford and UC Berkeley paper Lost in the Middle demonstrated that model performance follows a U-shaped retrieval curve: information near the beginning and end of long contexts remains relatively accessible, while information embedded in the middle becomes significantly harder for models to utilize effectively.
 
+
 <figure>
 
 <img
 src="/assets/images/articles/retrieve-passages/u-shaped-attention-curve-context-window.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Diagram illustrating the U-shaped attention curve in long context windows, showing higher model attention at the beginning and end of a sequence and reduced attention to information located in the middle.">
 
 <figcaption>
 
@@ -688,11 +691,12 @@ Once retrieval systems optimize around:
 
 This transition fundamentally changes retrieval architecture itself.
 
+
 <figure>
 
 <img
 src="/assets/images/articles/retrieve-passages/document-retrieval-vs-passage-retrieval-architecture.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Comparison diagram illustrating document retrieval and passage retrieval architectures, showing the transition from document-level retrieval using a single embedding to passage-level retrieval with independent embeddings and evidence competition.">
 
 <figcaption>
 
@@ -739,11 +743,12 @@ This architectural transition emerged directly through Dense Passage Retrieval (
 
 Mechanically, DPR uses a dual-encoder retrieval architecture.
 
+
 <figure>
 
 <img
 src="/assets/images/articles/retrieve-passages/dense-passage-retrieval-dpr-architecture.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Architecture diagram illustrating Dense Passage Retrieval (DPR), showing dual encoders that independently encode queries and passages into dense vectors before similarity search retrieves the highest matching passage.">
 
 <figcaption>
 
@@ -931,7 +936,7 @@ This progression establishes the central conclusion of the article.
 
 <img
 src="/assets/images/articles/retrieve-passages/retrieval-systems-evolution-timeline.png"
-alt="Why AI Systems Retrieve Passages Instead Of Pages">
+alt="Timeline diagram illustrating the evolution of AI retrieval systems from document retrieval to passage retrieval through retrieval objective shifts, semantic dilution, context compression, and evidence selection.">
 
 <figcaption>
 
@@ -973,47 +978,9 @@ How Modern Retrieval Pipelines Select Evidence Before AI Generates Answers
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## FAQ Section:
 
-FAQ 1: Why do AI systems retrieve passages instead of entire pages?
+### FAQ 1: Why do AI systems retrieve passages instead of entire pages?
 
 AI systems retrieve passages instead of entire pages because Passage Retrieval Units provide higher Evidence Density and stronger query alignment than complete Document Retrieval Units. Traditional Document Retrieval systems optimized for locating relevant documents, whereas modern retrieval systems increasingly optimize for locating Evidence capable of supporting answer generation. Entire documents frequently contain multiple Semantic Regions, navigational structures, redundant context, and semantically unrelated information that dilute Retrieval Visibility for highly relevant Evidence.
 
@@ -1021,7 +988,7 @@ Architecturally, retrieval systems operate within finite context windows and lim
 
 The implication is that Passage Retrieval enables localized Evidence to compete independently for Retrieval Visibility, making it a more efficient retrieval object for synthesis-oriented systems than complete webpages.
 
-## FAQ 2: What is Passage Retrieval?
+### FAQ 2: What is Passage Retrieval?
 
 Passage Retrieval is a retrieval architecture that indexes and retrieves localized Passage Retrieval Units instead of treating entire documents as single Document Retrieval Units. The architecture isolates smaller Semantic Regions and allows those regions to compete independently for Retrieval Visibility. As a result, highly relevant Evidence Spans can surface even when surrounding portions of the original document are less relevant to a query.
 
@@ -1029,7 +996,7 @@ Architecturally, Passage Retrieval changes Retrieval Granularity. Document Retri
 
 The implication is that retrieval systems become increasingly focused on Evidence selection rather than document selection. By reducing Semantic Dilution and preserving higher Evidence Density, Passage Retrieval improves the ability of retrieval systems to surface localized Evidence that remains useful within Context Compression constraints.
 
-## FAQ 3: How is Passage Retrieval different from Document Retrieval?
+### FAQ 3: How is Passage Retrieval different from Document Retrieval?
 
 Passage Retrieval differs from Document Retrieval because Passage Retrieval retrieves localized Passage Retrieval Units independently, whereas Document Retrieval retrieves entire documents as single Document Retrieval Units. The difference is determined by Retrieval Granularity.
 
@@ -1039,9 +1006,7 @@ Architecturally, Document Retrieval treats the document as the primary Retrieval
 
 The implication is that Passage Retrieval preserves higher Evidence Density, improves query alignment, and reduces Semantic Dilution, allowing highly relevant Evidence to surface more reliably than under document-level retrieval.
 
-
-
-## FAQ 4: Why is whole-page retrieval inefficient for AI systems?
+### FAQ 4: Why is whole-page retrieval inefficient for AI systems?
 
 Whole-page retrieval is inefficient for AI systems because complete Document Retrieval Units often contain large amounts of content that consume synthesis capacity while contributing relatively little usable Evidence. A document may contain a small number of highly relevant Evidence Spans surrounded by navigational structures, redundant explanations, mixed topics, and low Evidence Density Semantic Regions.
 
@@ -1051,9 +1016,7 @@ Architecturally, large Document Retrieval Units distribute relevant Evidence acr
 
 The implication is that retrieval quality becomes increasingly dependent on the efficient allocation of synthesis capacity, making Passage Retrieval a more effective retrieval architecture than whole-page retrieval for synthesis-oriented systems.
 
-
-
-## FAQ 5: What is Semantic Dilution in dense retrieval systems?
+### FAQ 5: What is Semantic Dilution in dense retrieval systems?
 
 Semantic Dilution is the reduction of Retrieval Visibility that occurs when multiple Semantic Regions are compressed into a single retrieval representation. As semantically distinct information is aggregated within the same Document Retrieval Unit, highly relevant Evidence becomes less distinguishable from surrounding content.
 
@@ -1063,9 +1026,7 @@ Architecturally, larger Document Retrieval Units increase representational compe
 
 The implication is that Semantic Dilution weakens retrieval precision by reducing the visibility of localized Evidence, making Passage Retrieval more effective than document-level retrieval in dense retrieval systems.
 
-
-
-## FAQ 6: How do context windows influence retrieval behavior?
+### FAQ 6: How do context windows influence retrieval behavior?
 
 Context windows influence retrieval behavior by limiting the amount of retrieved information that can participate effectively in synthesis. Because synthesis capacity is finite, retrieval systems must prioritize Evidence that provides the greatest value within available context allocation.
 
@@ -1075,9 +1036,7 @@ Architecturally, retrieval systems increasingly favor Retrieval Units that conce
 
 The implication is that context windows encourage retrieval systems to prioritize localized Evidence, increasing the effectiveness of Passage Retrieval relative to Document Retrieval.
 
-
-
-## FAQ 7: What is Context Compression?
+### FAQ 7: What is Context Compression?
 
 Context Compression is the retrieval pressure created by finite context windows that forces retrieval systems to maximize useful Evidence within limited synthesis capacity. Retrieved information must compete for scarce context allocation rather than entering generation environments without constraint.
 
@@ -1087,9 +1046,7 @@ Architecturally, Context Compression shifts retrieval optimization toward Eviden
 
 The implication is that retrieval quality depends not only on relevance but also on how efficiently retrieved Evidence uses available synthesis capacity, making Context Compression a primary driver of Passage Retrieval architectures.
 
-
-
-## FAQ 8: Why is localized Evidence more effective than whole-document Evidence in modern retrieval systems?
+### FAQ 8: Why is localized Evidence more effective than whole-document Evidence in modern retrieval systems?
 
 Localized Evidence is more effective than Evidence contained within complete Document Retrieval Units because localized Evidence preserves higher Evidence Density, stronger query alignment, and greater Retrieval Visibility than complete Document Retrieval Units. Whole documents frequently contain multiple Semantic Regions and semantically unrelated information that compete with relevant Evidence during retrieval.
 
@@ -1099,9 +1056,7 @@ Architecturally, Passage Retrieval allows localized Passage Retrieval Units cont
 
 The implication is that localized Evidence survives retrieval and synthesis constraints more effectively than Evidence contained within whole Document Retrieval Units, making Passage Retrieval better aligned with modern retrieval systems.
 
-
-
-## FAQ 9: What is Dense Passage Retrieval (DPR)?
+### FAQ 9: What is Dense Passage Retrieval (DPR)?
 
 Dense Passage Retrieval (DPR) is a Passage Retrieval architecture that retrieves Passage Retrieval Units through dense semantic representations rather than document-level retrieval representations. DPR operationalized the idea that localized Semantic Regions can be retrieved through independently indexed Passage Retrieval Units within dense retrieval systems.
 
@@ -1111,9 +1066,7 @@ Architecturally, DPR shifts retrieval competition from Document Retrieval Units 
 
 The implication is that DPR demonstrated the effectiveness of passage-level retrieval within dense retrieval systems, reinforcing the transition from document-centric retrieval toward retrieval architectures built around localized Evidence.
 
-
-
-## FAQ 10: How does Passage Retrieval improve retrieval precision?
+### FAQ 10: How does Passage Retrieval improve retrieval precision?
 
 Passage Retrieval improves retrieval precision by allowing localized Evidence to compete independently for Retrieval Visibility rather than requiring all information within a Document Retrieval Unit to compete through a single retrieval representation. This produces stronger alignment between queries and retrieved Evidence.
 
@@ -1123,9 +1076,7 @@ Architecturally, Passage Retrieval increases Retrieval Granularity by shifting r
 
 The implication is that retrieval systems can identify highly relevant Evidence more reliably, resulting in stronger query alignment, higher Evidence Density, and improved retrieval precision.
 
-
-
-## FAQ 11: Is Passage Retrieval used in Retrieval-Augmented Generation (RAG)?
+### FAQ 11: Is Passage Retrieval used in Retrieval-Augmented Generation (RAG)?
 
 Yes. Passage Retrieval is commonly used within Retrieval-Augmented Generation (RAG) systems because RAG architectures require retrieved Evidence that can be efficiently incorporated into synthesis workflows. Passage Retrieval Units provide a more effective retrieval object for this purpose than complete Document Retrieval Units.
 
@@ -1135,9 +1086,7 @@ Architecturally, RAG systems operate by combining retrieval with answer generati
 
 The implication is that Passage Retrieval aligns naturally with the operational requirements of RAG systems because retrieval quality increasingly depends on delivering highly relevant Evidence rather than broadly relevant documents.
 
-
-
-## FAQ 12: Why did traditional search engines retrieve pages instead of passages?
+### FAQ 12: Why did traditional search engines retrieve pages instead of passages?
 
 Traditional search engines retrieved pages instead of passages because webpages functioned as the primary Document Retrieval Units within a navigation-oriented retrieval architecture. Retrieval systems were designed to locate relevant documents, while users were responsible for identifying the relevant Evidence contained within those documents.
 
