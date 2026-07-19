@@ -144,7 +144,10 @@ Published {{ page.date | date: "%B %d, %Y" }}
 </section>
 
 <section class="article-content">
-
+    
+{% raw %}
+{% include toc.html %}
+{% endraw %}
 {{ content }}
 
 <div class="article-pagination">
